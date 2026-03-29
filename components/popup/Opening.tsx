@@ -61,7 +61,7 @@ const Opening = () => {
 
           {/* TANGGAL */}
           <p className='mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px] font-sweetsans font-light text-[18px] sm:text-[18px] md:text-[18px] lg:text-[18px] text-white mb-[5px]'>Dear Mr./ Mrs./ Ms.</p>
-          <p className='font-sweetsans font-normal text-[18px] text-white mb-[18px]'>Sela</p>
+          <p className='font-sweetsans font-normal text-[18px] text-white mb-[18px] lg:mb-[0px]'>Sela</p>
           <p className="text-center text-white font-sweetsans font-light text-[12px] md:hidden">We sincerely apologize <br />
           for any misspelling of names or titles.</p>
 

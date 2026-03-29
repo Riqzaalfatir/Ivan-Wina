@@ -34,7 +34,7 @@ const Hero = () => {
                             />
 
                             {/* TEXT */}
-                            <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] md:text-[72px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans font-normal text-center -mt-[30px] pr-[16px]">
+                            <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[49px] md:text-[72px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans font-normal text-center -mt-[30px] pr-[16px]">
                                 IVAN & WINA
                             </h1>
 
