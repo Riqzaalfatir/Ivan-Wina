@@ -3,6 +3,7 @@ import Image from "next/image"
 
 const VenueDetails = () => {
   return (
+    <>
     <section className='w-full min-h-screen grid grid-cols-1 md:grid-cols-2'>
 
         <div className='bg-[#6C7852] flex flex-col items-center justify-center leading-none gap-16'>
@@ -78,6 +79,10 @@ const VenueDetails = () => {
 
 </div>
     </section>
+
+        <div className="border-b border-[#202F26] border-[1.5px]" />
+  </>
+
   )
 }
 
