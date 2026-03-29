@@ -28,16 +28,8 @@ export const faqData: FAQSection[] = [
         judul: "ATTIRES & COMFORT",
         items: [
             {
-                pertanyaan: "What is the dress code?",
-                jawaban: "Formal attire is requested.",
-            },
-            {
                 pertanyaan: "A note on footwear:",
                 jawaban: "Please wear comfortable shoes.",
-            },
-            {
-                pertanyaan: "What about the weather?",
-                jawaban: "It may be warm, dress accordingly.",
             },
         ]
     },
@@ -55,10 +47,6 @@ export const faqData: FAQSection[] = [
             {
                 pertanyaan: "Do I need to pay for entrance or parking?",
                 jawaban: "No, everything is covered.",
-            },
-            {
-                pertanyaan: "Is there shuttle transport available?",
-                jawaban: "Yes, shuttle will be provided.",
             },
         ]
     },

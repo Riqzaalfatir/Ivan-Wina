@@ -14,7 +14,7 @@ const YourWishes = () => {
             return;
         }
 
-        console.log({nama, pesan})
+        console.log({ nama, pesan })
 
         setShowPopup(true)
 
@@ -26,53 +26,53 @@ const YourWishes = () => {
 
     return (
         <section className='w-full min-h-screen bg-[#6C7852]'>
-            <div className="max-w-2xl mx-auto px-4 py-32">
+            <div className="max-w-2xl mx-auto px-8 md:px-4 lg:px-4 py-32">
                 <div className="flex flex-col items-center">
-                    <h2 className='uppercase font-sweetsans font-medium text-[46px] tracking-[4px] text-white mb-6'>
+                    <h2 className='uppercase font-sweetsans font-medium text-[32px] md:text-[46px] lg:text-[46px] tracking-[4px] text-white mb-6'>
                         Your Wishes
                     </h2>
 
                     <div className='w-full flex flex-col gap-4'>
                         <input type="text" value={nama} onChange={(e) => setNama(e.target.value)} placeholder='Desy (Tester)' className='w-full text-white  font-sweetsans text-[18px] bg-transparent border-[2px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
-                        <textarea rows={15} value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full text-white font-sweetsans bg-transparent border-[2px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]'></textarea>
-                        <button onClick={handleSubmit} className='bg-[#454F23] py-2 text-[18px] font-sweetsans text-white uppercase flex items-center justify-center gap-2'>
+                        <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full text-white font-sweetsans bg-transparent border-[2px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4] h-[120px] md:h-[310px]'></textarea>
+                        <button onClick={handleSubmit} className='bg-[#454F23] py-2 text-[14px] md:text-[18px] lg:text-[18px] font-sweetsans text-white uppercase flex items-center justify-center gap-2'>
                             <Image
-                               src="/images/wishes/Kirim.png"
-                               alt="Kirim"
-                               width={20}
-                               height={20}
-                               className="object-cover" />
+                                src="/images/wishes/Kirim.png"
+                                alt="Kirim"
+                                width={18}
+                                height={18}
+                                className="object-cover" />
                             Send
                         </button>
 
-                        <div className="w-full mt-8 bg-[#454F23] py-10  px-8 max-h-[580px] overflow-y-auto">
+                        <div className="w-full mt-8 bg-[#454F23] py-6  px-6 max-h-[580px] overflow-y-auto rounded-md">
                             {dummyPesan
-                            .slice(0, showAll ? dummyPesan.length : 4)
-                            .map((item, index) => (
-                                <div key={item.id}>
+                                .slice(0, showAll ? dummyPesan.length : 4)
+                                .map((item, index) => (
+                                    <div key={item.id}>
 
-                                    <p className="text-white font-sweetsans font-bold text-[18px] mb-[17px]">
-                                        {item.nama}
-                                    </p>
+                                        <p className="text-white font-sweetsans font-bold text-[14px] md:text-[18px] lg:text-[18px] mb-[5px] md:mb-[17px] tracking-widest">
+                                            {item.nama}
+                                        </p>
 
-                                    <p className="text-white font-sweetsans text-[18px] font-light">
-                                        {item.pesan}
-                                    </p>
+                                        <p className="text-white font-sweetsans text-[14px] md:text-[18px] lg:text-[18px] mb-[5px] md:mb-[17px] font-light">
+                                            {item.pesan}
+                                        </p>
 
-                                    {index !== dummyPesan.length - 1 && (
-                                        <div className="border-t border-[#D9D9D9] my-5"></div>
-                                    )}
-                                </div>
-                            ))}
+                                        {index !== dummyPesan.length - 1 && (
+                                            <div className="border-t border-[#D9D9D9] my-3 md:my-5"></div>
+                                        )}
+                                    </div>
+                                ))}
                         </div>
 
-                        <button onClick={() => setShowAll(!showAll)} className='bg-[#454F23] py-2 text-[18px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2'> 
-                         <Image
-                            src="/images/wishes/Pesan.png"
-                            alt="Kirim"
-                            width={20}
-                            height={20}
-                            className="object-cover" />
+                        <button onClick={() => setShowAll(!showAll)} className='bg-[#454F23] py-2 text-[18px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2'>
+                            <Image
+                                src="/images/wishes/Pesan.png"
+                                alt="Kirim"
+                                width={20}
+                                height={20}
+                                className="object-cover" />
                             {showAll ? "Show Less" : "See all message"}
                         </button>
                     </div>

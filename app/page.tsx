@@ -10,10 +10,13 @@ import YourWishes from "@/components/sections/YourWishes"
 import Faq from "@/components/sections/Faq"
 import ThankYou from "@/components/sections/ThankYou"
 import Opening from "@/components/popup/Opening"
+import Header from "@/components/layout/Header"
 
 export default function Home() {
   return (
     <>
+
+    <Header />
      <Opening />
 
      <Hero />

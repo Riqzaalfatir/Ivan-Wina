@@ -14,14 +14,14 @@ const Faq = () => {
         <section className='w-full min-h-screen bg-[#6C7852]'>
             <div className="max-w-2xl mx-auto px-4 py-40">
 
-                <h2 className='uppercase text-center text-white font-sweetsans font-medium text-[46px] mb-[18px]'>
+                <h2 className='uppercase text-center text-white font-sweetsans font-medium text-[34px] md:text-[46px] lg:text-[46px] mb-[18px]'>
                     FAQ
                 </h2>
 
                 {faqData.map((section, sIndex) => (
                     <div key={sIndex} className="mb-10">
 
-                        <h3 className="text-center text-white font-sweetsans font-medium text-[22px] uppercase">
+                        <h3 className="text-center text-white font-sweetsans font-medium text-[16px] md:text-[22px] lg:text-[22px] uppercase">
                             {section.judul}
                         </h3>
 
@@ -38,7 +38,7 @@ const Faq = () => {
                                             onClick={() => toggle(key)}
                                             className="w-full flex justify-between items-center py-4 text-left text-white"
                                         >
-                                            <span className="text-[18px] text-white font-sweetsans">
+                                            <span className="text-[14px] md:text-[18px] lg:text-[18px] text-white font-sweetsans">
                                                 {item.pertanyaan}
                                             </span>
 
@@ -48,7 +48,7 @@ const Faq = () => {
                                         </button>
 
                                         {isOpen && (
-                                            <p className="text-[17px] font-sweetsans font-light text-slate-200 pb-3">
+                                            <p className="text-[14px] md:text-[18px] lg:text-[18px] font-sweetsans font-light text-slate-200 pb-3">
                                                 {item.jawaban}
                                             </p>
                                         )}

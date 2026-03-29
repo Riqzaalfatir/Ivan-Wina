@@ -3,9 +3,9 @@ import Image from "next/image"
 const DressCode = () => {
     return (
         <>
-            <section className='w-full min-h-screen grid grid-cols-1 md:grid-cols-2'>
+            <section className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
 
-                <div className="relative w-full min-h-screen overflow-hidden py-10">
+                <div className="relative w-full min-h-[70vh] lg:min-h-screen overflow-hidden py-10 px-4">
 
                     {/* BACKGROUND IMAGE */}
                     <Image
@@ -18,7 +18,7 @@ const DressCode = () => {
                     <div className="absolute z-0 inset-0 bg-[#0C1602AB]/50" />
 
                     {/* CENTER IMAGE */}
-                    <div className="relative z-10 flex items-center justify-center min-h-screen">
+                    <div className="relative z-10 flex items-center justify-center min-h-[70vh] lg:min-h-screen">
                         <div className="relative">
                             <Image
                                 src="/images/dresscode/Prewed2.png"
@@ -36,7 +36,7 @@ const DressCode = () => {
     top-1/2 left-1/2
     -translate-x-1/2 -translate-y-1/2
     text-white
-    text-[28px] md:text-[35px]
+    text-[28px] md:text-[40px] lg:text-[35px]
     font-sweetsans
     tracking-[6px]
     z-30
@@ -50,22 +50,22 @@ const DressCode = () => {
 
                 </div>
 
-                <div className='bg-[#6C7852] flex flex-col items-center justify-center leading-none gap-[79px]'>
+                <div className='bg-[#6C7852] flex flex-col items-center justify-center leading-none gap-[79px] py-[75px] md:py-[75px] lg:py-[1px]'>
                     <div className="text-center leading-none ">
-                        <h2 className="font-sweetsans font-medium text-[24px] text-white mb-[30px]">ATTIRE</h2>
-                        <p className="font-sweetsans font-light text-[17px] text-white leading-6 mb-[30px] ">We invite guests to dress semi-formal <br /> in “colors of nature”,  <br /> similar to this palette (other shades are welcome)</p>
+                        <h2 className="font-sweetsans font-medium text-[28px] md:text-[29px] lg:text-[24px] text-white mb-[40px] md:mb-[30px] lg:mb-[30px]">ATTIRE</h2>
+                        <p className="font-sweetsans font-light text-[13px] md:text-[17px] lg:text-[17px] text-white leading-6 mb-[20px] md:mb-[30px] lg:mb-[30px] ">We invite guests to dress semi-formal <br /> in “colors of nature”,  <br /> similar to this palette (other shades are welcome)</p>
                         <Image
                             src="/images/dresscode/Warna.png"
                             alt="main"
                             width={350}
                             height={200}
-                            className="object-cover mx-auto mb-[35px]"
+                            className="object-cover mx-auto mb-[35px] w-[280px] md:w-auto"
                         />
-                        <p className="font-sweetsans font-light text-[17px] text-white">Please don’t wear any black/white/ivory/batik.</p>
+                        <p className="font-sweetsans font-light text-[13px] md:text-[17px] lg:text-[17px] text-white">Please don’t wear any black/white/ivory/batik.</p>
                     </div>
                     <div className="text-center leading-none ">
-                        <h2 className="font-sweetsans font-medium text-[24px] text-white mb-[30px]">SHOES</h2>
-                        <p className="font-sweetsans  font-light text-[17px] text-white leading-6 mb-[15px] max-w-md">Since the venue is mostly gravel, you may wish to skip high heels and leather-bottomed shoes.Block heels or sturdy flats are recommended for <br /> your comfort.</p>
+                        <h2 className="font-sweetsans font-medium text-[28px] md:text-[24px] lg:text-[29px] text-white mb-[40px] md:mb-[30px] lg:mb-[30px]">SHOES</h2>
+                        <p className="font-sweetsans  font-light text-[13px] md:text-[17px] lg:text-[17px] text-white leading-6 mb-[15px] max-w-xs md:max-w-md">Since the venue is mostly gravel, you may wish to skip high heels and leather-bottomed shoes.Block heels or sturdy flats are recommended for <br /> your comfort.</p>
                         <Image
                             src="/images/dresscode/Sepatu.png"
                             alt="main"
