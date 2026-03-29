@@ -50,10 +50,10 @@ const VenueDetails = () => {
     {/* IMAGE */}
     <div className="relative w-[200px] md:w-[290px] h-[340px] md:h-[490px]">
       <Image
-        src="/images/venuedetails/KilogramCaffe.png"
+        src="/images/venuedetails/Venue.jpg"
         alt="venue"
         fill
-        className="object-contain"
+        className="object-cover"
       />
 
         <div className="absolute inset-0 bg-[#0C1602AB]/60" />

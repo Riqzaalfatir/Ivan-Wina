@@ -50,12 +50,12 @@ const Hero = () => {
                 </div>
 
                 {/* RIGHT */}
-                <div className="relative w-full h-[90vh] lg:h-full">
+                <div className="relative w-full h-[70vh] lg:h-full">
                     <Image
-                        src="/images/hero/Prewed2.png"
+                        src="/images/hero/Prewed3.jpg"
                         alt="Prewed2"
                         fill
-                        className="object-cover object-[50%_0%]"
+                        className="object-cover object-[50%_50%]"
                         priority
                     />
                 </div>

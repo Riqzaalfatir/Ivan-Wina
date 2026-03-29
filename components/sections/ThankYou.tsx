@@ -4,7 +4,7 @@ const ThankYou = () => {
   return (
     <section className="relative w-full h-screen">
 
-      <div className="lg:hidden bg-[#6C7852] flex flex-col items-center text-center px-6 py-4">
+      <div className="lg:hidden bg-[#6C7852] flex flex-col items-center text-center px-6 pt-20 h-screen">
 
         {/* MOBILE */}
         <div className="relative flex flex-col items-center">
@@ -21,7 +21,7 @@ const ThankYou = () => {
                                    />
        
                                    {/* TEXT */}
-                                   <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] md:text-[98px] lg:text-[72px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans font-normal text-center -mt-[60px] md:-mt-[100px] lg:-mt-[70px] pr-[1px] md:pr-[16px] lg:pr-[16px]">
+                                   <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[42px] md:text-[98px] lg:text-[72px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans font-normal text-center -mt-[60px] md:-mt-[100px] lg:-mt-[70px] pr-[1px] md:pr-[16px] lg:pr-[16px]">
                                        SEE YOU SOON
                                    </h1>
        
@@ -30,7 +30,7 @@ const ThankYou = () => {
                            </div>
 
         {/* DESC */}
-        <p className="mt-6 text-[12px] max-w-[330px] text-[#2F3E34] font-sweetsans leading-relaxed mb-20">
+        <p className="mt-6 text-[12px] max-w-[330px] text-white font-sweetsans leading-relaxed mb-0">
           It would be a joy and honor for us to have you join our celebration and share your blessings.
         </p>
 
@@ -40,7 +40,7 @@ const ThankYou = () => {
           alt="logo"
           width={100}
           height={30}
-          className="object-contain mt-20"
+          className="object-contain pt-0 mt-auto"
         />
 
       </div>

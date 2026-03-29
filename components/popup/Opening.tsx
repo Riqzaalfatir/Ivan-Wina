@@ -29,7 +29,7 @@ const Opening = () => {
           {/* LOGO ATAS */}
           <div className="relative mb-5 sm:mb-6 lg:mb-7">
             <Image
-              src="/images/hero/Iv&WiWhite 3.png"
+              src="/images/hero/Iv&WiWhite 1.png"
               alt="logo"
               width={130}
               height={130}
@@ -68,7 +68,7 @@ const Opening = () => {
           {/* BUTTON */}
           <button
             onClick={handleOpen}
-            className="mt-10 bg-white text-[#202F26] px-8 py-3 text-[12px] sm:text-[14px] md:text-[14px] lg:text-[14px]  tracking-[2px] uppercase font-sweetsans font-medium hover:opacity-90 transition"
+            className="mt-10 bg-white text-[#202F26] px-8 py-3 text-[14px] sm:text-[14px] md:text-[14px] lg:text-[14px]  tracking-[2px] uppercase font-sweetsans font-medium hover:opacity-90 transition"
           >
             Open Invitation
           </button>
