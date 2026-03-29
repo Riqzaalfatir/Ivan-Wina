@@ -1,3 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Sweet Sans Pro';
+  src: url('/fonts/SweetSansPro-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sweet Sans Pro';
+  src: url('/fonts/SweetSansPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sweet Sans Pro';
+  src: url('/fonts/SweetSansPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sweet Sans Pro';
+  src: url('/fonts/SweetSansPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sweet Sans Pro';
+  src: url('/fonts/SweetSansPro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
