@@ -37,6 +37,7 @@ const Rsvp = () => {
 
 
     return (
+        <>
         <section className='w-full bg-white'>
             <div className="max-w-7xl mx-auto px-4 py-32">
                 <div className="flex flex-col items-center justify-center leading-none">
@@ -111,6 +112,10 @@ const Rsvp = () => {
                 </div>
             </div>
         </section>
+
+            <div className="border-b border-[#454F2340]/20 border-[1.5px]" />
+    </>
+
     )
 }
 

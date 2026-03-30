@@ -18,6 +18,7 @@ const WeddingGift = () => {
   const [copied, setCopied] = useState<string | null>(null)
 
   return (
+    <>
     <section className='w-full min-h-screen bg-white flex items-center'>
       <div className="max-w-4xl mx-auto px-4 w-auto md:w-full py-30">
 
@@ -83,6 +84,9 @@ const WeddingGift = () => {
         </div>
       </div>
     </section>
+
+        <div className=" border-b border-[#454F2340]/20 border-[1.5px]" />
+        </>
   )
 }
 

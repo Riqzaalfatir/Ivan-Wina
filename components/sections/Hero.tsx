@@ -64,7 +64,7 @@ const Hero = () => {
             </section>
 
 
-            <div className="border-b border-[#202F26] border-[1.5px]" />
+            <div className="border-b border-[#454F2340]/20 border-[1.5px]" />
         </>
     )
 }

@@ -11,6 +11,7 @@ const Faq = () => {
     }
 
     return (
+        <>
         <section className='w-full min-h-screen bg-white'>
             <div className="max-w-2xl mx-auto px-4 py-40">
 
@@ -63,6 +64,10 @@ const Faq = () => {
 
             </div>
         </section>
+
+                <div className=" border-b border-[#454F2340]/20 border-[1.5px]" />
+                </>
+
     )
 }
 
