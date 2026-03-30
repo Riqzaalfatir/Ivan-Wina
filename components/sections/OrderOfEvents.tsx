@@ -21,9 +21,9 @@ const OrderOfEvents = () => {
                 <div className="absolute inset-0 bg-black/40" />
 
                 <motion.h2
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                    transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
                     className="relative z-10 font-sweetsans text-white text-[28px] md:text-[50px] lg:text-[46px] text-center font-medium "
                 >
@@ -37,10 +37,14 @@ const OrderOfEvents = () => {
 
                 {/* ITEM 1 */}
                 <motion.div
-                    initial={{ opacity: 0, y: 40 }}
+                    initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
+                    transition={{
+                        duration: 1.5,
+                        ease: [0.22, 1, 0.36, 1],
+                        delay: 0.2,
+                    }}
                     className="text-[#202F26] text-center leading-none"
                 >
                     <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[10px]">09.00 WIB</h3>
@@ -50,10 +54,14 @@ const OrderOfEvents = () => {
 
                 {/* ITEM 2 */}
                 <motion.div
-                    initial={{ opacity: 0, y: 40 }}
+                    initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
+                    transition={{
+                        duration: 1.5,
+                        ease: [0.22, 1, 0.36, 1],
+                        delay: 0.4,
+                    }}
                     className="text-[#202F26] text-center leading-none"
                 >
                     <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[10px]">13.00 WIB</h3>
@@ -63,18 +71,31 @@ const OrderOfEvents = () => {
 
                 {/* ITEM 3 */}
                 <motion.div
-                    initial={{ opacity: 0, y: 40 }}
+                    initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
                     viewport={{ once: true }}
+                    transition={{
+                        duration: 1.5,
+                        ease: [0.22, 1, 0.36, 1],
+                        delay: 0.6,
+                    }}
                     className="text-[#202F26] text-center leading-none"
                 >
                     <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[10px]">12.00 WIB</h3>
                     <h4 className="font-sweetsans font-medium text-[14px] md:text-[24px] lg:text-[24px] mb-[17px]">COCKTAIL HOUR</h4>
-                    <p className="font-sweetsans text-[9px] md:text-[14px] lg:text-[14px] mb-[20px] font-light italic text-[#202F26]">Followed by the Reception</p>
-
-                    <p className="font-sweetsans font-light text-[14px] md:text-[18px] lg:text-[18px] text-[#202F26]">The celebration. The joy.</p>
+                    <p className="font-sweetsans text-[9px] md:text-[14px] lg:text-[14px] font-light italic text-[#202F26]">Followed by the Reception</p>
                 </motion.div>
+
+                <motion.p 
+                initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 1.5,
+                        ease: [0.22, 1, 0.36, 1],
+                        delay: 0.8,
+                    }}
+                  className="font-sweetsans font-light text-[14px] md:text-[18px] lg:text-[18px] text-[#202F26] -mt-6">The celebration. The joy.</motion.p>
 
             </div>
 

@@ -1,5 +1,7 @@
 "use client"
 import { useState } from "react"
+import { motion} from "framer-motion"
+
 
 
 const WeddingGift = () => {
@@ -24,27 +26,54 @@ const WeddingGift = () => {
 
         {/* HEADER */}
         <div className="flex flex-col items-center text-center">
-          <h2 className='uppercase font-sweetsans font-medium text-[34px] md:text-[46px] lg:text-[46px] tracking-[4px] text-[#202F26] mb-8'>
+          <motion.h2 initial={{ opacity: 0, y: 80 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 1.5,
+                                ease: [0.22, 1, 0.36, 1],
+                            }} className='uppercase font-sweetsans font-medium text-[34px] md:text-[46px] lg:text-[46px] tracking-[4px] text-[#202F26] mb-8'>
             Wedding Gift
-          </h2>
+          </motion.h2>
 
-          <p className='text-[#202F26] text-[14px] md:text-[23px] lg:text-[18px] font-sweetsans font-light max-w-sm leading-[22px] mb-5'>
+          <motion.p initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.2,
+                }} className='text-[#202F26] text-[14px] md:text-[23px] lg:text-[18px] font-sweetsans font-light max-w-sm leading-[22px] mb-5'>
             Your presence and prayers <br />
             are the greatest blessing to us.
-          </p>
+          </motion.p>
 
-          <p className='text-[#202F26]  text-[14px] md:text-[23px] lg:text-[18px] font-sweetsans font-light max-w-[250px]  md:max-w-[400px] lg:max-w-[340px] leading-[22px] mb-14'>
+          <motion.p initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.4,
+                }} className='text-[#202F26]  text-[14px] md:text-[23px] lg:text-[18px] font-sweetsans font-light max-w-[250px]  md:max-w-[400px] lg:max-w-[340px] leading-[22px] mb-14'>
             Should you wish to honor us with a gift,
             please find the details below
             for your convenience.
-          </p>
+          </motion.p>
         </div>
 
         {/* LIST BANK */}
         <div className="max-w-md mx-auto space-y-10">
 
           {/* ITEM 1 */}
-          <div>
+          <motion.div initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.6,
+                }}>
             <div className="flex items-center justify-between text-[#202F26]">
               <div>
                 <p className="uppercase font-sweetsans font-light tracking-[2px] text-[12px] md:text-[22px] lg:text-[17px]">BCA</p>
@@ -60,10 +89,17 @@ const WeddingGift = () => {
             </div>
 
             <div className="border-b border-[#202F26] mt-4"></div>
-          </div>
+          </motion.div>
 
           {/* ITEM 2 */}
-          <div>
+          <motion.div initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.8,
+                }}>
             <div className="flex items-center justify-between text-[#202F26]">
               <div>
                 <p className="uppercase font-sweetsans font-light tracking-[2px] text-[12px] md:text-[22px] lg:text-[17px]">MANDIRI</p>
@@ -79,7 +115,7 @@ const WeddingGift = () => {
             </div>
 
             <div className="border-b border-[#202F26] mt-4"></div>
-          </div>
+          </motion.div>
 
         </div>
       </div>

@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import {motion} from "framer-motion"
 
 const ThankYou = () => {
   return (
@@ -10,7 +13,15 @@ const ThankYou = () => {
         <div className="relative flex flex-col items-center">
        
                                {/* TEXT OVERLAY */}
-                               <div className="relative w-[230px] h-[370px] sm:w-[240px] sm:h-[390px] md:w-[430px] md:h-[580px] lg:w-[270px] lg:h-[420px]">
+                               <motion.div initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 1.5,
+                                    ease: [0.22, 1, 0.36, 1],
+                                                                        delay: 0.1,
+
+                                }} className="relative w-[230px] h-[370px] sm:w-[240px] sm:h-[390px] md:w-[430px] md:h-[580px] lg:w-[270px] lg:h-[420px]">
        
                                    {/* IMAGE */}
                                    <Image
@@ -25,17 +36,26 @@ const ThankYou = () => {
                                        SEE YOU SOON
                                    </h1>
        
-                               </div>
+                               </motion.div>
        
                            </div>
 
         {/* DESC */}
-        <p className="mt-6 text-[12px] max-w-[330px] text-[#202F26] font-sweetsans leading-relaxed mb-0">
+        <motion.p
+        initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 1.5,
+                                    ease: [0.22, 1, 0.36, 1],
+                                    delay: 0.2,
+                                }} className="mt-6 text-[12px] max-w-[330px] text-[#202F26] font-sweetsans leading-relaxed mb-0">
           It would be a joy and honor for us to have you join our celebration and share your blessings.
-        </p>
+        </motion.p>
 
         {/* LOGO */}
-        <Image
+
+                                   <Image
           src="/images/thankyou/logo provite1.png"
           alt="logo"
           width={100}
@@ -60,23 +80,37 @@ const ThankYou = () => {
 
         <div className="relative z-10 flex flex-col items-center h-full text-center text-white px-4">
 
-          <h2 className="text-[46px] tracking-[2px] font-sweetsans mb-1 pt-[90px]">
+          <motion.h2 initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 1.5,
+                                    ease: [0.22, 1, 0.36, 1],
+                                }}   className="text-[46px] tracking-[2px] font-sweetsans mb-1 pt-[90px]">
             THANK YOU
-          </h2>
+          </motion.h2>
 
-          <p className="text-[18px] max-w-md font-sweetsans font-light text-slate-100 leading-relaxed">
+          <motion.p initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 1.5,
+                                    ease: [0.22, 1, 0.36, 1],
+                                    delay: 0.2,
+                                }}  className="text-[18px] max-w-md font-sweetsans font-light text-slate-100 leading-relaxed">
             It would be a joy and honor for us to have you join our
             celebration and share your blessings.
-          </p>
+          </motion.p>
 
-          <div className="absolute bottom-6">
+          <motion.div
+            className="absolute bottom-6">
             <Image
               src="/images/thankyou/logoprovite.png"
               alt="Provite Logo"
               width={120}
               height={40}
             />
-          </div>
+          </motion.div>
 
         </div>
       </div>

@@ -3,6 +3,8 @@
 import { dummyPesan } from "@/components/data/wishes"
 import { useState } from "react"
 import Image from "next/image"
+import { motion} from "framer-motion"
+
 
 
 const YourWishes = () => {
@@ -28,14 +30,28 @@ const YourWishes = () => {
         <section className='w-full min-h-screen bg-white'>
             <div className="max-w-2xl mx-auto px-8 md:px-4 lg:px-4 py-32">
                 <div className="flex flex-col items-center">
-                    <h2 className='uppercase font-sweetsans font-medium text-[30px] md:text-[46px] lg:text-[46px] tracking-[4px] text-[#202F26] mb-10 md:mb-6'>
+                    <motion.h2 initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.2,
+                }} className='uppercase font-sweetsans font-medium text-[30px] md:text-[46px] lg:text-[46px] tracking-[4px] text-[#202F26] mb-10 md:mb-6'>
                         Your Wishes
-                    </h2>
+                    </motion.h2>
 
-                    <div className='w-full flex flex-col gap-4'>
-                        <input type="text" value={nama} onChange={(e) => setNama(e.target.value)} className='w-full rounded-md text-white  font-sweetsans text-[18px] bg-transparent border-[1.5px] border-[#202F26] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
-                        <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full rounded-md text-white font-sweetsans bg-transparent border-[1.5px] border-[#202F26] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4] h-[120px] md:h-[310px]'></textarea>
-                        <button onClick={handleSubmit} className='bg-[#202F26] py-2 text-[14px] md:text-[18px] lg:text-[18px] font-sweetsans text-white uppercase flex items-center justify-center gap-2 rounded-md'>
+                    <motion.div initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.2,
+                }}  className='w-full flex flex-col gap-4'>
+                        <input type="text" value={nama} onChange={(e) => setNama(e.target.value)} className='w-full rounded-md text-[#202F26]  font-sweetsans text-[18px] bg-transparent border-[1.5px] border-[#202F26] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
+                        <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full rounded-md  font-sweetsans bg-transparent border-[1.5px] border-[#202F26] px-3 py-2 text-sm outline-none text-[#202F26] h-[120px] md:h-[310px]'></textarea>
+                        <button onClick={handleSubmit} className='bg-[#202F26] py-2 text-[14px] md:text-[18px] lg:text-[18px] font-sweetsans uppercase flex items-center justify-center gap-2 rounded-md text-white'>
                             <Image
                                 src="/images/wishes/Kirim.png"
                                 alt="Kirim"
@@ -45,7 +61,14 @@ const YourWishes = () => {
                             Send
                         </button>
 
-                        <div className="w-full mt-8 bg-[#202F26] py-6  px-6 max-h-[580px] overflow-y-auto rounded-md">
+                        <motion.div initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.2,
+                }}  className="w-full mt-8 bg-[#202F26] py-6  px-6 max-h-[580px] overflow-y-auto rounded-md">
                             {dummyPesan
                                 .slice(0, showAll ? dummyPesan.length : 4)
                                 .map((item, index) => (
@@ -64,9 +87,16 @@ const YourWishes = () => {
                                         )}
                                     </div>
                                 ))}
-                        </div>
+                        </motion.div>
 
-                        <button onClick={() => setShowAll(!showAll)} className='bg-[#202F26] py-2 text-[14px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2 rounded-md'>
+                        <motion.button initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.2,
+                }}  onClick={() => setShowAll(!showAll)} className='bg-[#202F26] py-2 text-[14px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2 rounded-md'>
                             <Image
                                 src="/images/wishes/Pesan.png"
                                 alt="Kirim"
@@ -74,8 +104,8 @@ const YourWishes = () => {
                                 height={20}
                                 className="object-cover" />
                             {showAll ? "Show Less" : "See all message"}
-                        </button>
-                    </div>
+                        </motion.button>
+                    </motion.div>
                 </div>
             </div>
 

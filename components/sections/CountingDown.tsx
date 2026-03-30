@@ -88,21 +88,37 @@ const CountingDown = () => {
           <div className="flex flex-col items-center justify-center">
 
             <motion.h2
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
               viewport={{ once: true }}
               className='uppercase font-sweetsans font-bold text-[#202F26] text-[28px] md:text-[51px] lg:text-[46px] mb-[38px] md:mb-[60px] lg:mb-[60px]'
             >
               COUNTING DOWN
             </motion.h2>
 
-            <Countdown date={tanggalTarget} renderer={renderer} />
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 1.5,
+                ease: [0.22, 1, 0.36, 1],
+                delay: 0.2,
+              }}
+            >
+              <Countdown date={tanggalTarget} renderer={renderer} />
+            </motion.div>
 
             <motion.a
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
+
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 300 }}
+
               href="#"
               className="uppercase font-normal text-white text-[12px] md:text-[23px] lg:text-[18px] font-sweetsans py-2 px-8 md:px-14 bg-[#CB4F35]"
             >

@@ -28,7 +28,15 @@ const OurStory = () => {
 
     return (
         <>
-            <section id="gallery" className='w-full bg-white'>
+            <motion.section id="gallery" initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 1.5,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: 0.2,
+                }}
+                className='w-full bg-white'>
                 <div className="max-w-7xl mx-auto px-4 py-20">
                     <div className="flex items-center justify-center">
 
@@ -54,7 +62,15 @@ const OurStory = () => {
                             </AnimatePresence>
 
                             {/* ARROW KIRI */}
-                            <button
+                            <motion.button
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 1.5,
+                                    ease: [0.22, 1, 0.36, 1],
+                                    delay: 0.6,
+                                }}
                                 onClick={prevSlide}
                                 className="absolute left-6 md:left-8 top-1/2 -translate-y-1/2"
                             >
@@ -65,10 +81,18 @@ const OurStory = () => {
                                     height={40}
                                     className="w-[40px] md:w-[60px]"
                                 />
-                            </button>
+                            </motion.button>
 
                             {/* ARROW KANAN */}
-                            <button
+                            <motion.button
+                                initial={{ opacity: 0, x: 80 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 1.5,
+                                    ease: [0.22, 1, 0.36, 1],
+                                    delay: 0.6,
+                                }}
                                 onClick={nextSlide}
                                 className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2"
                             >
@@ -79,13 +103,13 @@ const OurStory = () => {
                                     height={40}
                                     className="w-[40px] md:w-[60px]"
                                 />
-                            </button>
+                            </motion.button>
 
                         </div>
 
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
             <div className="hidden md:block border-b border-[#454F2340]/20 border-[1.5px]" />
         </>
