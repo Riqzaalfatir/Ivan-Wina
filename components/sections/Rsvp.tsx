@@ -38,7 +38,7 @@ const Rsvp = () => {
 
     return (
         <>
-        <section className='w-full bg-white'>
+        <section id="rsvp" className='w-full bg-white'>
             <div className="max-w-7xl mx-auto px-4 py-32">
                 <div className="flex flex-col items-center justify-center leading-none">
                     <h2 className='uppercase font-sweetsans font-medium text-[34px] md:text-[46px] lg:text-[46px] text-[#202F26] mb-[36px]'>RSVP</h2>

@@ -19,7 +19,7 @@ const WeddingGift = () => {
 
   return (
     <>
-    <section className='w-full min-h-screen bg-white flex items-center'>
+    <section id="gift" className='w-full min-h-screen bg-white flex items-center'>
       <div className="max-w-4xl mx-auto px-4 w-auto md:w-full py-30">
 
         {/* HEADER */}

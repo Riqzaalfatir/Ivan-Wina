@@ -11,7 +11,7 @@ const VenueDetails = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
+        duration: 1.4,
 ease: [0.25, 1, 0.5, 1]      }
     }
   }
@@ -20,7 +20,7 @@ ease: [0.25, 1, 0.5, 1]      }
     hidden: {},
     show: {
       transition: {
-        staggerChildren: 0.2
+        staggerChildren: 0.25
       }
     }
   }
@@ -36,7 +36,6 @@ ease: [0.25, 1, 0.5, 1]      }
     >
 
         <motion.div
-          variants={staggerContainer}
           className='bg-white flex flex-col items-center justify-center leading-none gap-16 order-2 lg:order-1 py-[75px] md:py-[75px] lg:py-[1px]'
         >
 

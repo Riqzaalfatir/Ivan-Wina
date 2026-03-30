@@ -48,14 +48,14 @@ const Header = () => {
             </motion.button>
 
             {/* MENU */}
-            <ul className="-mt-2 ml-2 space-y-1 text-[10px] md:text-[14px] tracking-widest font-sweetsans font-medium">
-              <li>HOME</li>
-              <li>PROFILE</li>
-              <li>COUNTING DOWN</li>
-              <li>OUR STORY</li>
-              <li>RSVP</li>
-              <li>GALLERY</li>
-              <li>WEDDING GIFT</li>
+            <ul className="-mt-2 ml-2 space-y-1 text-[10px] md:text-[14px] tracking-widest font-sweetsans font-medium flex flex-col">
+              <a href="#hero">HOME</a>
+              <a href="#hero">PROFILE</a>
+              <a href="#counting">COUNTING DOWN</a>
+              <a href="#dresscode">OUR STORY</a>
+              <a href="#gallery">GALLERY</a>
+              <a href="#rsvp">RSVP</a>
+              <a href="#gift">WEDDING GIFT</a>
             </ul>
 
             {/* TEXT */}

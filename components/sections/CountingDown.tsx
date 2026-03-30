@@ -83,7 +83,7 @@ const CountingDown = () => {
 
   return (
     <>
-      <section className='w-full bg-white py-[75px] md:py-[145px] lg:py-[145px]'>
+      <section id="counting" className='w-full bg-white py-[75px] md:py-[145px] lg:py-[145px]'>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col items-center justify-center">
 

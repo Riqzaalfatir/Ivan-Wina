@@ -3,7 +3,7 @@ import Image from "next/image"
 const Hero = () => {
     return (
         <>
-            <section className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
+            <section id="hero" className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
 
                 {/* LEFT */}
                 <div className="bg-white flex flex-col items-center justify-center px-6 relative min-h-screen lg:min-h-0">

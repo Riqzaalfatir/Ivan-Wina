@@ -28,7 +28,7 @@ const OurStory = () => {
 
     return (
         <>
-            <section className='w-full bg-white'>
+            <section id="gallery" className='w-full bg-white'>
                 <div className="max-w-7xl mx-auto px-4 py-20">
                     <div className="flex items-center justify-center">
 
