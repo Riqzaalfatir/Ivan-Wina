@@ -37,42 +37,44 @@ const Rsvp = () => {
 
 
     return (
-        <section className='w-full bg-[#6C7852]'>
+        <section className='w-full bg-white'>
             <div className="max-w-7xl mx-auto px-4 py-32">
                 <div className="flex flex-col items-center justify-center leading-none">
-                    <h2 className='uppercase font-sweetsans font-medium text-[34px] md:text-[46px] lg:text-[46px] text-white mb-[36px]'>RSVP</h2>
-                    <p className='font-sweetsans font-light text-[16px] md:text-[22px] lg:text-[18px] text-white mb-[23px]'>Dear Mr./ Mrs./ Ms.</p>
-                    <p className='font-sweetsans font-normal  text-[16px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>.............</p>
-                    <p className='font-sweetsans font-light text-center  text-[16px] md:text-[22px] lg:text-[18px] text-white leading-6 mb-[50px] '>Kindly confirm your attendance before <span className='block font-bold'>07 February 2026</span></p>
+                    <h2 className='uppercase font-sweetsans font-medium text-[34px] md:text-[46px] lg:text-[46px] text-[#202F26] mb-[36px]'>RSVP</h2>
+                    <p className='font-sweetsans font-light text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] mb-[23px]'>Dear Mr./ Mrs./ Ms.</p>
+                    <p className='font-sweetsans font-normal  text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] mb-[40px]'>.............</p>
+                    <p className='font-sweetsans font-light text-center  text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] leading-6 mb-[50px] '>Kindly confirm your attendance before <span className='block font-bold'>07 February 2026</span></p>
                     <div className='flex items-center gap-4 mb-[40px]'>
-                        <button
-                            onClick={() => setStatus("attend")}
-                            className={`uppercase font-sweetsans font-normal text-[14px] md:text-[22px] lg:text-[18px] text-white py-2 px-8 ${status === "attend"
-                                ? "bg-[#CB4F35]"
-                                : "border-[1px] border-[#CB4F35]"
-                                }`}
-                        >
-                            Attend
-                        </button>
+                    <button
+  onClick={() => setStatus("attend")}
+  className={`uppercase font-sweetsans font-normal text-[14px] md:text-[22px] lg:text-[18px] py-2 px-8 rounded-md ${
+    status === "attend"
+      ? "bg-[#CB4F35] text-white"
+      : "border border-[#CB4F35] text-[#202F26]"
+  }`}
+>
+  Attend
+</button>
 
-                        <button
-                            onClick={() => setStatus("not")}
-                            className={`uppercase font-sweetsans font-normal  text-[14px] md:text-[22px] lg:text-[18px] text-white py-2 px-8 ${status === "not"
-                                ? "bg-[#CB4F35]"
-                                : "border-[1px] border-[#CB4F35]"
-                                }`}
-                        >
-                            Not Attend
-                        </button>
+                     <button
+  onClick={() => setStatus("not")}
+  className={`uppercase font-sweetsans font-normal text-[14px] md:text-[22px] lg:text-[18px] py-2 px-8 rounded-md ${
+    status === "not"
+      ? "bg-[#CB4F35] text-white"
+      : "border border-[#CB4F35] text-[#202F26]"
+  }`}
+>
+  Not Attend
+</button>
                     </div>
 
                     {status === "not" && (
                         <>
-                            <p className='uppercase font-sweetsans font-light  text-[16px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
+                            <p className='uppercase font-sweetsans font-light  text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] mb-[40px]'>
                                 Are You Sure?
                             </p>
 
-                            <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[14px] md:text-[22px] lg:text-[18px] text-white py-2 px-16 bg-[#CB4F35] mb-[40px]'>
+                            <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[14px] md:text-[22px] lg:text-[18px] text-white py-2 px-16 bg-[#CB4F35] mb-[40px] rounded-md'>
                                 Confirm Not Attend
                             </button>
                         </>
@@ -87,7 +89,7 @@ const Rsvp = () => {
                                 <select
                                     value={guest}
                                     onChange={(e) => setGuest(Number(e.target.value))}
-                                    className="w-full bg-[#d9d29c] text-black text-[14  px] md:text-[19px] lg:text-[15px]  py-3 px-4 rounded-md"
+                                    className="w-full bg-[#F5F5F5] text-black text-[14px] md:text-[19px] lg:text-[15px]  py-3 px-4 rounded-md"
                                 >
                                     {[1, 2, 3, 4, 5].map((num) => (
                                         <option key={num} value={num}>
@@ -97,15 +99,15 @@ const Rsvp = () => {
                                 </select>
                             </div>
 
-                            <button onClick={waHadir} className='uppercase font-sweetsans font-normal text-[14px] md:text-[22px] lg:text-[18px] text-white py-2 px-[85px] bg-[#CB4F35] mb-[40px]'>
+                            <button onClick={waHadir} className='uppercase font-sweetsans font-normal text-[14px] md:text-[22px] lg:text-[18px] text-white py-2 px-[83px] md:px-[90px] bg-[#CB4F35] mb-[40px] rounded-md'>
                                 Confirm Attend
                             </button>
                         </>
                     )}
                     {/* <p className='uppercase font-sweetsans font-light text-[17px] text-white mb-[40px]'>Are You Sure?</p>
                     <button className='uppercase font-sweetsans font-normal test-[18px] text-white py-2 px-16 bg-[#CB4F35] mb-[40px]'>Confirm Not Attend</button> */}
-                    <p className='font-sweetsans font-light  text-[16px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>Having trouble with RSVP?</p>
-                    <button onClick={waHelpdesk} className='uppercase font-sweetsans font-normal text-[14px] md:text-[22px] lg:text-[18px] text-white py-2 px-16 bg-[#CB4F35]'>Chat helpdesk team</button>
+                    <p className='font-sweetsans font-light  text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] mb-[40px]'>Having trouble with RSVP?</p>
+                    <button onClick={waHelpdesk} className='uppercase font-sweetsans font-normal text-[14px] md:text-[22px] lg:text-[18px] text-white py-2 px-16 bg-[#CB4F35] rounded-md'>Chat helpdesk team</button>
                 </div>
             </div>
         </section>

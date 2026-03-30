@@ -5,10 +5,11 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 const images = [
-    { src: "/images/ourstory/Prewed1.jpg", position: "object-[50%_20%]"},
-    { src: "/images/ourstory/Prewed2.jpg", position: "object-[50%_20%]"},
-    { src: "/images/ourstory/Prewed3.jpg", position: "object-[50%_50%]"},
-    { src: "/images/ourstory/Prewed4.jpg", position: "object-[50%_30%]"},
+    { src: "/images/ourstory/ourstory3.jpg", position: "object-[50%_50%]" },
+    { src: "/images/ourstory/ourstory2.jpg", position: "object-[50%_20%]" },
+    { src: "/images/ourstory/ourstory1.jpg", position: "object-[50%_50%]" },
+    { src: "/images/ourstory/ourstory4.jpg", position: "object-[50%_0%]" },
+    { src: "/images/ourstory/ourstory5.jpg", position: "object-[50%_50%]" },
 ]
 
 const OurStory = () => {
@@ -27,7 +28,7 @@ const OurStory = () => {
 
     return (
         <>
-            <section className='w-full bg-[#6C7852]'>
+            <section className='w-full bg-white'>
                 <div className="max-w-7xl mx-auto px-4 py-20">
                     <div className="flex items-center justify-center">
 
@@ -55,26 +56,28 @@ const OurStory = () => {
                             {/* ARROW KIRI */}
                             <button
                                 onClick={prevSlide}
-                                className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2"
+                                className="absolute left-6 md:left-8 top-1/2 -translate-y-1/2"
                             >
                                 <Image
                                     src="/images/ourstory/Vector2.png"
                                     alt="left"
                                     width={50}
                                     height={40}
+                                    className="w-[40px] md:w-[60px]"
                                 />
                             </button>
 
                             {/* ARROW KANAN */}
                             <button
                                 onClick={nextSlide}
-                                className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2"
+                                className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2"
                             >
                                 <Image
                                     src="/images/ourstory/Vector1.png"
                                     alt="right"
                                     width={50}
                                     height={40}
+                                    className="w-[40px] md:w-[60px]"
                                 />
                             </button>
 

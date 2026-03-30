@@ -12,13 +12,13 @@ const Header = () => {
       {/* HAMBURGER (saat tertutup) */}
       {!open && (
         <button onClick={() => setOpen(true)}>
-          <FiMenu size={24} className="text-white" />
+          <FiMenu size={24} className="text-[#C3C3C3]" />
         </button>
       )}
 
       {/* DROPDOWN BOX */}
       {open && (
-        <div className="bg-[#FEFBF052]/30 p-6 md:p-8 text-white  relative w-full max-w-[240px] md:max-w-[280px]">
+        <div className="bg-[#1E1E1E]/60 p-6 md:p-8 text-white  relative w-full max-w-[240px] md:max-w-[280px]">
 
           {/* CLOSE */}
           <button

@@ -15,21 +15,21 @@ const CountingDown = () => {
     if (completed) {
       return (
         <div className="flex items-center text-center mb-[60px] md:mb-[60px] lg:mb-[75px] gap-[45px] md:gap-[55px] lg:gap-[55px]">
-          <div className="flex flex-col gap-2 md:gap-1">
-            <h4 className="text-white font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</h4>
-            <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">DAYS</p>
+          <div className="flex flex-col gap-1.5 md:gap-1">
+            <h4 className="text-[#202F26] font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</h4>
+            <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">DAYS</p>
           </div>
-          <div className="flex flex-col gap-2 md:gap-1">
-            <h4 className="text-white font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</h4>
-            <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Hours</p>
+          <div className="flex flex-col gap-1.5 md:gap-1">
+            <h4 className="text-[#202F26] font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</h4>
+            <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Hours</p>
           </div>
-          <div className="flex flex-col gap-2 md:gap-1">
-            <h4 className="text-white font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</h4>
-            <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Minutes</p>
+          <div className="flex flex-col gap-1.5 md:gap-1">
+            <h4 className="text-[#202F26] font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</h4>
+            <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Minutes</p>
           </div>
-          <div className="flex flex-col gap-2 md:gap-1">
-            <h4 className="text-white font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</h4>
-            <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Seconds</p>
+          <div className="flex flex-col gap-1.5 md:gap-1">
+            <h4 className="text-[#202F26] font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</h4>
+            <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Seconds</p>
           </div>
         </div>
       )
@@ -37,29 +37,29 @@ const CountingDown = () => {
 
     return (
       <div className="flex items-center text-center mb-[60px] md:mb-[60px] lg:mb-[75px] gap-[45px] md:gap-[55px] lg:gap-[55px]">
-        <div className="flex flex-col gap-2 md:gap-1">
-          <h4 className="text-white font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none tabular-nums">
+        <div className="flex flex-col gap-1.5 md:gap-1">
+          <h4 className="text-[#202F26] font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none tabular-nums">
             {days.toString().padStart(2, "0")}
           </h4>
-          <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">DAYS</p>
+          <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">DAYS</p>
         </div>
-        <div className="flex flex-col gap-2 md:gap-1">
-          <h4 className="text-white font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none tabular-nums">
+        <div className="flex flex-col gap-1.5 md:gap-1">
+          <h4 className="text-[#202F26] font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none tabular-nums">
             {hours.toString().padStart(2, "0")}
           </h4>
-          <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Hours</p>
+          <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Hours</p>
         </div>
-        <div className="flex flex-col gap-2 md:gap-1">
-          <h4 className="text-white font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none tabular-nums">
+        <div className="flex flex-col gap-1.5 md:gap-1">
+          <h4 className="text-[#202F26] font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none tabular-nums">
             {minutes.toString().padStart(2, "0")}
           </h4>
-          <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Minutes</p>
+          <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Minutes</p>
         </div>
-        <div className="flex flex-col gap-2 md:gap-1">
-          <h4 className="text-white font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none tabular-nums">
+        <div className="flex flex-col gap-1.5 md:gap-1">
+          <h4 className="text-[#202F26] font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none tabular-nums">
             {seconds.toString().padStart(2, "0")}
           </h4>
-          <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Seconds</p>
+          <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Seconds</p>
         </div>
       </div>
     )
@@ -67,10 +67,10 @@ const CountingDown = () => {
 
   return (
     <>
-      <section className='w-full bg-[#6C7852] py-[75px] md:py-[145px] lg:py-[145px]'>
+      <section className='w-full bg-white py-[75px] md:py-[145px] lg:py-[145px]'>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col items-center justify-center">
-            <h2 className='uppercase font-sweetsans font-bold text-white text-[28px] md:text-[51px] lg:text-[46px] mb-[38px] md:mb-[60px] lg:mb-[60px]'>
+            <h2 className='uppercase font-sweetsans font-bold text-[#202F26] text-[28px] md:text-[51px] lg:text-[46px] mb-[38px] md:mb-[60px] lg:mb-[60px]'>
               COUNTING DOWN
             </h2>
 

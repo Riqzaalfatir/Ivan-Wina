@@ -6,15 +6,15 @@ const Hero = () => {
             <section className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
 
                 {/* LEFT */}
-                <div className="bg-[#6C7852] flex flex-col items-center justify-center px-6 relative min-h-screen lg:min-h-0">
+                <div className="bg-white flex flex-col items-center justify-center px-6 relative min-h-screen lg:min-h-0">
 
                     {/* ✅ GAMBAR PUTIH ATAS */}
                      <div className="relative mb-5 sm:mb-6 lg:mb-7">
                                 <Image
                                   src="/images/hero/Iv&WiWhite 3.png"
                                   alt="logo"
-                                  width={130}
-                                  height={130}
+                                  width={120}
+                                  height={120}
                                   className="w-[90px] h-[60px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[100px] lg:w-auto lg:h-auto"
                                 />
                     </div>
@@ -43,7 +43,7 @@ const Hero = () => {
                     </div>
 
                     {/* TANGGAL */}
-                    <p className="mt-[30px] text-white tracking-widest text-[14px] md:text-[22px] lg:text-[18px] font-sweetsans font-medium">
+                    <p className="mt-[30px] text-[#202F26] tracking-widest text-[14px] md:text-[22px] lg:text-[18px] font-sweetsans font-medium">
                         23 MAY 2026
                     </p>
 
@@ -55,7 +55,7 @@ const Hero = () => {
                         src="/images/hero/Prewed3.jpg"
                         alt="Prewed2"
                         fill
-                        className="object-cover object-[50%_50%]"
+                        className="object-cover object-[50%_70%]"
                         priority
                     />
                 </div>
