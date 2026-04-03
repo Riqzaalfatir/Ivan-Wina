@@ -96,13 +96,11 @@ const OurStory = () => {
                                 onClick={nextSlide}
                                 className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-20 "
                             >
-                                <Image
-                                    src="/images/ourstory/vectorkanan.png"
-                                    alt="right"
-                                    width={50}
-                                    height={40}
-                                    className="w-[40px] md:w-[60px]"
-                                />
+                              <img
+  src="/images/ourstory/vectorkanan.png"
+  alt="right"
+  className="w-[40px] md:w-[60px]"
+/>
                             </motion.button>
 
                         </div>

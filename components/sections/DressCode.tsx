@@ -150,7 +150,6 @@ const DressCode = () => {
         </motion.div>
       </section>
 
-      <div className="border-b border-[#454F2340]/20 border-[1.5px]" />
     </>
   )
 }
