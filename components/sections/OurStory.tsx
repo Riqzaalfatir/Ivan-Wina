@@ -40,13 +40,13 @@ const OurStory = () => {
                 <div className="max-w-7xl mx-auto px-4 py-20">
                     <div className="flex items-center justify-center">
 
-                        <div className="relative w-full max-w-[950px] h-[430px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden">
+                        <div className="relative w-full max-w-[950px] h-[430px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden z-10">
 
                             {/* IMAGE SLIDE */}
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={index}
-                                    className="absolute inset-0"
+                                    className="absolute inset-0 z-0"
                                     initial={{ x: direction > 0 ? 100 : -100, opacity: 0 }}
                                     animate={{ x: 0, opacity: 1 }}
                                     exit={{ x: direction > 0 ? -100 : 100, opacity: 0 }}
@@ -62,17 +62,10 @@ const OurStory = () => {
                             </AnimatePresence>
 
                             {/* ARROW KIRI */}
-                            <motion.button
-                                initial={{ opacity: 0, y: 80 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{
-                                    duration: 1.5,
-                                    ease: [0.22, 1, 0.36, 1],
-                                    delay: 0.6,
-                                }}
+                            <button
+
                                 onClick={prevSlide}
-                                className="absolute left-6 md:left-8 top-1/2 -translate-y-1/2 z-20"
+                                className="absolute left-6 md:left-8 top-1/2 -translate-y-1/2 z-30"
                             >
                                 <Image
                                     src="/images/ourstory/vectorkiri.png"
@@ -81,27 +74,20 @@ const OurStory = () => {
                                     height={40}
                                     className="w-[40px] md:w-[60px]"
                                 />
-                            </motion.button>
+                            </button>
 
                             {/* ARROW KANAN */}
-                            <motion.button
-                                initial={{ opacity: 0, x: 80 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{
-                                    duration: 1.5,
-                                    ease: [0.22, 1, 0.36, 1],
-                                    delay: 0.6,
-                                }}
+                            <button
+
                                 onClick={nextSlide}
-                                className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-20 "
+                                className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
                             >
                               <img
   src="/images/ourstory/panahkanan.png"
   alt="right"
-  className="w-[40px] md:w-[60px]"
+  className="w-[42px] md:w-[60px]"
 />
-                            </motion.button>
+                            </button>
 
                         </div>
 
