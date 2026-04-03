@@ -7,7 +7,7 @@ const ThankYou = () => {
   return (
     <section className="relative w-full h-screen">
 
-      <div className="lg:hidden bg-[#6C7852] flex flex-col items-center text-center px-6 pt-40 h-screen">
+      <div className="lg:hidden bg-[#6C7852] flex flex-col items-center text-center px-6 pt-24 h-screen">
 
         {/* MOBILE */}
         <div className="relative flex flex-col items-center">
@@ -60,7 +60,7 @@ const ThankYou = () => {
           alt="logo"
           width={100}
           height={30}
-          className="object-contain pt-0 mt-auto"
+          className="object-contain pt-20 mt-auto"
         />
 
       </div>
