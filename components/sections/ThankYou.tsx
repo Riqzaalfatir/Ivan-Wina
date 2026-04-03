@@ -7,7 +7,7 @@ const ThankYou = () => {
   return (
     <section className="relative w-full h-screen">
 
-      <div className="lg:hidden bg-white flex flex-col items-center text-center px-6 pt-20 h-screen">
+      <div className="lg:hidden bg-[#6C7852] flex flex-col items-center text-center px-6 pt-40 h-screen">
 
         {/* MOBILE */}
         <div className="relative flex flex-col items-center">
@@ -49,14 +49,14 @@ const ThankYou = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} className="mt-6 text-[12px] max-w-[330px] text-[#202F26] font-sweetsans leading-relaxed mb-0">
+                                }} className="mt-6 text-[12px] max-w-[200px] text-white font-sweetsans leading-relaxed mb-0">
           It would be a joy and honor for us to have you join our celebration and share your blessings.
         </motion.p>
 
         {/* LOGO */}
 
                                    <Image
-          src="/images/thankyou/logo provite1.png"
+          src="/images/thankyou/logoprovite.png"
           alt="logo"
           width={100}
           height={30}
@@ -105,7 +105,7 @@ const ThankYou = () => {
           <motion.div
             className="absolute bottom-6">
             <Image
-              src="/images/thankyou/logoprovite.png"
+              src="/images/thankyou/logoprovite1.png"
               alt="Provite Logo"
               width={120}
               height={40}

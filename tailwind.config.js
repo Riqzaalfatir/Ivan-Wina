@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sweetsans: ['"Sweet Sans Pro"'],
+        mono: ['"Roboto Mono"', 'monospace'],
       },
     },
   },

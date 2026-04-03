@@ -67,8 +67,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto Mono', monospace;  
   -moz-osx-font-smoothing: grayscale;
 }
 

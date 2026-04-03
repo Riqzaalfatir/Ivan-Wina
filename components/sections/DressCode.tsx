@@ -143,7 +143,7 @@ const DressCode = () => {
               alt="main"
               width={240}
               height={200}
-              className="object-cover mx-auto"
+              className="object-cover mx-auto hidden md:block"
             />
           </motion.div>
 

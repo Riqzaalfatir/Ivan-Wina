@@ -39,7 +39,7 @@ const Rsvp = () => {
 
     return (
         <>
-            <section id="rsvp" className='w-full bg-white'>
+            <section id="rsvp" className='w-full bg-[#6C7852] '>
                 <div className="max-w-7xl mx-auto px-4 py-32">
                     <div className="flex flex-col items-center justify-center leading-none">
                         <motion.h2 initial={{ opacity: 0, y: 80 }}
@@ -48,7 +48,7 @@ const Rsvp = () => {
                             transition={{
                                 duration: 1.5,
                                 ease: [0.22, 1, 0.36, 1],
-                            }} className='uppercase font-sweetsans font-medium text-[34px] md:text-[46px] lg:text-[46px] text-[#202F26] mb-[36px]'>
+                            }} className='uppercase font-sweetsans font-medium text-[34px] md:text-[46px] lg:text-[46px] text-white mb-[36px]'>
                             RSVP
                         </motion.h2>
                         <motion.div initial={{ opacity: 0, y: 80 }}
@@ -59,8 +59,8 @@ const Rsvp = () => {
                                 ease: [0.22, 1, 0.36, 1],
                                 delay: 0.1,
                             }}>
-                            <p className='font-sweetsans font-light text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] mb-[23px]'>Dear Mr./ Mrs./ Ms.</p>
-                            <p className='font-sweetsans font-normal  text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] mb-[40px]'>.............</p>
+                            <p className='font-sweetsans font-light text-[16px] md:text-[22px] lg:text-[18px] text-white mb-[23px]'>Dear Mr./ Mrs./ Ms.</p>
+                            <p className='font-sweetsans font-normal text-center  text-[16px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>.............</p>
                         </motion.div>
 
                         <motion.p
@@ -72,7 +72,7 @@ const Rsvp = () => {
                                 ease: [0.22, 1, 0.36, 1],
                                 delay: 0.2,
                             }}
-                            className='font-sweetsans font-light text-center text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] leading-6 mb-[50px]'
+                            className='font-sweetsans font-light text-center text-[16px] md:text-[22px] lg:text-[18px] text-white leading-6 mb-[50px]'
                         >
                             Kindly confirm your attendance before
                             <span className='block font-bold'>07 February 2026</span>
@@ -92,7 +92,7 @@ const Rsvp = () => {
                                 onClick={() => setStatus("attend")}
                                 className={`uppercase font-sweetsans font-normal text-[14px] md:text-[22px] lg:text-[18px] py-2.5 px-8 rounded-md ${status === "attend"
                                     ? "bg-[#CB4F35] text-white"
-                                    : "border border-[#CB4F35] text-[#202F26]"
+                                    : "border border-[#CB4F35] text-white"
                                     }`}
                             >
                                 Attend
@@ -102,7 +102,7 @@ const Rsvp = () => {
                                 onClick={() => setStatus("not")}
                                 className={`uppercase font-sweetsans font-normal text-[14px] md:text-[22px] lg:text-[18px] py-2.5 px-8 rounded-md ${status === "not"
                                     ? "bg-[#CB4F35] text-white"
-                                    : "border border-[#CB4F35] text-[#202F26]"
+                                    : "border border-[#CB4F35] text-white"
                                     }`}
                             >
                                 Not Attend
@@ -119,7 +119,7 @@ const Rsvp = () => {
                             }}>
                         {status === "not" && (
                             <div>
-                                <p className='uppercase text-center font-sweetsans font-light  text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] mb-[40px]'>
+                                <p className='uppercase text-center font-sweetsans font-light  text-[16px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
                                     Are You Sure?
                                 </p>
 
@@ -156,7 +156,7 @@ const Rsvp = () => {
                         {/* <p className='uppercase font-sweetsans font-light text-[17px] text-white mb-[40px]'>Are You Sure?</p>
                     <button className='uppercase font-sweetsans font-normal test-[18px] text-white py-2.5 px-16 bg-[#CB4F35] mb-[40px]'>Confirm Not Attend</button> */}
                         
-                            <p className='font-sweetsans font-light text-[16px] md:text-[22px] lg:text-[18px] text-[#202F26] mb-[40px]'>
+                            <p className='font-sweetsans  text-center font-light text-[16px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
                                 Having trouble with RSVP?
                             </p>
 
@@ -171,7 +171,7 @@ const Rsvp = () => {
                     </div>
             </section>
 
-            <div className="border-b border-[#454F2340]/20 border-[1.5px]" />
+            <div className="border-b border-[#454F23]/80 border-[1px]" />
         </>
 
     )

@@ -36,7 +36,7 @@ const OurStory = () => {
                     ease: [0.22, 1, 0.36, 1],
                     delay: 0.2,
                 }}
-                className='w-full bg-white'>
+                className='w-full bg-[#6C7852]  '>
                 <div className="max-w-7xl mx-auto px-4 py-20">
                     <div className="flex items-center justify-center">
 
@@ -111,7 +111,7 @@ const OurStory = () => {
                 </div>
             </motion.section>
 
-            <div className="hidden md:block border-b border-[#454F2340]/20 border-[1.5px]" />
+            <div className="border-b border-[#454F23]/80 border-[1px]" />
         </>
     )
 }
