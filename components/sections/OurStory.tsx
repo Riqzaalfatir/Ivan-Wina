@@ -97,7 +97,7 @@ const OurStory = () => {
                                 className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-20 "
                             >
                               <img
-  src="/images/ourstory/vectorkanan.png"
+  src="/images/ourstory/panahkanan.png"
   alt="right"
   className="w-[40px] md:w-[60px]"
 />
