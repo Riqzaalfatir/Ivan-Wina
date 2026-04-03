@@ -56,7 +56,7 @@ const ThankYou = () => {
         {/* LOGO */}
 
                                    <Image
-          src="/images/thankyou/logoprovite.png"
+          src="/images/thankyou/logoprovite1.png"
           alt="logo"
           width={100}
           height={30}

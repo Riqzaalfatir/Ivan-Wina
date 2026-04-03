@@ -72,10 +72,10 @@ const OurStory = () => {
                                     delay: 0.6,
                                 }}
                                 onClick={prevSlide}
-                                className="absolute left-6 md:left-8 top-1/2 -translate-y-1/2"
+                                className="absolute left-6 md:left-8 top-1/2 -translate-y-1/2 z-20"
                             >
                                 <Image
-                                    src="/images/ourstory/Vector2.png"
+                                    src="/images/ourstory/vectorkiri.png"
                                     alt="left"
                                     width={50}
                                     height={40}
@@ -94,10 +94,10 @@ const OurStory = () => {
                                     delay: 0.6,
                                 }}
                                 onClick={nextSlide}
-                                className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2"
+                                className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-20 "
                             >
                                 <Image
-                                    src="/images/ourstory/Vector1.png"
+                                    src="/images/ourstory/vectorkanan.png"
                                     alt="right"
                                     width={50}
                                     height={40}
