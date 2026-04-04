@@ -35,17 +35,17 @@ const OurStory = () => {
     return (
         
         <>
-            <motion.section id="gallery" initial={{ opacity: 0, y: 80 }}
+            <motion.section id="gallery"
+                className='w-full bg-[#6C7852]  '>
+                <div className="max-w-7xl mx-auto px-4 py-20">
+                    <motion.div  initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{
                     duration: 1.5,
                     ease: [0.22, 1, 0.36, 1],
                     delay: 0.2,
-                }}
-                className='w-full bg-[#6C7852]  '>
-                <div className="max-w-7xl mx-auto px-4 py-20">
-                    <div className="flex items-center justify-center">
+                }} className="flex items-center justify-center">
 
                         <div className="relative w-full max-w-[950px] h-[430px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden z-10">
 
@@ -102,7 +102,7 @@ const OurStory = () => {
 
                         </div>
 
-                    </div>
+                    </motion.div>
                 </div>
             </motion.section>
             <Lightbox
