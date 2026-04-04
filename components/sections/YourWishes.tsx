@@ -5,6 +5,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import WishesCard from "../popup/WishesCard"
+import type { Wish } from "@/components/data/wishes"
 
 
 
@@ -26,7 +27,7 @@ const YourWishes = () => {
     }
     const [showPopup, setShowPopup] = useState(false);
     const [showAll, setShowAll] = useState(false);
-    const [selectedMessage, setSelectedMessage] = useState(null)
+    const [selectedMessage, setSelectedMessage] = useState<Wish | null>(null)
 
     return (
         <>
