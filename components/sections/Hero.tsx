@@ -66,8 +66,8 @@ const Hero = () => {
 
             </section>
 
-
-        </>
+            <div className="border-b border-[#454F23]/85 border-[1px]" />
+</>
     )
 }
 

@@ -42,9 +42,9 @@ const VenueDetails = () => {
               viewport={{ once: true }}
               className='uppercase font-sweetsans font-normal text-[13px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[30px]'
             >
-              <p className="font-medium">LOCATION:</p>
-              <p className="font-light">GEREJA KATOLIK</p>
-              <p className="font-light">SANTO LAURENTIUS</p>
+              <p className="font-semibold">LOCATION:</p>
+              <p className="">GEREJA KATOLIK</p>
+              <p className="">SANTO LAURENTIUS</p>
             </motion.div>
 
             <motion.div
@@ -90,8 +90,8 @@ const VenueDetails = () => {
               viewport={{ once: true }}
               className='uppercase font-sweetsans font-normal text-[13px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[30px]'
             >
-              <p className='font-medium'>LOCATION:</p>
-              <p className="font-light">KILOGRAM</p>
+              <p className='font-semibold'>LOCATION:</p>
+              <p className="">KILOGRAM</p>
             </motion.div>
 
             <motion.div

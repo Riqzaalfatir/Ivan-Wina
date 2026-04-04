@@ -1,5 +1,6 @@
 
 
+
 export type Wish = {
     id: number;
     nama: string;
@@ -40,6 +41,6 @@ export const dummyPesan: Wish[] = [
     id: 6,
     nama: "Kel. Ivan Gladwin Harliono",
     pesan:
-      "Selamat ya daren and given Bahagia selalu and happy in new chapters Luv to the moon and back",
+      "Selamat ya daren and given Bahagia selalu and happy in new chapters Luv to the moon and back..en and given Bahagia selalu and happy in new chapters Luv to the moon and back",
   },
 ]

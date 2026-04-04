@@ -3,6 +3,9 @@
 import Image from "next/image"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import Lightbox from "yet-another-react-lightbox"
+import "yet-another-react-lightbox/styles.css"
+import Zoom from "yet-another-react-lightbox/plugins/zoom"
 
 const images = [
     { src: "/images/ourstory/ourstory3.jpg", position: "object-[50%_50%]" },
@@ -15,6 +18,8 @@ const images = [
 const OurStory = () => {
     const [index, setIndex] = useState(0)
     const [direction, setDirection] = useState(0)
+    const [open, setOpen] = useState(false)
+    const [scrollY, setScrollY] = useState(0)
 
     const nextSlide = () => {
         setDirection(1)
@@ -25,8 +30,10 @@ const OurStory = () => {
         setDirection(-1)
         setIndex((prev) => (prev - 1 + images.length) % images.length)
     }
+    
 
     return (
+        
         <>
             <motion.section id="gallery" initial={{ opacity: 0, y: 80 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +53,11 @@ const OurStory = () => {
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={index}
-                                    className="absolute inset-0 z-0"
+                                    className="absolute inset-0 z-0 cursor-pointer"
+                                   onClick={() => {
+  setScrollY(window.scrollY)
+  setOpen(true)
+}}
                                     initial={{ x: direction > 0 ? 100 : -100, opacity: 0 }}
                                     animate={{ x: 0, opacity: 1 }}
                                     exit={{ x: direction > 0 ? -100 : 100, opacity: 0 }}
@@ -82,11 +93,11 @@ const OurStory = () => {
                                 onClick={nextSlide}
                                 className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
                             >
-                              <img
-  src="/images/ourstory/panahkanan.png"
-  alt="right"
-  className="w-[42px] md:w-[60px]"
-/>
+                                <img
+                                    src="/images/ourstory/panahkanan.png"
+                                    alt="right"
+                                    className="w-[42px] md:w-[60px]"
+                                />
                             </button>
 
                         </div>
@@ -94,8 +105,25 @@ const OurStory = () => {
                     </div>
                 </div>
             </motion.section>
+            <Lightbox
+                open={open}
+            close={() => {
+  setOpen(false)
 
-            <div className="border-b border-[#454F23]/80 border-[1px]" />
+  requestAnimationFrame(() => {
+    window.scrollTo({
+      top: scrollY,
+      behavior: "smooth"
+    })
+  })
+}}
+                index={index}
+
+                slides={images.map((img) => ({ src: img.src }))}
+                plugins={[Zoom]}
+            />
+
+            <div className="border-b border-[#454F23]/80 md:border-[#454F23]/85 border-[1px]" />
         </>
     )
 }

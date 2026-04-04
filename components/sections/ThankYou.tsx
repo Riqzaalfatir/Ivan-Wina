@@ -7,7 +7,7 @@ const ThankYou = () => {
   return (
     <section className="relative w-full h-screen">
 
-      <div className="lg:hidden bg-[#6C7852] flex flex-col items-center text-center px-6 pt-24 h-screen">
+      <div className=" bg-[#6C7852] flex flex-col items-center text-center px-6 pt-24 h-screen">
 
         {/* MOBILE */}
         <div className="relative flex flex-col items-center">
@@ -32,7 +32,7 @@ const ThankYou = () => {
                                    />
        
                                    {/* TEXT */}
-                                   <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[42px] md:text-[98px] lg:text-[72px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans font-normal text-center -mt-[60px] md:-mt-[100px] lg:-mt-[70px] pr-[1px] md:pr-[16px] lg:pr-[16px]">
+                                   <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[42px] md:text-[98px] lg:text-[72px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans  font-normal text-center -mt-[60px] md:-mt-[100px] lg:-mt-[70px] pr-[1px] md:pr-[16px] lg:pr-[16px]">
                                        SEE YOU SOON
                                    </h1>
        
@@ -49,24 +49,24 @@ const ThankYou = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} className="mt-6 text-[12px] max-w-[200px] text-white font-sweetsans leading-relaxed mb-0">
+                                }} className="mt-8 text-[12px] lg:text-[18px] max-w-[200px] md:max-w-[300px] font-light text-white font-sweetsans leading-relaxed mb-0">
           It would be a joy and honor for us to have you join our celebration and share your blessings.
         </motion.p>
 
         {/* LOGO */}
 
-                                   <Image
+                                   {/* <Image
           src="/images/thankyou/logoprovite1.png"
           alt="logo"
           width={100}
           height={30}
           className="object-contain pt-20 mt-auto"
-        />
+        /> */}
 
       </div>
 
       {/* DEKSTOP */}
-      <div className="hidden lg:block relative w-full h-screen">
+      {/* <div className="hidden lg:block relative w-full h-screen">
 
         <Image
           src="/images/thankyou/BgThankyou.jpg"
@@ -113,7 +113,7 @@ const ThankYou = () => {
           </motion.div>
 
         </div>
-      </div>
+      </div> */}
 
     </section>
   );

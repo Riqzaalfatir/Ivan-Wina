@@ -47,8 +47,8 @@ const OrderOfEvents = () => {
                     }}
                     className="text-[#202F26] text-center leading-none"
                 >
-                    <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[10px]">09.00 WIB</h3>
-                    <h4 className="font-sweetsans font-medium  text-[14px] md:text-[24px] lg:text-[24px] mb-[17px]">CEREMONY</h4>
+                    <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[20px]">09.00 WIB</h3>
+                    <h4 className="font-sweetsans font-semibold text-[13px] md:text-[24px] lg:text-[24px] mb-[17px]">CEREMONY</h4>
                     <p className="font-sweetsans font-normal text-[12px] md:text-[16px] lg:text-[16px] text-[#202F26]">The Sacrament. The vows</p>
                 </motion.div>
 
@@ -64,8 +64,8 @@ const OrderOfEvents = () => {
                     }}
                     className="text-[#202F26] text-center leading-none"
                 >
-                    <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[10px]">13.00 WIB</h3>
-                    <h4 className="font-sweetsans font-medium text-[14px] md:text-[24px] lg:text-[24px] mb-[17px]">TEA PAI</h4>
+                    <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[20px]">12.00 WIB</h3>
+                    <h4 className="font-sweetsans font-semibold text-[13px] md:text-[24px] lg:text-[24px] mb-[17px]">TEA PAI</h4>
                     <p className="font-sweetsans font-normal text-[12px] md:text-[16px] lg:text-[16px] text-[#202F26]">The tradition. The honor.</p>
                 </motion.div>
 
@@ -81,8 +81,8 @@ const OrderOfEvents = () => {
                     }}
                     className="text-[#202F26] text-center leading-none"
                 >
-                    <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[10px]">12.00 WIB</h3>
-                    <h4 className="font-sweetsans font-medium text-[14px] md:text-[24px] lg:text-[24px] mb-[17px]">COCKTAIL HOUR</h4>
+                    <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[20px]">12.00 WIB</h3>
+                    <h4 className="font-sweetsans font-semibold text-[13px] md:text-[24px] lg:text-[24px] mb-[5px]">COCKTAIL HOUR</h4>
                     <p className="font-sweetsans text-[9px] md:text-[14px] lg:text-[14px] font-light italic text-[#202F26]">Followed by the Reception</p>
                 </motion.div>
 
@@ -95,7 +95,7 @@ const OrderOfEvents = () => {
                         ease: [0.22, 1, 0.36, 1],
                         delay: 0.8,
                     }}
-                  className="font-sweetsans font-light text-[14px] md:text-[18px] lg:text-[18px] text-[#202F26] -mt-6">The celebration. The joy.</motion.p>
+                  className="font-sweetsans  text-[12px] md:text-[18px] lg:text-[18px] text-[#202F26] -mt-8">The celebration. The joy.</motion.p>
 
             </div>
 

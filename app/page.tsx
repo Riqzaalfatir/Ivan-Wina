@@ -11,6 +11,8 @@ import Faq from "@/components/sections/Faq"
 import ThankYou from "@/components/sections/ThankYou"
 import Opening from "@/components/popup/Opening"
 import Header from "@/components/layout/Header"
+import Footer from "@/components/layout/Footer"
+import WishesCard from "@/components/popup/WishesCard"
 
 export default function Home() {
   return (
@@ -30,6 +32,10 @@ export default function Home() {
      <YourWishes />
      <Faq />
      <ThankYou />
+
+     <WishesCard />
+
+    <Footer />
     </>
   );
 }
