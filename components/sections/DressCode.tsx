@@ -94,7 +94,7 @@ const DressCode = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-white text-[28px] md:text-[40px] lg:text-[46px] font-sweetsans tracking-[6px] text-center whitespace-nowrap font-medium z-10"
+              className="text-white text-[28px] md:text-[40px] lg:text-[40px] font-sweetsans  text-center whitespace-nowrap font-medium z-10"
             >
               DRESS CODE
             </motion.h2>
