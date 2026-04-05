@@ -10,7 +10,7 @@ const Countdown = dynamic(() => import("react-countdown"), {
 })
 
 const CountingDown = () => {
-  const tanggalTarget = new Date("2026-04-05T00:00:00")
+  const tanggalTarget = new Date("2026-04-09T00:00:00")
 
   const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
     if (completed) {
@@ -32,11 +32,11 @@ const CountingDown = () => {
           </div>
           <div className="flex flex-col gap-1.5 md:gap-1">
             <motion.h4 initial={{ scale: 0.8 }} animate={{ scale: 1 }} transition={{ duration: 0.3 }} className="text-white font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</motion.h4>
-            <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Minutes</p>
+            <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Minutes</p>
           </div>
           <div className="flex flex-col gap-1.5 md:gap-1">
             <motion.h4 initial={{ scale: 0.8 }} animate={{ scale: 1 }} transition={{ duration: 0.3 }} className="text-[#202F26] font-medium font-sweetsans text-[32px] md:text-[59px] lg:text-[54px] leading-none">00</motion.h4>
-            <p className="text-[#202F26] font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Seconds</p>
+            <p className="text-white font-bold font-sweetsans text-[10px] md:text-[23px] lg:text-[18px] leading-none uppercase">Seconds</p>
           </div>
         </motion.div>
       )

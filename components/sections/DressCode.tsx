@@ -106,7 +106,7 @@ const DressCode = () => {
             <h2 className="font-sweetsans font-medium text-[28px] md:text-[29px] lg:text-[24px] text-[#202F26] mb-[40px] md:mb-[30px] lg:mb-[30px]">
               ATTIRE
             </h2>
-            <p className="font-sweetsans font-light text-[13px] md:text-[17px] lg:text-[17px] text-[#202F26] leading-6 mb-[20px] md:mb-[30px] lg:mb-[30px] ">
+            <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[17px] text-[#202F26] leading-6 mb-[20px] md:mb-[30px] lg:mb-[30px] ">
               We invite guests to dress semi-formal <br />
               in “colors of nature”, <br />
               similar to this palette (other shades are welcome)
@@ -118,7 +118,7 @@ const DressCode = () => {
               height={200}
               className="object-cover mx-auto mb-[35px] w-[280px] md:w-auto"
             />
-            <p className="font-sweetsans font-light text-[13px] md:text-[17px] lg:text-[17px] text-[#202F26]">
+            <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[17px] text-[#202F26]">
               Please don’t wear any black/white/ivory/batik.
             </p>
           </motion.div>
@@ -134,7 +134,7 @@ const DressCode = () => {
             <h2 className="font-sweetsans font-medium text-[28px] md:text-[24px] lg:text-[29px] text-[#202F26] mb-[40px] md:mb-[30px] lg:mb-[30px]">
               SHOES
             </h2>
-            <p className="font-sweetsans font-light text-[13px] md:text-[17px] lg:text-[17px] text-[#202F26] leading-6 mb-[15px] max-w-xs md:max-w-md">
+            <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[17px] text-[#202F26] leading-6 mb-[15px] max-w-xs md:max-w-md">
               Since the venue is mostly gravel, you may wish to skip high heels and leather-bottomed shoes.
               Block heels or sturdy flats are recommended for <br /> your comfort.
             </p>

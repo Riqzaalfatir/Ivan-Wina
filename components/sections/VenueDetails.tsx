@@ -30,7 +30,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='uppercase font-sweetsans font-bold text-[18px] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[30px]'
+              className='uppercase font-sweetsans font-bold text-[14px] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[30px]'
             >
               CEREMONY
             </motion.h2>
@@ -40,7 +40,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='uppercase font-sweetsans font-normal text-[13px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[30px]'
+              className='uppercase font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[30px]'
             >
               <p className="font-semibold">LOCATION:</p>
               <p className="">GEREJA KATOLIK</p>
@@ -52,7 +52,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='font-sweetsans font-normal text-[13px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[55px]'
+              className='font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[40px]'
             >
               <p>JL. Sukajadi No.223,</p>
               <p>Bandung, Jawa Barat</p>
@@ -64,7 +64,7 @@ const VenueDetails = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              <Link href="https://www.google.com/maps?q=Jl.+Sukajadi+No.223+Bandung+Jawa+Barat" target="_blank" className="uppercase text-white text-[11px] md:text-[18px] lg:text-[18px] font-sweetsans py-2 px-12 bg-[#CB4F35] font-light flex items-center gap-2">
+              <Link href="https://www.google.com/maps?q=Jl.+Sukajadi+No.223+Bandung+Jawa+Barat" target="_blank" className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-sweetsans py-2 px-12 bg-[#CB4F35] font-light flex items-center gap-2">
                 <Image src="/images/venuedetails/Maps.png" alt="Maps" width={20} height={20} />
                 OPEN GOOGLE MAPS
               </Link>
@@ -78,7 +78,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='uppercase font-sweetsans font-bold text-[18px] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[30px]'
+              className='uppercase font-sweetsans font-bold text-[14x] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[30px]'
             >
               RECEPTION
             </motion.h2>
@@ -88,7 +88,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='uppercase font-sweetsans font-normal text-[13px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[30px]'
+              className='uppercase font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[30px]'
             >
               <p className='font-semibold'>LOCATION:</p>
               <p className="">KILOGRAM</p>
@@ -99,7 +99,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='font-sweetsans font-normal text-[13px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[55px]'
+              className='font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[40px]'
             >
               <p>Cikole, Lembang, Jawa Barat</p>
             </motion.div>
@@ -110,7 +110,7 @@ const VenueDetails = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              <Link href="https://www.google.com/maps?q=Cikole+Lembang+Bandung+Jawa+Barat" target="_blank" className="uppercase text-white text-[11px] md:text-[18px] lg:text-[18px] font-sweetsans py-2 px-12 bg-[#CB4F35] font-light flex items-center gap-2">
+              <Link href="https://www.google.com/maps?q=Cikole+Lembang+Bandung+Jawa+Barat" target="_blank" className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-sweetsans py-2 px-12 bg-[#CB4F35] font-light flex items-center gap-2">
                 <Image src="/images/venuedetails/Maps.png" alt="Maps" width={20} height={20} />
                 OPEN GOOGLE MAPS
               </Link>

@@ -32,7 +32,7 @@ const YourWishes = () => {
     return (
         <>
             <section className='w-full min-h-screen bg-[#6C7852]'>
-                <div className="max-w-2xl mx-auto px-8 md:px-4 lg:px-4 py-32">
+                <div className="max-w-2xl mx-auto px-10 md:px-4 lg:px-4 py-32">
                     <div className="flex flex-col items-center">
                         <motion.h2 initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ const YourWishes = () => {
                                 duration: 1.5,
                                 ease: [0.22, 1, 0.36, 1],
                                 delay: 0.2,
-                            }} className='uppercase font-sweetsans font-medium text-[30px] md:text-[46px] lg:text-[46px] tracking-[4px] text-white mb-10 md:mb-6'>
+                            }} className='uppercase font-sweetsans font-medium text-[28px] md:text-[46px] lg:text-[46px] tracking-[4px] text-white mb-10 md:mb-6'>
                             Your Wishes
                         </motion.h2>
 
@@ -53,9 +53,9 @@ const YourWishes = () => {
                                 ease: [0.22, 1, 0.36, 1],
                                 delay: 0.2,
                             }} className='w-full flex flex-col gap-4'>
-                            <input type="text" value={nama} placeholder="Desy (Tester)" onChange={(e) => setNama(e.target.value)} className='w-full rounded-md text-white  font-sweetsans text-[18px] bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
-                            <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full rounded-md  font-sweetsans bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none text-white h-[120px] md:h-[310px]'></textarea>
-                            <button onClick={handleSubmit} className='bg-[#454F23] py-2 text-[14px] md:text-[18px] lg:text-[18px] font-sweetsans uppercase flex items-center justify-center gap-2 rounded-md text-white'>
+                            <input type="text" value={nama} placeholder="Desy (Tester)" onChange={(e) => setNama(e.target.value)} className='w-full rounded-md text-white  font-sweetsans text-[12px] bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
+                            <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full rounded-md text-[12px]  font-sweetsans bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none text-white h-[120px] md:h-[310px]'></textarea>
+                            <button onClick={handleSubmit} className='bg-[#454F23] py-2 text-[12px] md:text-[18px] lg:text-[18px] font-sweetsans uppercase flex items-center justify-center gap-2  text-white'>
                                 <Image
                                     src="/images/wishes/Kirim.png"
                                     alt="Kirim"
@@ -72,17 +72,17 @@ const YourWishes = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} className={`w-full max-w-none mt-8 py-6 px-6 rounded-md ${showAll ? "bg-transparent" : "bg-[#454F23] max-h-[580px] overflow-y-auto"
+                                }} className={`w-full max-w-none mt-8 py-6 px-6  ${showAll ? "bg-transparent" : "bg-[#454F23] max-h-[580px] overflow-y-auto"
                                     }`}>
                                 {!showAll ? (
                                     // 🔹 LIST MODE (awal)
                                     dummyPesan.slice(0, 4).map((item, index) => (
                                         <div key={item.id}>
-                                            <p className="text-white font-bold text-[14px] mb-2 font-sweetsans">
+                                            <p className="text-white font-bold text-[12px] mb-2 font-sweetsans">
                                                 {item.nama}
                                             </p>
 
-                                            <p className="text-white text-[14px] font-light font-sweetsans">
+                                            <p className="text-white text-[12px] font-light font-sweetsans">
                                                 {item.pesan}
                                             </p>
 
@@ -93,7 +93,7 @@ const YourWishes = () => {
                                     ))
                                 ) : (
                                     // 🔥 GRID CARD MODE (KOMENTAR)
-                                    <div className="max-w-2xl relative left-1/2 -translate-x-1/2 w-screen px-10 md:px-12">
+                                    <div className="max-w-2xl relative left-1/2 -translate-x-1/2 w-screen px-14 md:px-12">
                                         <motion.div
                                             layout
                                             initial="hidden"
@@ -117,7 +117,7 @@ const YourWishes = () => {
                                                         ease: [0.22, 1, 0.36, 1]
                                                     }}
                                                     onClick={() => setSelectedMessage(item)}
-                                                    className="min-h-[160px] md:min-h-[170px] rounded-lg overflow-hidden shadow-md bg-[#F4F8F5] font-sweetsans flex flex-col"
+                                                    className="min-h-[160px] md:min-h-[170px] rounded-md overflow-hidden shadow-md bg-[#F4F8F5] font-sweetsans flex flex-col"
                                                 >
                                                     {/* CONTENT */}
                                                     <div className="p-2 text-[#202F26] relative flex-1 flex flex-col justify-center">
@@ -155,7 +155,7 @@ const YourWishes = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} onClick={() => setShowAll(!showAll)} className='bg-[#454F23] py-2 text-[14px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2 rounded-md'>
+                                }} onClick={() => setShowAll(!showAll)} className='bg-[#454F23] py-2 text-[14px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2 '>
                                 <Image
                                     src="/images/wishes/Pesan.png"
                                     alt="Kirim"
