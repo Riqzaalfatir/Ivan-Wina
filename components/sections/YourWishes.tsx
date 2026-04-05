@@ -93,7 +93,7 @@ const YourWishes = () => {
                                     ))
                                 ) : (
                                     // 🔥 GRID CARD MODE (KOMENTAR)
-                                    <div className="max-w-2xl relative left-1/2 -translate-x-1/2 w-screen px-14 md:px-12">
+                                    <div className="max-w-2xl relative left-1/2 -translate-x-1/2 w-screen px-10 md:px-12">
                                         <motion.div
                                             layout
                                             initial="hidden"

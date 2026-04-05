@@ -40,7 +40,7 @@ const Rsvp = () => {
     return (
         <>
             <section id="rsvp" className='w-full bg-[#6C7852] '>
-                <div className="w-full max-w-7xl mx-auto px-12 py-32">
+                <div className="w-full max-w-7xl mx-auto px-12 py-20">
                     <div className="flex flex-col items-center justify-center leading-none text-center">
                         <motion.h2 initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
