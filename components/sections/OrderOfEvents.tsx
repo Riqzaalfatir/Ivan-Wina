@@ -33,7 +33,7 @@ const OrderOfEvents = () => {
             </div>
 
             {/* RIGHT */}
-            <div className="bg-white flex flex-col items-center justify-center gap-[50px] py-[75px] md:py-[85px] lg:py-[0px]">
+            <div className="bg-white lg:bg-[#D9D9D9] flex flex-col items-center justify-center gap-[50px] py-[75px] md:py-[85px] lg:py-[0px]">
 
                 {/* ITEM 1 */}
                 <motion.div

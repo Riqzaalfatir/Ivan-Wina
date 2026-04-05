@@ -37,7 +37,7 @@ const Faq = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} className="text-center text-white font-sweetsans font-medium text-[14px] md:text-[22px] lg:text-[22px] uppercase">
+                                }} className="text-center text-white font-sweetsans font-medium text-[14px] md:text-[22px] lg:text-[24px] uppercase">
                                 {section.judul}
                             </motion.h3>
 

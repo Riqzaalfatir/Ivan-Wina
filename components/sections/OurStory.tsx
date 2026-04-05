@@ -72,11 +72,11 @@ const OurStory = () => {
                                 </motion.div>
                             </AnimatePresence>
 
-                            {/* ARROW KIRI */}
+                            {/* ARROW KIRI MOBILE */}
                             <button
 
                                 onClick={prevSlide}
-                                className="absolute left-6 md:left-8 top-1/2 -translate-y-1/2 z-30"
+                                className="lg:hidden absolute left-6 md:left-8 top-1/2 -translate-y-1/2 z-30"
                             >
                                 <Image
                                     src="/images/ourstory/vectorkiri.png"
@@ -87,14 +87,43 @@ const OurStory = () => {
                                 />
                             </button>
 
-                            {/* ARROW KANAN */}
+                            {/* ARROW KIRI MOBILE DESKTOP */}
+                            <button
+
+                                onClick={prevSlide}
+                                className="hidden lg:block absolute left-6 md:left-8 top-1/2 -translate-y-1/2 z-30"
+                            >
+                                <Image
+                                    src="/images/ourstory/panahkiriputih.png"
+                                    alt="left"
+                                    width={50}
+                                    height={40}
+                                    className="w-[40px] md:w-[60px]"
+                                />
+                            </button>
+
+                            {/* ARROW KANAN MOBILE */}
                             <button
 
                                 onClick={nextSlide}
-                                className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
+                                className="lg:hidden absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
                             >
                                 <img
                                     src="/images/ourstory/panahkanan.png"
+                                    alt="right"
+                                    className="w-[42px] md:w-[60px]"
+                                />
+                            </button>
+
+                            {/* ARROW KANAN DEKSTOP */}
+
+                            <button
+
+                                onClick={nextSlide}
+                                className="hidden lg:block absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
+                            >
+                                <img
+                                    src="/images/ourstory/panahkananputih.png"
                                     alt="right"
                                     className="w-[42px] md:w-[60px]"
                                 />

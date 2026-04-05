@@ -36,7 +36,7 @@ const Hero = () => {
                         </div>
                     
                         {/* TEXT LAYER (DI LUAR overflow) */}
-                        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[48px] sm:text-[64px] md:text-[80px] lg:text-[66px] text-[#202F26] z-10 whitespace-nowrap text-center">
+                        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[48px] sm:text-[64px] md:text-[80px] lg:text-[72px] text-[#202F26] z-10 whitespace-nowrap text-center">
                           IVAN & WINA
                         </h1>
 

@@ -93,7 +93,7 @@ const DressCode = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ delayChildren: 0.2 }} // ⬅️ ini bikin napas dulu
 
-          className='bg-white flex flex-col items-center justify-center leading-none gap-[79px] py-[75px] md:py-[75px] lg:py-[1px]'
+          className='bg-white lg:bg-[#D9D9D9]  flex flex-col items-center justify-center leading-none gap-[79px] py-[75px] md:py-[75px] lg:py-[1px]'
         >
 
           <motion.div  initial={{ opacity: 0, y: 80 }}

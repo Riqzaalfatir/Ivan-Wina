@@ -78,11 +78,11 @@ const YourWishes = () => {
                                     // 🔹 LIST MODE (awal)
                                     dummyPesan.slice(0, 4).map((item, index) => (
                                         <div key={item.id}>
-                                            <p className="text-white font-bold text-[12px] mb-2 font-sweetsans">
+                                            <p className="text-white font-bold text-[12px] md:text-[18pxpx] mb-2 font-sweetsans">
                                                 {item.nama}
                                             </p>
 
-                                            <p className="text-white text-[12px] font-light font-sweetsans">
+                                            <p className="text-white text-[12px] md:text-[18pxpx]  font-light font-sweetsans">
                                                 {item.pesan}
                                             </p>
 
@@ -125,14 +125,14 @@ const YourWishes = () => {
                                                             “
                                                         </p>
 
-                                                        <p className="text-[11px] md:text-[13px] leading-relaxed px-1 md:px-4  md:pt-7 text-slate-800 font-medium line-clamp-3 text-center">
+                                                        <p className="text-[11px] md:text-[16px] leading-relaxed px-1 md:px-4  md:pt-9 text-slate-600 font-medium line-clamp-3 text-center">
                                                             {item.pesan}
                                                         </p>
                                                     </div>
 
                                                     {/* FOOTER */}
                                                     <div className="bg-[#454F23] h-[35px] flex items-center justify-center px-3">
-                                                        <p className="text-white text-[12px] md:text-[14px] font-bold text-center line-clamp-1">
+                                                        <p className="text-white text-[12px] md:text-[18px] font-bold text-center line-clamp-1">
                                                             {item.nama}
                                                         </p>
                                                     </div>

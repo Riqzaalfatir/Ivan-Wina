@@ -48,7 +48,7 @@ const Rsvp = () => {
                             transition={{
                                 duration: 1.5,
                                 ease: [0.22, 1, 0.36, 1],
-                            }} className='uppercase font-sweetsans font-medium text-[28px] md:text-[46px] lg:text-[46px] text-white mb-[36px]'>
+                            }} className='uppercase font-sweetsans font-medium text-[28px] md:text-[46px]  text-white mb-[36px]'>
                             RSVP
                         </motion.h2>
                         <motion.div initial={{ opacity: 0, y: 80 }}
