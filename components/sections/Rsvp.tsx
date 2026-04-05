@@ -133,12 +133,12 @@ const Rsvp = () => {
                         {status === "attend" && (
                             <div>
                                 <div className="w-[320px] md:w-[350px] max-w-[500px] mb-[40px] flex flex-col items-center mx-auto">
-                                    <p className="uppercase text-white font-sweetsans font-light text-[12px] md:text-[19px] lg:text-[15px] mb-3">how many people came?</p>
+                                    <p className="uppercase text-white text-start font-sweetsans font-light text-[12px] md:text-[19px] lg:text-[15px] mb-3">how many people came?</p>
 
                                     <select
                                         value={guest}
                                         onChange={(e) => setGuest(Number(e.target.value))}
-                                        className="w-[280px] bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px]  py-3 px-4 rounded-md"
+                                        className="w-[260px] bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px]  py-3 px-4 rounded-md"
                                     >
                                         {[1, 2, 3, 4, 5].map((num) => (
                                             <option key={num} value={num}>
