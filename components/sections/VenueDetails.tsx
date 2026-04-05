@@ -162,7 +162,7 @@ const VenueDetails = () => {
 
       </section>
 
-      <div className="border-b border-[#202F26] border-[1.5px]" />
+      <div className="lg:hidden border-b border-[#202F26] border-[1.5px]" />
     </>
   )
 }

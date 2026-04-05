@@ -62,7 +62,7 @@ const WeddingGift = () => {
           {/* ITEM BANK */}
           <div className="max-w-md mx-auto space-y-10">
 
-\            <motion.div initial={{ opacity: 0, y: 80 }}
+            <motion.div initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{

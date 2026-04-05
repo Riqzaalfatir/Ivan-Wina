@@ -94,7 +94,7 @@ const Rsvp = () => {
                             }} className='flex items-center gap-4 mb-[40px]'>
                             <button
                                 onClick={() => setStatus("attend")}
-                                className={`uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2.5 px-6 md:px-8 rounded-md ${status === "attend"
+                                className={`uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2.5 px-6 md:px-8  ${status === "attend"
                                     ? "bg-[#CB4F35] text-white"
                                     : "border border-[#CB4F35] text-white"
                                     }`}
@@ -104,7 +104,7 @@ const Rsvp = () => {
 
                             <button
                                 onClick={() => setStatus("not")}
-                                className={`uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2.5  px-6 md:px-8 rounded-md ${status === "not"
+                                className={`uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2.5  px-6 md:px-8  ${status === "not"
                                     ? "bg-[#CB4F35] text-white"
                                     : "border border-[#CB4F35] text-white"
                                     }`}
@@ -129,7 +129,7 @@ const Rsvp = () => {
                                         Are You Sure?
                                     </p>
 
-                                    <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-14 md:px-[72px] bg-[#CB4F35] mb-[40px] rounded-md'>
+                                    <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-14 md:px-[72px] bg-[#CB4F35] mb-[40px] '>
                                         Confirm Not Attend
                                     </button>
                                 </div>
@@ -144,7 +144,7 @@ const Rsvp = () => {
                                         <select
                                             value={guest}
                                             onChange={(e) => setGuest(Number(e.target.value))}
-                                            className="w-[260px] md:w-full bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px]  py-3 px-4 rounded-md"
+                                            className="w-[260px] md:w-full bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px]  py-3 px-4 "
                                         >
                                             {[1, 2, 3, 4, 5].map((num) => (
                                                 <option key={num} value={num}>
@@ -154,7 +154,7 @@ const Rsvp = () => {
                                         </select>
                                     </div>
 
-                                    <button onClick={waHadir} className='mx-auto uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-[70px]  md:px-[90px] bg-[#CB4F35] mb-[40px] rounded-md'>
+                                    <button onClick={waHadir} className='mx-auto uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-[70px]  md:px-[90px] bg-[#CB4F35] mb-[40px] '>
                                         Confirm Attend
                                     </button>
                                 </div>
@@ -168,7 +168,7 @@ const Rsvp = () => {
                             <button
                                 onClick={waHelpdesk}
                                 className='uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5  px-[55px]  md:px-[70px]
-                                 bg-[#CB4F35] rounded-md'
+                                 bg-[#CB4F35] '
                             >
                                 Chat helpdesk team
                             </button>
