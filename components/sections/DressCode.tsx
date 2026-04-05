@@ -94,7 +94,7 @@ const DressCode = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-white text-[28px] md:text-[40px] lg:text-[40px] font-sweetsans  text-center whitespace-nowrap font-medium z-10"
+              className="text-white text-[28px] md:text-[40px] lg:text-[46px] font-sweetsans  text-center whitespace-nowrap font-medium z-10"
             >
               DRESS CODE
             </motion.h2>
@@ -126,9 +126,8 @@ const DressCode = () => {
               ATTIRE
             </h2>
             <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[17px] text-[#202F26] leading-6 mb-[20px] md:mb-[30px] lg:mb-[30px] ">
-              We invite guests to dress semi-formal <br />
-              in “colors of nature”, <br />
-              similar to this palette (other shades are welcome)
+              We kindly encourage our guests <br />
+              to wear these colors for our special day
             </p>
             <Image
               src="/images/dresscode/Warna.png"

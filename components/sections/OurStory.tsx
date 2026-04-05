@@ -54,7 +54,8 @@ const OurStory = () => {
                                     key={index}
                                     className="absolute inset-0 z-0 cursor-pointer"
                                     onClick={() => {
-                                        setScrollY(window.scrollY)
+                                        const currentY = window.scrollY
+                                        setScrollY(currentY)
                                         setOpen(true)
                                     }}
                                     initial={{ x: direction > 0 ? 100 : -100, opacity: 0 }}
@@ -140,22 +141,21 @@ const OurStory = () => {
             <Lightbox
                 open={open}
                 close={() => {
-                    setOpen(false)
+  setOpen(false)
 
-                    requestAnimationFrame(() => {
-                        window.scrollTo({
-                            top: scrollY,
-                            behavior: "smooth"
-                        })
-                    })
-                }}
+  setTimeout(() => {
+    window.scrollTo({
+      top: scrollY,
+    })
+  }, 50)
+}}
                 index={index}
 
                 slides={images.map((img) => ({ src: img.src }))}
                 plugins={[Zoom]}
             />
 
-            <div className="border-b border-[#454F23]/80 md:border-[#454F23]/85 border-[1px]" />
+            <div className="border-b border-[#454F23]/80 md:border-[#454F23]/80 border-[1px]" />
         </>
     )
 }

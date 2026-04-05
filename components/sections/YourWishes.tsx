@@ -203,7 +203,7 @@ const YourWishes = () => {
                 )}
             </section>
 
-            <div className="border-b border-[#454F23]/80 md:border-[#454F23]/85 border-[1px]" />
+            <div className="border-b border-[#454F23]/80 md:border-[#454F23]/80 border-[1px]" />
         </>
     )
 }
