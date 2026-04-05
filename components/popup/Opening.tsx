@@ -67,8 +67,8 @@ const Opening = () => {
 
           {/* TANGGAL */}
           <p className='mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px] font-sweetsans  text-[14px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[5px] text-white'>Dear Mr./ Mrs./ Ms.</p>
-          <p className='font-sweetsans text-[18px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[26px] lg:mb-[1px] text-white font-bold'>Sela</p>
-          <p className="text-center font-sweetsans font-light text-[10px] md:hidden text-white">We sincerely apologize <br />
+          <p className='font-sweetsans text-[18px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[26px] lg:mb-[20px] text-white font-bold'>Sela</p>
+          <p className="text-center font-sweetsans font-light text-[10px] md:text-[14px] text-white">We sincerely apologize <br />
             for any misspelling of names or titles.</p>
 
           {/* BUTTON */}

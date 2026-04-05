@@ -123,7 +123,7 @@ const Rsvp = () => {
                                     Are You Sure?
                                 </p>
 
-                                <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-14 md:px-[16px] bg-[#CB4F35] mb-[40px] rounded-md'>
+                                <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-14 md:px-[72px] bg-[#CB4F35] mb-[40px] rounded-md'>
                                     Confirm Not Attend
                                 </button>
                             </div>
@@ -138,7 +138,7 @@ const Rsvp = () => {
                                     <select
                                         value={guest}
                                         onChange={(e) => setGuest(Number(e.target.value))}
-                                        className="w-[260px] bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px]  py-3 px-4 rounded-md"
+                                        className="w-[260px] md:w-full bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px]  py-3 px-4 rounded-md"
                                     >
                                         {[1, 2, 3, 4, 5].map((num) => (
                                             <option key={num} value={num}>
@@ -162,7 +162,8 @@ const Rsvp = () => {
 
                             <button
                                 onClick={waHelpdesk}
-                                className='uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-14 bg-[#CB4F35] rounded-md'
+                                className='uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5  px-[55px]  md:px-[70px]
+                                 bg-[#CB4F35] rounded-md'
                             >
                                 Chat helpdesk team
                             </button>
