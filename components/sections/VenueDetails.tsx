@@ -21,6 +21,7 @@ const VenueDetails = () => {
     <>
       <section className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
 
+      {/* KIRI */}
         <div className='bg-white lg:bg-[#D9D9D9] flex flex-col items-center justify-center leading-none gap-16 order-2 lg:order-1 py-[75px] md:py-[75px] lg:py-[1px]'>
 
           {/* CEREMONY */}
@@ -119,7 +120,8 @@ const VenueDetails = () => {
 
         </div>
 
-        {/* RIGHT SIDE */}
+
+        {/* KANAN */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

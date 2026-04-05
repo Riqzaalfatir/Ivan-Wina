@@ -7,7 +7,7 @@ const OrderOfEvents = () => {
     return (
         <section className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
 
-            {/* LEFT */}
+            {/* KIRI */}
             <div className="relative w-full h-[80vh] lg:h-full flex items-center justify-center">
 
                 <Image
@@ -32,10 +32,10 @@ const OrderOfEvents = () => {
 
             </div>
 
-            {/* RIGHT */}
+            {/* KANAN */}
             <div className="bg-white lg:bg-[#D9D9D9] flex flex-col items-center justify-center gap-[50px] py-[75px] md:py-[85px] lg:py-[0px]">
 
-                {/* ITEM 1 */}
+                {/* ITEM 1 CEREMONY */}
                 <motion.div
                     initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ const OrderOfEvents = () => {
                     <p className="font-sweetsans font-normal text-[12px] md:text-[16px] lg:text-[16px] text-[#202F26]">The Sacrament. The vows</p>
                 </motion.div>
 
-                {/* ITEM 2 */}
+                {/* ITEM 2 TEA PAI */}
                 <motion.div
                     initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +69,7 @@ const OrderOfEvents = () => {
                     <p className="font-sweetsans font-normal text-[12px] md:text-[16px] lg:text-[16px] text-[#202F26]">The tradition. The honor.</p>
                 </motion.div>
 
-                {/* ITEM 3 */}
+                {/* ITEM 3 COCKTAIL HOUR */}
                 <motion.div
                     initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -86,8 +86,8 @@ const OrderOfEvents = () => {
                     <p className="font-sweetsans text-[9px] md:text-[14px] lg:text-[14px] font-light italic text-[#202F26]">Followed by the Reception</p>
                 </motion.div>
 
-                <motion.p 
-                initial={{ opacity: 0, y: 80 }}
+                <motion.p
+                    initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{
@@ -95,7 +95,7 @@ const OrderOfEvents = () => {
                         ease: [0.22, 1, 0.36, 1],
                         delay: 0.8,
                     }}
-                  className="font-sweetsans  text-[12px] md:text-[18px] lg:text-[18px] text-[#202F26] -mt-8">The celebration. The joy.</motion.p>
+                    className="font-sweetsans  text-[12px] md:text-[18px] lg:text-[18px] text-[#202F26] -mt-8">The celebration. The joy.</motion.p>
 
             </div>
 

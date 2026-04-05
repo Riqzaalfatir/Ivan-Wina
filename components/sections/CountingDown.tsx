@@ -4,17 +4,17 @@ import Link from "next/link"
 import dynamic from "next/dynamic"
 import { motion } from "framer-motion"
 
-// ✅ PINDAH KE SINI (LUAR COMPONENT)
 const Countdown = dynamic(() => import("react-countdown"), {
   ssr: false,
 })
 
 const CountingDown = () => {
-  const tanggalTarget = new Date("2026-04-09T00:00:00")
+const tanggalTarget = new Date("2026-04-09T00:00:00+07:00")
 
   const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
     if (completed) {
       return (
+        // COUNTDOWN APABILA WAKTU TELAH HABIS: 00
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -43,6 +43,7 @@ const CountingDown = () => {
     }
 
     return (
+      // COUNTDOWN APABILA MASIH TERSEDIA
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +120,10 @@ const CountingDown = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
 
-              href="#"
+              href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding%20Ivan%20%26%20Partner&dates=20260409T030000Z/20260409T060000Z&details=Join%20our%20wedding%20celebration&location=Jakarta"
+              target="_blank"
+              rel="noopener noreferrer"
+              
               className="uppercase font-normal text-white text-[12px] md:text-[23px] lg:text-[18px] font-sweetsans py-2 px-8 md:px-14 bg-[#CB4F35]"
             >
               MARK YOUR CALENDAR

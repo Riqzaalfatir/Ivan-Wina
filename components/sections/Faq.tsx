@@ -26,10 +26,12 @@ const Faq = () => {
                         }} className='uppercase text-center text-white font-sweetsans font-medium text-[28px] md:text-[46px] lg:text-[46px] mb-[18px]'>
                         FAQ
                     </motion.h2>
-
+                
+                {/* RENDER FAQ */}
                     {faqData.map((section, sIndex) => (
                         <div key={sIndex} className="mb-10">
 
+                        {/* JUDUL FAQ */}
                             <motion.h3 initial={{ opacity: 0, y: 80 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}

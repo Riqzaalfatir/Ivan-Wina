@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const Rsvp = () => {
     const waHadir = () => {
-        const nomorHp = "6283102851438" // GANTI nomor lo (pakai 62, tanpa 0 depan)
+        const nomorHp = "6283102851438" 
 
         const pesan = `Hello, I will be attending your event with ${guest} people. Thank you.`
 
@@ -14,7 +14,7 @@ const Rsvp = () => {
     }
 
     const watTidakHadir = () => {
-        const nomorHp = "6283102851438" // GANTI nomor lo (pakai 62, tanpa 0 depan)
+        const nomorHp = "6283102851438" 
 
         const pesan = `Sorry, I can't attend your event.`
 
@@ -24,7 +24,7 @@ const Rsvp = () => {
     }
 
     const waHelpdesk = () => {
-        const nomorHp = "6283102851438" // GANTI nomor lo (pakai 62, tanpa 0 depan)
+        const nomorHp = "6283102851438" 
 
         const pesan = `Hello, I need help with RSVPing my invitations. Please help me. Thank you.`
 
@@ -40,8 +40,11 @@ const Rsvp = () => {
     return (
         <>
             <section id="rsvp" className='w-full bg-[#6C7852] '>
+
                 <div className="w-full max-w-7xl mx-auto px-12 py-20">
+
                     <div className="flex flex-col items-center justify-center leading-none text-center">
+
                         <motion.h2 initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -51,6 +54,7 @@ const Rsvp = () => {
                             }} className='uppercase font-sweetsans font-medium text-[28px] md:text-[46px]  text-white mb-[36px]'>
                             RSVP
                         </motion.h2>
+
                         <motion.div initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -109,7 +113,7 @@ const Rsvp = () => {
                             </button>
                         </motion.div>
 
-                        <motion.div  initial={{ opacity: 0, y: 80 }}
+                        <motion.div initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{
@@ -117,45 +121,46 @@ const Rsvp = () => {
                                 ease: [0.22, 1, 0.36, 1],
                                 delay: 0.4,
                             }}>
-                        {status === "not" && (
-                            <div>
-                                <p className='uppercase text-center font-sweetsans font-light  text-[12px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
-                                    Are You Sure?
-                                </p>
 
-                                <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-14 md:px-[72px] bg-[#CB4F35] mb-[40px] rounded-md'>
-                                    Confirm Not Attend
-                                </button>
-                            </div>
-                        )}
+                        {/* STATUS NOT ATTEND */}
+                            {status === "not" && (
+                                <div>
+                                    <p className='uppercase text-center font-sweetsans font-light  text-[12px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
+                                        Are You Sure?
+                                    </p>
 
-
-                        {status === "attend" && (
-                            <div>
-                                <div className="w-[320px] md:w-[350px] max-w-[500px] mb-[40px] flex flex-col items-center mx-auto">
-                                    <p className="uppercase text-white text-start font-sweetsans font-light text-[12px] md:text-[19px] lg:text-[15px] mb-3">how many people came?</p>
-
-                                    <select
-                                        value={guest}
-                                        onChange={(e) => setGuest(Number(e.target.value))}
-                                        className="w-[260px] md:w-full bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px]  py-3 px-4 rounded-md"
-                                    >
-                                        {[1, 2, 3, 4, 5].map((num) => (
-                                            <option key={num} value={num}>
-                                                {num}
-                                            </option>
-                                        ))}
-                                    </select>
+                                    <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-14 md:px-[72px] bg-[#CB4F35] mb-[40px] rounded-md'>
+                                        Confirm Not Attend
+                                    </button>
                                 </div>
+                            )}
 
-                                <button onClick={waHadir} className='mx-auto uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-[70px]  md:px-[90px] bg-[#CB4F35] mb-[40px] rounded-md'>
-                                    Confirm Attend
-                                </button>
-                            </div>
-                        )}
-                        {/* <p className='uppercase font-sweetsans font-light text-[17px] text-white mb-[40px]'>Are You Sure?</p>
-                    <button className='uppercase font-sweetsans font-normal test-[18px] text-white py-2.5 px-16 bg-[#CB4F35] mb-[40px]'>Confirm Not Attend</button> */}
-                        
+                         {/* STATUS ATTEND  */}
+                            {status === "attend" && (
+                                <div>
+                                    <div className="w-[320px] md:w-[350px] max-w-[500px] mb-[40px] flex flex-col items-center mx-auto">
+                                        <p className="uppercase text-white text-start font-sweetsans font-light text-[12px] md:text-[19px] lg:text-[15px] mb-3">how many people came?</p>
+
+                                        <select
+                                            value={guest}
+                                            onChange={(e) => setGuest(Number(e.target.value))}
+                                            className="w-[260px] md:w-full bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px]  py-3 px-4 rounded-md"
+                                        >
+                                            {[1, 2, 3, 4, 5].map((num) => (
+                                                <option key={num} value={num}>
+                                                    {num}
+                                                </option>
+                                            ))}
+                                        </select>
+                                    </div>
+
+                                    <button onClick={waHadir} className='mx-auto uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-[70px]  md:px-[90px] bg-[#CB4F35] mb-[40px] rounded-md'>
+                                        Confirm Attend
+                                    </button>
+                                </div>
+                            )}
+                          
+
                             <p className='font-sweetsans  text-center font-light text-[11px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
                                 Having trouble with RSVP?
                             </p>
@@ -167,9 +172,9 @@ const Rsvp = () => {
                             >
                                 Chat helpdesk team
                             </button>
-                            </motion.div>
-                        </div>
+                        </motion.div>
                     </div>
+                </div>
             </section>
 
             <div className="border-b border-[#454F23]/80 md:border-[#454F23]/85 border-[1px]" />

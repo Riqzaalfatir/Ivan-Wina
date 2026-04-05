@@ -30,34 +30,33 @@ const OurStory = () => {
         setDirection(-1)
         setIndex((prev) => (prev - 1 + images.length) % images.length)
     }
-    
+
 
     return (
-        
+
         <>
-            <motion.section id="gallery"
-                className='w-full bg-[#6C7852]  '>
+            <motion.section id="gallery" className='w-full bg-[#6C7852]  '>
                 <div className="max-w-7xl mx-auto px-4 py-20">
-                    <motion.div  initial={{ opacity: 0, y: 80 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                    duration: 1.5,
-                    ease: [0.22, 1, 0.36, 1],
-                    delay: 0.2,
-                }} className="flex items-center justify-center">
+                    <motion.div initial={{ opacity: 0, y: 80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 1.5,
+                            ease: [0.22, 1, 0.36, 1],
+                            delay: 0.2,
+                        }} className="flex items-center justify-center">
 
                         <div className="relative w-full max-w-[950px] h-[430px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden z-10">
 
-                            {/* IMAGE SLIDE */}
+                            {/* SLIDE GAMBAR */}
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={index}
                                     className="absolute inset-0 z-0 cursor-pointer"
-                                   onClick={() => {
-  setScrollY(window.scrollY)
-  setOpen(true)
-}}
+                                    onClick={() => {
+                                        setScrollY(window.scrollY)
+                                        setOpen(true)
+                                    }}
                                     initial={{ x: direction > 0 ? 100 : -100, opacity: 0 }}
                                     animate={{ x: 0, opacity: 1 }}
                                     exit={{ x: direction > 0 ? -100 : 100, opacity: 0 }}
@@ -72,7 +71,7 @@ const OurStory = () => {
                                 </motion.div>
                             </AnimatePresence>
 
-                            {/* ARROW KIRI MOBILE */}
+                            {/* PANAH KIRI MOBILE */}
                             <button
 
                                 onClick={prevSlide}
@@ -87,7 +86,7 @@ const OurStory = () => {
                                 />
                             </button>
 
-                            {/* ARROW KIRI MOBILE DESKTOP */}
+                            {/* PANAH KIRI MOBILE DESKTOP */}
                             <button
 
                                 onClick={prevSlide}
@@ -102,7 +101,8 @@ const OurStory = () => {
                                 />
                             </button>
 
-                            {/* ARROW KANAN MOBILE */}
+
+                            {/* PANAH KANAN MOBILE */}
                             <button
 
                                 onClick={nextSlide}
@@ -115,7 +115,7 @@ const OurStory = () => {
                                 />
                             </button>
 
-                            {/* ARROW KANAN DEKSTOP */}
+                            {/* PANAH KANAN DEKSTOP */}
 
                             <button
 
@@ -134,18 +134,21 @@ const OurStory = () => {
                     </motion.div>
                 </div>
             </motion.section>
+
+
+            {/* LIGHTBOX */}
             <Lightbox
                 open={open}
-            close={() => {
-  setOpen(false)
+                close={() => {
+                    setOpen(false)
 
-  requestAnimationFrame(() => {
-    window.scrollTo({
-      top: scrollY,
-      behavior: "smooth"
-    })
-  })
-}}
+                    requestAnimationFrame(() => {
+                        window.scrollTo({
+                            top: scrollY,
+                            behavior: "smooth"
+                        })
+                    })
+                }}
                 index={index}
 
                 slides={images.map((img) => ({ src: img.src }))}

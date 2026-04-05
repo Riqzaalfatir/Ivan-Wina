@@ -65,6 +65,7 @@ const YourWishes = () => {
                                 Send
                             </button>
 
+                         {/* PESAN */}
                             <motion.div initial={{ opacity: 0, y: 80 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -72,17 +73,18 @@ const YourWishes = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} className={`w-full max-w-none mt-8 py-6 px-6  ${showAll ? "bg-transparent" : "bg-[#454F23] max-h-[580px] overflow-y-auto"
+                                }} className={`w-full max-w-none mt-18 py-6 px-6  ${showAll ? "bg-transparent" : "bg-[#454F23] max-h-[580px] overflow-y-auto"
                                     }`}>
+                            
+                            {/* DEFAULT PESAN */}
                                 {!showAll ? (
-                                    // 🔹 LIST MODE (awal)
                                     dummyPesan.slice(0, 4).map((item, index) => (
                                         <div key={item.id}>
-                                            <p className="text-white font-bold text-[12px] md:text-[18pxpx] mb-2 font-sweetsans">
+                                            <p className="text-white font-bold text-[12px] md:text-[18px] mb-4 font-sweetsans">
                                                 {item.nama}
                                             </p>
 
-                                            <p className="text-white text-[12px] md:text-[18pxpx]  font-light font-sweetsans">
+                                            <p className="text-white text-[12px] md:text-[18px]  font-light font-sweetsans">
                                                 {item.pesan}
                                             </p>
 
@@ -92,7 +94,8 @@ const YourWishes = () => {
                                         </div>
                                     ))
                                 ) : (
-                                    // 🔥 GRID CARD MODE (KOMENTAR)
+
+                            // SEMUA PESAN
                                     <div className="max-w-2xl relative left-1/2 -translate-x-1/2 w-screen px-10 md:px-12">
                                         <motion.div
                                             layout
@@ -119,7 +122,6 @@ const YourWishes = () => {
                                                     onClick={() => setSelectedMessage(item)}
                                                     className="min-h-[160px] md:min-h-[170px] rounded-md overflow-hidden shadow-md bg-[#F4F8F5] font-sweetsans flex flex-col"
                                                 >
-                                                    {/* CONTENT */}
                                                     <div className="p-2 text-[#202F26] relative flex-1 flex flex-col justify-center">
                                                         <p className="text-[40px] md:text-[60px] text-slate-500 opacity-30 leading-none absolute top-2 left-3">
                                                             “
@@ -130,7 +132,6 @@ const YourWishes = () => {
                                                         </p>
                                                     </div>
 
-                                                    {/* FOOTER */}
                                                     <div className="bg-[#454F23] h-[35px] flex items-center justify-center px-3">
                                                         <p className="text-white text-[12px] md:text-[18px] font-bold text-center line-clamp-1">
                                                             {item.nama}
@@ -143,10 +144,11 @@ const YourWishes = () => {
                                 )}
                             </motion.div>
 
+                       
                             <WishesCard
-  data={selectedMessage}
-  onClose={() => setSelectedMessage(null)}
-/>
+                                data={selectedMessage}
+                                onClose={() => setSelectedMessage(null)}
+                            />
 
                             <motion.button initial={{ opacity: 0, y: 80 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -168,6 +170,7 @@ const YourWishes = () => {
                     </div>
                 </div>
 
+        {/* POPUP KETIKA PESAN DIKIRIM */}
                 {showPopup && (
                     <div className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-50">
 
