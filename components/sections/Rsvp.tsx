@@ -190,7 +190,7 @@ const Rsvp = () => {
 
                             <button
                                 onClick={waHelpdesk}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree font-semibold text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 lg:py-2 bg-[#CB4F35]'                            >
+                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree font-semibold text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 lg:py-2 bg-[#CB4F35]'                            >
                                 {/* <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"
