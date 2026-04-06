@@ -127,7 +127,7 @@ const VenueDetails = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="bg-[#202F26] flex items-center justify-center py-20 md:py-20 lg:py-0 order-1 lg:order-2"
+          className="bg-[#202F26] flex items-center justify-center py-28 md:py-20 lg:py-0 order-1 lg:order-2"
         >
           <div className="relative flex items-center justify-center">
 
@@ -136,7 +136,7 @@ const VenueDetails = () => {
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.2 }}
-              className="relative w-[200px] md:w-[290px] h-[340px] md:h-[490px]"
+              className="relative w-[200px] md:w-[290px] h-[310px] md:h-[490px]"
             >
               <Image
                 src="/images/venuedetails/Venue.jpg"
@@ -144,7 +144,7 @@ const VenueDetails = () => {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-[#0C1602AB]/30" />
+              <div className="absolute inset-0 bg-[#0C1602AB]/50" />
             </motion.div>
 
             <motion.h2
