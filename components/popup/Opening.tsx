@@ -68,7 +68,7 @@ const Opening = () => {
 
           <button
             onClick={handleOpen}
-            className="mt-10 bg-[#CB4F35] text-[#FEFBF0] px-8 py-3 text-[14px] sm:text-[14px] md:text-[18px] lg:text-[18px]  tracking-[2px] uppercase font-sweetsans font-medium hover:opacity-90 transition"
+            className="mt-10 bg-[#CB4F35] text-[#FEFBF0] px-8 py-2 text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]  tracking-[2px] uppercase font-sweetsans font-medium hover:opacity-90 transition"
           >
             Open Invitation
           </button>

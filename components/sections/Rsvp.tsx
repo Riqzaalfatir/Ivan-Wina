@@ -14,7 +14,7 @@ const Rsvp = () => {
         window.open(url, "_blank")
     }
 
-    const watTidakHadir = () => {
+    const waTidakHadir = () => {
         const nomorHp = "6283102851438"
 
         const pesan = `Sorry, I can't attend your event.`
@@ -133,7 +133,7 @@ const Rsvp = () => {
                                     </p>
 
                             <button
-                                onClick={waHelpdesk}
+                                onClick={waTidakHadir}
                                 className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-0.5 lg:py-1.5 mb-8 bg-[#CB4F35]'                            >
                                 <Image
                                     src="/images/rsvp/lonceng.png"
@@ -167,12 +167,19 @@ const Rsvp = () => {
                                         </select>
                                     </div>
 
-                                    <button
-                                        onClick={waHadir}
-                                        className='w-full uppercase font-sweetsans font-medium text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 bg-[#CB4F35] mb-[40px]'
-                                    >
-                                        Confirm Attend
-                                    </button>
+                                     <button
+                                onClick={waHadir}
+                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-0.5 lg:py-1.5 mb-8 bg-[#CB4F35]'                            >
+                                <Image
+                                    src="/images/rsvp/lonceng.png"
+                                    alt="wa"
+                                    width={25}
+                                    height={25}
+                                    className="w-[20px] md:w-[20px] object-contain"
+                                />
+
+                                Confirm attend
+                            </button>
                                 </div>
                             )}
 
