@@ -34,7 +34,7 @@ const DressCode = () => {
             alt="bg"
             fill
             sizes="100vw"
-            className="lg:hidden object-cover object-center"
+            className="lg:hidden object-cover object-center "
           />
 
           {/* GAMBAR UNTUK DEKSTOP */}
@@ -43,14 +43,14 @@ const DressCode = () => {
             alt="bg"
             fill
             sizes="100vw"
-            className="hidden lg:block object-cover object-center"
+            className="hidden lg:block object-cover object-center "
           />
 
           {/* OVERLAY DEKSTOP */}
           <div className="hidden lg:block absolute z-0 inset-0 bg-[#0C1602AB]/50" />
 
 
-          <div className="relative z-10 flex items-center justify-center min-h-[70vh] lg:min-h-screen px-4 py-10">
+          <div className="relative z-10 flex items-center justify-center min-h-[70vh] lg:min-h-screen p-6">
             <motion.div
               initial={{ scale: 1.1 }}
               whileInView={{ scale: 1 }}
