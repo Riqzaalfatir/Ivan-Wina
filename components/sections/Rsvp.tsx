@@ -134,7 +134,7 @@ const Rsvp = () => {
 
                             <button
                                 onClick={waTidakHadir}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-0.5 lg:py-1.5 mb-8 bg-[#CB4F35]'                            >
+                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-1 lg:py-1.5 mb-8 bg-[#CB4F35]'                            >
                                 <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"
@@ -169,7 +169,7 @@ const Rsvp = () => {
 
                                      <button
                                 onClick={waHadir}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-0.5 lg:py-1.5 mb-8 bg-[#CB4F35]'                            >
+                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-1 lg:py-1.5 mb-8 bg-[#CB4F35]'                            >
                                 <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"
