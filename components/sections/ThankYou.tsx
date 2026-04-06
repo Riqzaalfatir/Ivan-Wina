@@ -28,7 +28,7 @@ const ThankYou = () => {
               className="object-cover"
             />
 
-            <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] md:text-[98px] lg:text-[68px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans  font-normal text-center -mt-[72px] md:-mt-[100px] lg:-mt-[100px] pr-[1px] md:pr-[16px] lg:pr-[16px]">
+            <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40px] md:text-[80px] lg:text-[68px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans  font-normal text-center -mt-[72px] md:-mt-[100px] lg:-mt-[100px] pr-[1px] md:pr-[16px] lg:pr-[16px]">
               SEE YOU SOON
             </h1>
 

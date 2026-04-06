@@ -36,7 +36,7 @@ const OurStory = () => {
 
         <>
             <motion.section id="gallery" className='w-full bg-[#6C7852]  '>
-                <div className="max-w-7xl mx-auto px-10 py-16 lg:py-26">
+                <div className="max-w-7xl mx-auto px-6 py-16 lg:py-26">
                     <motion.div initial={{ opacity: 0, y: 80 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -46,7 +46,7 @@ const OurStory = () => {
                             delay: 0.2,
                         }} className="flex items-center justify-center">
 
-                        <div className="relative w-full max-w-[950px] h-[420px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden z-10">
+                        <div className="relative w-full max-w-[950px] h-[350px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden z-10">
 
                             {/* SLIDE GAMBAR */}
                             <AnimatePresence mode="wait">
@@ -76,7 +76,7 @@ const OurStory = () => {
                             <button
 
                                 onClick={prevSlide}
-                                className="lg:hidden absolute left-6 md:left-8 top-1/2 -translate-y-1/2 z-30"
+                                className="lg:hidden absolute left-2  top-1/2 -translate-y-1/2 z-30"
                             >
                                 <Image
                                     src="/images/ourstory/vectorkiri.png"
@@ -91,7 +91,7 @@ const OurStory = () => {
                             <button
 
                                 onClick={prevSlide}
-                                className="hidden lg:block absolute left-6 md:left-8 top-1/2 -translate-y-1/2 z-30"
+                                className="hidden lg:block absolute left-8 top-1/2 -translate-y-1/2 z-30"
                             >
                                 <Image
                                     src="/images/ourstory/panahkiriputih.png"
@@ -107,7 +107,7 @@ const OurStory = () => {
                             <button
 
                                 onClick={nextSlide}
-                                className="lg:hidden absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
+                                className="lg:hidden absolute right-3 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
                             >
                                 <img
                                     src="/images/ourstory/panahkanan.png"
@@ -121,7 +121,7 @@ const OurStory = () => {
                             <button
 
                                 onClick={nextSlide}
-                                className="hidden lg:block absolute right-6 md:right-8 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
+                                className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
                             >
                                 <img
                                     src="/images/ourstory/panahkananputih.png"

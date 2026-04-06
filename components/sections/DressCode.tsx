@@ -15,6 +15,14 @@ const DressCode = () => {
     },
   }
 
+  const warnaDc = [
+    "/images/dresscode/Ellipse 1.svg",
+    "/images/dresscode/Ellipse 2.svg",
+    "/images/dresscode/Ellipse 3.svg",
+    "/images/dresscode/Ellipse 4.svg",
+    "/images/dresscode/Ellipse 5.svg",
+  ]
+
   return (
     <>
       <section id="dresscode" className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
@@ -125,18 +133,25 @@ const DressCode = () => {
             <h2 className="font-sweetsans font-medium text-[28px] md:text-[29px] lg:text-[24px] text-[#202F26] mb-[40px] md:mb-[30px] lg:mb-[30px]">
               ATTIRE
             </h2>
-            <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[17px] text-[#202F26] leading-6 mb-[20px] md:mb-[30px] lg:mb-[30px] ">
+            <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[18px] text-[#202F26] leading-6 mb-[20px] md:mb-[30px] lg:mb-[30px] ">
               We kindly encourage our guests <br />
               to wear these colors for our special day
             </p>
-            <Image
-              src="/images/dresscode/Warna.png"
-              alt="main"
-              width={400}
-              height={200}
-              className="object-cover mx-auto mb-[35px] w-[280px] md:w-[300px]"
-            />
-            <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[17px] text-[#202F26]">
+
+            <div className="flex items-center justify-center gap-3 mb-[35px]">
+              {warnaDc.map((src, i) => (
+                <Image
+                  key={i}
+                  src={src}
+                  alt={`color-${i}`}
+                  width={60}
+                  height={60}
+                  className="w-[40px] md:w-[55px] lg:w-[50px] object-contain"
+                />
+              ))}
+            </div>
+
+            <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[18px] text-[#202F26]">
               Please don’t wear any black/white/ivory/batik.
             </p>
           </motion.div>
@@ -149,10 +164,10 @@ const DressCode = () => {
               ease: [0.22, 1, 0.36, 1],
               delay: 0.2,
             }} className="text-center leading-none ">
-            <h2 className="font-sweetsans font-medium text-[28px] md:text-[24px] lg:text-[29px] text-[#202F26] mb-[40px] md:mb-[30px] lg:mb-[30px]">
+            <h2 className="font-sweetsans font-medium text-[28px] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[40px] md:mb-[30px] lg:mb-[30px]">
               SHOES
             </h2>
-            <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[17px] text-[#202F26] leading-6 mb-[15px] max-w-xs md:max-w-lg">
+            <p className="font-sweetsans font-light text-[12px] md:text-[17px] lg:text-[18px] text-[#202F26] leading-6 mb-[15px] max-w-xs md:max-w-lg">
               Since the venue is mostly gravel, you may wish to <br /> skip high heels and leather-bottomed shoes.<br />
               Block heels or sturdy flats are recommended for <br /> your comfort.
             </p>
