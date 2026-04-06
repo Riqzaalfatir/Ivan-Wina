@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Figtree } from "next/font/google";
+import { Geist, Geist_Mono, Figtree, Noto_Sans } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,12 +17,18 @@ const figtree = Figtree({
   variable: "--font-figtree",
 });
 
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-noto-sans",
+});
+
 export const metadata: Metadata = {
   title: "Wedding Invitation",
   description: "You are invited to our special day",
 
   icons: {
-    icon: "/favicon.ico", // ⚠️ jangan pakai foto gede
+    icon: "/favicon.ico", 
   },
 
   openGraph: {
@@ -43,7 +49,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${figtree.variable} ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${figtree.variable} ${geistSans.variable} ${geistMono.variable} ${notoSans.variable}`}>
       <body>{children}</body>
     </html>
   );

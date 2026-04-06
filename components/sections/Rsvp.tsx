@@ -134,14 +134,14 @@ const Rsvp = () => {
 
                             <button
                                 onClick={waTidakHadir}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-1 lg:py-2 mb-8 bg-[#CB4F35]'                            >
-                                <Image
+                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 lg:py-2 mb-8 bg-[#CB4F35]'                            >
+                                {/* <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"
                                     width={25}
                                     height={25}
                                     className="w-[20px] md:w-[20px] object-contain"
-                                />
+                                /> */}
 
                                 Confirm not attend
                             </button>
@@ -169,14 +169,14 @@ const Rsvp = () => {
 
                                      <button
                                 onClick={waHadir}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-1 lg:py-2 mb-8 bg-[#CB4F35]'                            >
-                                <Image
+                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 lg:py-2 mb-8 bg-[#CB4F35]'                            >
+                                {/* <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"
                                     width={25}
                                     height={25}
                                     className="w-[20px] md:w-[20px] object-contain"
-                                />
+                                /> */}
 
                                 Confirm attend
                             </button>
@@ -190,14 +190,14 @@ const Rsvp = () => {
 
                             <button
                                 onClick={waHelpdesk}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree font-semibold text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 lg:py-2.5 bg-[#CB4F35]'                            >
-                                {/* <Image
-                                    src="/images/rsvp/lonceng.png"
+                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree  text-[12px] md:text-[22px] lg:text-[18px] text-white py-0.5 lg:py-2 bg-[#CB4F35]'                            >
+                                <Image
+                                    src="/images/rsvp/lonceng.svg"
                                     alt="wa"
                                     width={25}
                                     height={25}
                                     className="w-[20px] md:w-[20px] object-contain"
-                                /> */}
+                                />
 
                                 Chat helpdesk team
                             </button>
