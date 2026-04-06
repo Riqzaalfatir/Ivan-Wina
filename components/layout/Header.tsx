@@ -18,7 +18,7 @@ const Header = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 250, damping: 20 }}
         >
-          <FiMenu size={32} className="text-[#C3C3C3]" />
+          <FiMenu size={28} className="text-[#C3C3C3]" />
         </motion.button>
       )}
 

@@ -50,7 +50,7 @@ const DressCode = () => {
           <div className="hidden lg:block absolute z-0 inset-0 bg-[#0C1602AB]/50" />
 
 
-          <div className="relative z-10 flex items-center justify-center min-h-[70vh] lg:min-h-screen p-20">
+          <div className="relative z-10 flex items-center justify-center min-h-[70vh] lg:min-h-screen p-10">
             <motion.div
               initial={{ scale: 1.1 }}
               whileInView={{ scale: 1 }}

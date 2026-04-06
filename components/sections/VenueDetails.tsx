@@ -31,7 +31,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='uppercase font-sweetsans font-bold text-[14px] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[30px]'
+              className='uppercase font-sweetsans font-bold text-[14px] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[20px]'
             >
               CEREMONY
             </motion.h2>
@@ -79,7 +79,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='uppercase font-sweetsans font-bold text-[14x] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[30px]'
+              className='uppercase font-sweetsans font-bold text-[14x] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[20px]'
             >
               RECEPTION
             </motion.h2>
@@ -144,7 +144,7 @@ const VenueDetails = () => {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-[#0C1602AB]/60" />
+              <div className="absolute inset-0 bg-[#0C1602AB]/30" />
             </motion.div>
 
             <motion.h2
