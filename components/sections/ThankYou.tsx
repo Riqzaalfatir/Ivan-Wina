@@ -48,7 +48,16 @@ const ThankYou = () => {
           It would be a joy and honor for us to have you join our celebration and share your blessings.
         </motion.p>
 
-           <footer className=' lg:-mt-0flex items-center justify-center'>
+           <motion.footer
+            initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 1.5,
+            ease: [0.22, 1, 0.36, 1],
+            delay: 0.4,
+          }}
+           className=' lg:-mt-0flex items-center justify-center'>
   <Image
     src="/images/thankyou/logoprovite1.png"
     alt="logo"
@@ -57,7 +66,7 @@ const ThankYou = () => {
     sizes="100vw"
     className="w-[90px] md:w-[140px] lg:w-[150px] h-auto object-contain"
   />
-</footer>
+</motion.footer>
 
       </div>
 

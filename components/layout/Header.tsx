@@ -44,7 +44,7 @@ const Header = () => {
               transition={{ type: "spring", stiffness: 250, damping: 20 }}
               className="absolute top-1 left-1"
             >
-              <FiX size={22} />
+              <FiX size={26} />
             </motion.button>
 
             {/* MENU */}

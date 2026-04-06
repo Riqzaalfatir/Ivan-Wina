@@ -1,10 +1,11 @@
 "use client"
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
+import Image from 'next/image'
 
 const Rsvp = () => {
     const waHadir = () => {
-        const nomorHp = "6283102851438" 
+        const nomorHp = "6283102851438"
 
         const pesan = `Hello, I will be attending your event with ${guest} people. Thank you.`
 
@@ -14,7 +15,7 @@ const Rsvp = () => {
     }
 
     const watTidakHadir = () => {
-        const nomorHp = "6283102851438" 
+        const nomorHp = "6283102851438"
 
         const pesan = `Sorry, I can't attend your event.`
 
@@ -24,7 +25,7 @@ const Rsvp = () => {
     }
 
     const waHelpdesk = () => {
-        const nomorHp = "6283102851438" 
+        const nomorHp = "6283102851438"
 
         const pesan = `Hello, I need help with RSVPing my invitations. Please help me. Thank you.`
 
@@ -94,7 +95,7 @@ const Rsvp = () => {
                             }} className='flex items-center gap-4 mb-[40px]'>
                             <button
                                 onClick={() => setStatus("attend")}
-                                className={`uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2.5 px-6 md:px-8  ${status === "attend"
+                                className={`uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-1.5 px-6 md:px-8  ${status === "attend"
                                     ? "bg-[#CB4F35] text-white"
                                     : "border border-[#CB4F35] text-white"
                                     }`}
@@ -104,7 +105,7 @@ const Rsvp = () => {
 
                             <button
                                 onClick={() => setStatus("not")}
-                                className={`uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2.5  px-6 md:px-8  ${status === "not"
+                                className={`uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-1.5  px-6 md:px-8  ${status === "not"
                                     ? "bg-[#CB4F35] text-white"
                                     : "border border-[#CB4F35] text-white"
                                     }`}
@@ -122,20 +123,20 @@ const Rsvp = () => {
                                 delay: 0.4,
                             }}>
 
-                        {/* STATUS NOT ATTEND */}
+                            {/* STATUS NOT ATTEND */}
                             {status === "not" && (
                                 <div>
                                     <p className='uppercase text-center font-sweetsans font-light  text-[12px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
                                         Are You Sure?
                                     </p>
 
-                                    <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-14 md:px-[72px] bg-[#CB4F35] mb-[40px] '>
+                                    <button onClick={watTidakHadir} className='uppercase font-sweetsans font-normal  text-[12px] md:text-[22px] lg:text-[18px] text-white py-1.5 px-14 md:px-[72px] bg-[#CB4F35] mb-[40px] '>
                                         Confirm Not Attend
                                     </button>
                                 </div>
                             )}
 
-                         {/* STATUS ATTEND  */}
+                            {/* STATUS ATTEND  */}
                             {status === "attend" && (
                                 <div>
                                     <div className="w-[320px] md:w-[350px] max-w-[500px] mb-[40px] flex flex-col items-center mx-auto">
@@ -154,12 +155,12 @@ const Rsvp = () => {
                                         </select>
                                     </div>
 
-                                    <button onClick={waHadir} className='mx-auto uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5 px-[70px]  md:px-[90px] bg-[#CB4F35] mb-[40px] '>
+                                    <button onClick={waHadir} className='mx-auto uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-1.5 px-[70px]  md:px-[90px] bg-[#CB4F35] mb-[40px] '>
                                         Confirm Attend
                                     </button>
                                 </div>
                             )}
-                          
+
 
                             <p className='font-sweetsans  text-center font-light text-[11px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
                                 Having trouble with RSVP?
@@ -167,9 +168,16 @@ const Rsvp = () => {
 
                             <button
                                 onClick={waHelpdesk}
-                                className='uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2.5  px-[55px]  md:px-[70px]
-                                 bg-[#CB4F35] '
+                                className='flex items-center mx-auto gap-2 uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-1.5 px-[45px] md:px-[55px] bg-[#CB4F35]'
                             >
+                                <Image
+                                    src="/images/rsvp/lonceng.png"
+                                    alt="wa"
+                                    width={20}
+                                    height={20}
+                                    className="w-[14px] md:w-[20px]"
+                                />
+
                                 Chat helpdesk team
                             </button>
                         </motion.div>

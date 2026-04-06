@@ -36,7 +36,7 @@ const OurStory = () => {
 
         <>
             <motion.section id="gallery" className='w-full bg-[#6C7852]  '>
-                <div className="max-w-7xl mx-auto px-4 py-20">
+                <div className="max-w-7xl mx-auto px-10 py-16 lg:py-26">
                     <motion.div initial={{ opacity: 0, y: 80 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -46,7 +46,7 @@ const OurStory = () => {
                             delay: 0.2,
                         }} className="flex items-center justify-center">
 
-                        <div className="relative w-full max-w-[950px] h-[430px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden z-10">
+                        <div className="relative w-full max-w-[950px] h-[420px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden z-10">
 
                             {/* SLIDE GAMBAR */}
                             <AnimatePresence mode="wait">
