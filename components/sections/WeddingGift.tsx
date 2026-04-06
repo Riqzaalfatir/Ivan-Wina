@@ -19,7 +19,7 @@ const WeddingGift = () => {
   return (
     <>
       <section id="gift" className='w-full  bg-[#6C7852]  flex items-center'>
-        <div className="w-full max-w-4xl mx-auto px-20 md:w-full py-32">
+        <div className="w-full max-w-4xl mx-auto px-16 md:w-full py-32">
 
           <div className="flex flex-col items-center text-center">
             <motion.h2 initial={{ opacity: 0, y: 80 }}

@@ -7,7 +7,7 @@ const ThankYou = () => {
   return (
     <section className="bg-[#6C7852]  relative w-full">
 
-      <div className=" flex flex-col items-center text-center px-6 pt-32 pb-6 lg:pb-1">
+      <div className=" flex flex-col items-center text-center px-6 pt-32 pb-6 lg:pb-0">
 
         <div className="relative flex flex-col items-center">
 
@@ -44,7 +44,7 @@ const ThankYou = () => {
             duration: 1.5,
             ease: [0.22, 1, 0.36, 1],
             delay: 0.2,
-          }} className="mt-[50px] md:mt-8 text-[12px] lg:text-[18px] max-w-[200px] md:max-w-[320px] font-light text-white font-sweetsans leading-relaxed mb-[40px] lg:mb-[120px]">
+          }} className="mt-[40px] md:mt-8 text-[12px] lg:text-[18px] max-w-[200px] md:max-w-[320px] font-light text-white font-sweetsans leading-relaxed mb-[40px] lg:mb-[100px]">
           It would be a joy and honor for us to have you join our celebration and share your blessings.
         </motion.p>
 
@@ -55,7 +55,7 @@ const ThankYou = () => {
     width={0}
     height={0}
     sizes="100vw"
-    className="w-[85px] md:w-[140px] lg:w-[150px] h-auto object-contain"
+    className="w-[90px] md:w-[140px] lg:w-[150px] h-auto object-contain"
   />
 </footer>
 
