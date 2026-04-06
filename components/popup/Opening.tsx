@@ -61,14 +61,14 @@ const Opening = () => {
 
           </div>
 
-          <p className='mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px] font-sweetsans  text-[14px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[5px] text-white'>Dear Mr./ Mrs./ Ms.</p>
-          <p className='font-sweetsans text-[18px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[26px] lg:mb-[20px] text-white font-bold'>Sela</p>
+          <p className='mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px] font-sweetsans  text-[12px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[5px] text-white'>Dear Mr./ Mrs./ Ms.</p>
+          <p className='font-sweetsans text-[14px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[26px] lg:mb-[20px] text-white font-bold'>Sela</p>
           <p className="text-center font-sweetsans font-light text-[10px] md:text-[14px] text-white">We sincerely apologize <br />
             for any misspelling of names or titles.</p>
 
           <button
             onClick={handleOpen}
-            className="mt-10 bg-[#CB4F35] text-[#FEFBF0] px-8 py-2 text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]  tracking-[2px] uppercase font-sweetsans font-medium hover:opacity-90 transition"
+            className="mt-5 bg-[#CB4F35] text-[#FEFBF0] px-8 py-2 text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]  tracking-[2px] uppercase font-sweetsans font-medium hover:opacity-90 transition"
           >
             Open Invitation
           </button>
