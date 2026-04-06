@@ -18,7 +18,7 @@ const Header = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 250, damping: 20 }}
         >
-          <FiMenu size={26} className="text-[#C3C3C3]" />
+          <FiMenu size={32} className="text-[#C3C3C3]" />
         </motion.button>
       )}
 
@@ -31,7 +31,7 @@ const Header = () => {
             exit={{ opacity: 0, y: -60, scale: 0.98 }}
             transition={{
               duration: 0.45,
-              ease: [0.7, 1, 0.5, 1], // ini kunci smooth premium
+              ease: [0.7, 1, 0.5, 1], 
             }}
             className="bg-[#1E1E1E]/60 p-6 md:p-8 text-white relative w-full max-w-[240px] md:max-w-[280px]"
           >
