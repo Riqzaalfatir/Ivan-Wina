@@ -8,19 +8,19 @@ const Hero = () => {
         {/* KIRI */}
         <div className="bg-[#6C7852]  flex flex-col items-center justify-center px-6 relative min-h-screen lg:min-h-0">
 
-          <div className="relative mb-5 sm:mb-6 lg:mb-7">
+          <div className="relative mt-20 mb-8 sm:mb-6 lg:mb-7">
             <Image
               src="/images/hero/Iv&WiWhite 1.png"
               alt="logo"
               width={120}
               height={120}
-              className="w-[90px] h-[60px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[100px] lg:w-[120px] lg:h-[70px]"
+              className="w-[95px] h-[60px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[100px] lg:w-[120px] lg:h-[70px]"
             />
           </div>
 
           <div className="relative flex flex-col items-center">
 
-            <div className="relative w-[210px] h-[330px] sm:w-[240px] sm:h-[390px] md:w-[350px] md:h-[500px] lg:w-[250px] lg:h-[390px]">
+            <div className="relative w-[210px] h-[330px] sm:w-[240px] sm:h-[390px] md:w-[350px] md:h-[500px] lg:w-[250px] lg:h-[390px]  md:mt-0">
 
               <div className="absolute inset-0 overflow-hidden">
                 <Image
