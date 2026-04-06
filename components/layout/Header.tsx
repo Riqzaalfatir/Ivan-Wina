@@ -108,20 +108,13 @@ const Header = () => {
                   className="cursor-pointer relative group inline-block"
                 >
                   {/* ARROW */}
-                  <span className="absolute left-0 opacity-0 -translate-x-3 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">
-                    →
+<span className="hidden absolute left-0 opacity-0 -translate-x-3 transition-all duration-300 ease-out md:group-hover:opacity-100 md:group-hover:translate-x-0">                    
+  →
                   </span>
 
                   {/* TEXT */}
                   <motion.span
-                    className="inline-block"
-                    whileHover={{ x: 22 }}
-                    transition={{
-                      type: "spring",
-                      stiffness: 180,
-                      damping: 22,
-                      delay: 0.05
-                    }}
+
                   >
                     {menu}
                   </motion.span>
