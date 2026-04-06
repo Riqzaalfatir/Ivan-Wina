@@ -48,7 +48,7 @@ const Header = () => {
             </motion.button>
 
             {/* MENU */}
-            <ul className="-mt-2 ml-2 space-y-1.5 text-[10px] md:text-[14px] tracking-widest font-sweetsans font-medium flex flex-col">
+            <ul className="-mt-2 ml-4 space-y-1.5 text-[10px] md:text-[14px] tracking-widest font-sweetsans font-medium flex flex-col">
               <a href="#hero">HOME</a>
               <a href="#hero">PROFILE</a>
               <a href="#counting">COUNTING DOWN</a>
