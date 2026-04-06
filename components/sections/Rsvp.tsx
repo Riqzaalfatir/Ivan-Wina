@@ -85,38 +85,36 @@ const Rsvp = () => {
 
 
                         <motion.div
-  initial={{ opacity: 0, y: 80 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{
-    duration: 1.5,
-    ease: [0.22, 1, 0.36, 1],
-    delay: 0.3,
-  }}
-  className='flex w-full items-center gap-4 mb-[40px]'
->
-  <button
-    onClick={() => setStatus("attend")}
-    className={`flex-1 whitespace-nowrap uppercase font-figtree font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${
-      status === "attend"
-        ? "bg-[#CB4F35] text-white"
-        : "border border-[#CB4F35] text-white"
-    }`}
-  >
-    Attend
-  </button>
+                            initial={{ opacity: 0, y: 80 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 1.5,
+                                ease: [0.22, 1, 0.36, 1],
+                                delay: 0.3,
+                            }}
+                            className='flex w-full items-center gap-4 mb-[40px]'
+                        >
+                            <button
+                                onClick={() => setStatus("attend")}
+                                className={`flex-1 whitespace-nowrap uppercase font-figtree font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${status === "attend"
+                                        ? "bg-[#CB4F35] text-white"
+                                        : "border border-[#CB4F35] text-white"
+                                    }`}
+                            >
+                                Attend
+                            </button>
 
-  <button
-    onClick={() => setStatus("not")}
-    className={`flex-1 whitespace-nowrap uppercase font-figtree font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${
-      status === "not"
-        ? "bg-[#CB4F35] text-white"
-        : "border border-[#CB4F35] text-white"
-    }`}
-  >
-    Not Attend
-  </button>
-</motion.div>
+                            <button
+                                onClick={() => setStatus("not")}
+                                className={`flex-1 whitespace-nowrap uppercase font-figtree font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${status === "not"
+                                        ? "bg-[#CB4F35] text-white"
+                                        : "border border-[#CB4F35] text-white"
+                                    }`}
+                            >
+                                Not Attend
+                            </button>
+                        </motion.div>
 
                         <motion.div initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -134,12 +132,19 @@ const Rsvp = () => {
                                         Are You Sure?
                                     </p>
 
-                                   <button
-  onClick={watTidakHadir}
-  className='w-full uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 bg-[#CB4F35] mb-[40px]'
->
-  Confirm Not Attend
-</button>
+                            <button
+                                onClick={waHelpdesk}
+                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-0.5 lg:py-1.5 mb-8 bg-[#CB4F35]'                            >
+                                <Image
+                                    src="/images/rsvp/lonceng.png"
+                                    alt="wa"
+                                    width={25}
+                                    height={25}
+                                    className="w-[20px] md:w-[20px] object-contain"
+                                />
+
+                                Confirm not attend
+                            </button>
                                 </div>
                             )}
 
@@ -162,12 +167,12 @@ const Rsvp = () => {
                                         </select>
                                     </div>
 
-                                  <button
-  onClick={waHadir}
-  className='w-full uppercase font-sweetsans font-medium text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 bg-[#CB4F35] mb-[40px]'
->
-  Confirm Attend
-</button>
+                                    <button
+                                        onClick={waHadir}
+                                        className='w-full uppercase font-sweetsans font-medium text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 bg-[#CB4F35] mb-[40px]'
+                                    >
+                                        Confirm Attend
+                                    </button>
                                 </div>
                             )}
 
@@ -178,14 +183,14 @@ const Rsvp = () => {
 
                             <button
                                 onClick={waHelpdesk}
-className='flex w-full items-center justify-center gap-3 uppercase font-figtree font-semibold text-[12px] md:text-[22px] lg:text-[18px] text-white py-0.5 lg:py-1.5 bg-[#CB4F35]'                            >
-                                <Image
+                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree font-semibold text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 lg:py-2 bg-[#CB4F35]'                            >
+                                {/* <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"
                                     width={25}
                                     height={25}
                                     className="w-[20px] md:w-[20px] object-contain"
-                                />
+                                /> */}
 
                                 Chat helpdesk team
                             </button>
