@@ -46,7 +46,7 @@ const OurStory = () => {
                             delay: 0.2,
                         }} className="flex items-center justify-center">
 
-                        <div className="relative w-full max-w-[950px] h-[350px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden z-10">
+                        <div className="relative w-full max-w-[950px] h-[400px] md:max-w-[700px] md:h-[800px] lg:max-w-[950px] lg:h-[600px] overflow-hidden z-10">
 
                             {/* SLIDE GAMBAR */}
                             <AnimatePresence mode="wait">
