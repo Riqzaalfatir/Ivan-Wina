@@ -54,7 +54,7 @@ const YourWishes = () => {
                                 delay: 0.2,
                             }} className='w-full flex flex-col gap-4'>
                             <input type="text" value={nama} placeholder="Desy (Tester)" onChange={(e) => setNama(e.target.value)} className='w-full  text-white  font-sweetsans text-[12px] bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
-                            <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full  text-[12px]  font-sweetsans bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none text-white h-[120px] md:h-[310px]'></textarea>
+                            <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full  text-[12px]  font-sweetsans bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none text-white h-[80px] md:h-[310px]'></textarea>
                             <button onClick={handleSubmit} className='bg-[#454F23] py-2 text-[12px] md:text-[18px] lg:text-[18px] font-sweetsans uppercase flex items-center justify-center gap-2  text-white'>
                                 <Image
                                     src="/images/wishes/Kirim.png"
@@ -73,7 +73,7 @@ const YourWishes = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} className={`w-full max-w-none mt-18 py-6 px-6  ${showAll ? "bg-transparent" : "bg-[#454F23] max-h-[580px] overflow-y-auto"
+                                }} className={`w-full max-w-none mt-18 py-6 px-4  ${showAll ? "bg-transparent" : "bg-[#454F23] max-h-[580px] overflow-y-auto"
                                     }`}>
                             
                             {/* DEFAULT PESAN */}

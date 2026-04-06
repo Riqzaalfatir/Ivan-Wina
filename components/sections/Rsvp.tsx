@@ -97,7 +97,7 @@ const Rsvp = () => {
 >
   <button
     onClick={() => setStatus("attend")}
-    className={`flex-1 whitespace-nowrap uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${
+    className={`flex-1 whitespace-nowrap uppercase font-figtree font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${
       status === "attend"
         ? "bg-[#CB4F35] text-white"
         : "border border-[#CB4F35] text-white"
@@ -108,7 +108,7 @@ const Rsvp = () => {
 
   <button
     onClick={() => setStatus("not")}
-    className={`flex-1 whitespace-nowrap uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${
+    className={`flex-1 whitespace-nowrap uppercase font-figtree font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${
       status === "not"
         ? "bg-[#CB4F35] text-white"
         : "border border-[#CB4F35] text-white"
@@ -130,7 +130,7 @@ const Rsvp = () => {
                             {/* STATUS NOT ATTEND */}
                             {status === "not" && (
                                 <div className='w-full'>
-                                    <p className='uppercase text-center font-sweetsans font-light  text-[12px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
+                                    <p className='uppercase text-center font-sweetsans font-light  text-[12px] md:text-[22px] lg:text-[18px] text-white mb-[30px]'>
                                         Are You Sure?
                                     </p>
 
@@ -164,7 +164,7 @@ const Rsvp = () => {
 
                                   <button
   onClick={waHadir}
-  className='w-full uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 bg-[#CB4F35] mb-[40px]'
+  className='w-full uppercase font-sweetsans font-medium text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 bg-[#CB4F35] mb-[40px]'
 >
   Confirm Attend
 </button>
@@ -172,19 +172,19 @@ const Rsvp = () => {
                             )}
 
 
-                            <p className='font-sweetsans  text-center font-light text-[11px] md:text-[22px] lg:text-[18px] text-white mb-[40px]'>
+                            <p className='font-sweetsans  text-center font-light text-[11px] md:text-[22px] lg:text-[18px] text-white mb-[20px]'>
                                 Having trouble with RSVP?
                             </p>
 
                             <button
                                 onClick={waHelpdesk}
-className='flex w-full items-center justify-center gap-2 uppercase font-sweetsans font-normal text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 bg-[#CB4F35]'                            >
+className='flex w-full items-center justify-center gap-3 uppercase font-figtree font-semibold text-[12px] md:text-[22px] lg:text-[18px] text-white py-0.5 lg:py-1.5 bg-[#CB4F35]'                            >
                                 <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"
-                                    width={20}
-                                    height={20}
-                                    className="w-[14px] md:w-[20px]"
+                                    width={25}
+                                    height={25}
+                                    className="w-[20px] md:w-[20px] object-contain"
                                 />
 
                                 Chat helpdesk team
