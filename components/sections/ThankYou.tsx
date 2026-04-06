@@ -44,7 +44,7 @@ const ThankYou = () => {
             duration: 1.5,
             ease: [0.22, 1, 0.36, 1],
             delay: 0.2,
-          }} className="mt-[40px] md:mt-8 text-[12px] lg:text-[18px] max-w-[200px] md:max-w-[320px] font-light text-white font-sweetsans leading-relaxed mb-[40px] lg:mb-[100px]">
+          }} className="mt-[30px] md:mt-8 text-[12px] lg:text-[18px] max-w-[200px] md:max-w-[320px] font-light text-white font-sweetsans leading-relaxed mb-[40px] lg:mb-[100px]">
           It would be a joy and honor for us to have you join our celebration and share your blessings.
         </motion.p>
 

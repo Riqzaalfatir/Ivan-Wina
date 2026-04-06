@@ -14,8 +14,8 @@ const Faq = () => {
 
     return (
         <>
-            <section className='w-full min-h-screen bg-[#6C7852]'>
-                <div className="max-w-2xl mx-auto px-4 py-20">
+            <section className='w-full  bg-[#6C7852]'>
+                <div className="max-w-2xl mx-auto px-4 py-12 lg:py-28">
 
                     <motion.h2 initial={{ opacity: 0, y: 80 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -26,6 +26,8 @@ const Faq = () => {
                         }} className='uppercase text-center text-white font-sweetsans font-medium text-[28px] md:text-[46px] lg:text-[46px] mb-[18px]'>
                         FAQ
                     </motion.h2>
+            
+            <div className="max-h-[580px] lg:max-h-none overflow-y-auto lg:overflow-visible">
                 
                 {/* RENDER FAQ */}
                     {faqData.map((section, sIndex) => (
@@ -94,6 +96,8 @@ const Faq = () => {
                     ))}
 
                 </div>
+
+            </div>
             </section>
 
             <div className="border-b border-[#454F23]/80 md:border-[#454F23]/80 border-[1px]" />

@@ -31,8 +31,8 @@ const YourWishes = () => {
 
     return (
         <>
-            <section className='w-full min-h-screen bg-[#6C7852]'>
-                <div className="max-w-2xl mx-auto px-10 md:px-4 lg:px-4 py-32">
+            <section className='w-full  bg-[#6C7852]'>
+                <div className="max-w-2xl mx-auto px-10 md:px-4 lg:px-4  py-12 lg:py-28">
                     <div className="flex flex-col items-center">
                         <motion.h2 initial={{ opacity: 0, y: 80 }}
                             whileInView={{ opacity: 1, y: 0 }}
