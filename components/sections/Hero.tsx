@@ -8,7 +8,7 @@ const Hero = () => {
         {/* KIRI */}
         <div className="bg-[#6C7852]  flex flex-col items-center justify-center px-6 relative min-h-screen lg:min-h-0">
 
-          <div className="relative mt-20 mb-8 sm:mb-6 lg:mb-7">
+          <div className="relative mt-18 mb-8 sm:mb-6 lg:mb-7">
             <Image
               src="/images/hero/Iv&WiWhite 1.png"
               alt="logo"
