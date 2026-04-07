@@ -69,11 +69,14 @@ const Header = ({ open, setOpen }: any) => {
           <motion.div
             initial={{ scale: 0.7, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            exit={{
-              scale: 0.7,
-              opacity: 0,
-              transition: { duration: 0.25 }
-            }}
+           exit={{
+  scale: 0.85,
+  opacity: 0,
+  transition: {
+    duration: 0.4,
+    ease: [0.4, 0, 0.2, 1]
+  }
+}}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             style={{ originX: 0, originY: 0 }}
             className="bg-[#1E1E1E]/50 py-4 md:p-8 text-white relative w-full max-w-[260px] md:max-w-[280px] z-0"
@@ -109,7 +112,11 @@ const Header = ({ open, setOpen }: any) => {
                   href={menu.link}
                   variants={itemVariants}
                   whileTap={{ scale: 0.97 }}
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+  setTimeout(() => {
+    setOpen(false)
+  }, 200)
+}}
                   className="group relative flex items-center cursor-pointer"
                 >
                   {/* PANAH */}
