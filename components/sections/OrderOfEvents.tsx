@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const OrderOfEvents = () => {
     return (
-        <section className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
+        <section id="orderofevents" className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
 
             {/* KIRI */}
             <div className="relative w-full h-[80vh] lg:h-full flex items-center justify-center">

@@ -5,8 +5,17 @@ import { FiMenu } from "react-icons/fi"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
-const Header = () => {
-  const [open, setOpen] = useState(false)
+const Header = ({ open, setOpen }: any) => {
+
+  const linkMenu = [
+    { name: "HOME", link: "#hero" },
+    { name: "COUNTING DOWN", link: "#counting" },
+    { name: "ORDER OF EVENTS", link: "#orderofevents" },
+    { name: "VENUE DETAILS", link: "#venue" },
+    { name: "DRESS CODE", link: "#dresscode" },
+    { name: "RSVP", link: "#rsvp" },
+    { name: "WEDDING GIFT", link: "#gift" }
+  ]
 
   const container = {
     hidden: {
@@ -42,7 +51,10 @@ const Header = () => {
       {/* HAMBURGER */}
       {!open && (
         <motion.button
-          onClick={() => setOpen(true)}
+          onClick={() => {
+            console.log("OPEN CLICKED")
+            setOpen(true)
+          }}
           whileTap={{ scale: 0.92 }}
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 250, damping: 20 }}
@@ -64,7 +76,7 @@ const Header = () => {
             }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             style={{ originX: 0, originY: 0 }}
-            className="bg-[#1E1E1E]/50 py-4 md:p-8 text-white relative w-full max-w-[260px] md:max-w-[280px] z-0"
+            className="bg-[#1E1E1E]/50 py-4 md:p-8 text-white relative w-full max-w-[245px] md:max-w-[280px] z-0"
           >
 
             {/* CLOSE */}
@@ -91,32 +103,23 @@ const Header = () => {
               animate="show"
               className="pt-4 pl-7 space-y-1.5 text-[12px] md:text-[14px] tracking-widest text-white font-sans font-medium flex flex-col"
             >
-              {[
-                "HOME",
-                "COUNTING DOWN",
-                "ORDER OF EVENTS",
-                "VENUE DETAILS",
-                "DRESS CODE",
-                "RSVP",
-                "WEDDING GIFT"
-              ].map((menu) => (
+              {linkMenu.map((menu) => (
                 <motion.a
-                  key={menu}
-                  href="#"
+                  key={menu.name}
+                  href={menu.link}
                   variants={itemVariants}
                   whileTap={{ scale: 0.97 }}
                   className="cursor-pointer relative group inline-block"
+                  onClick={() => setOpen(false)}
                 >
                   {/* ARROW */}
-<span className="hidden absolute left-0 opacity-0 -translate-x-3 transition-all duration-300 ease-out md:group-hover:opacity-100 md:group-hover:translate-x-0">                    
-  →
+                  <span className="absolute left-0 opacity-0 -translate-x-3 transition-all duration-300 ease-out md:group-hover:opacity-100 md:group-hover:translate-x-0">
+                    →
                   </span>
 
                   {/* TEXT */}
-                  <motion.span
-
-                  >
-                    {menu}
+                  <motion.span>
+                    {menu.name}
                   </motion.span>
                 </motion.a>
               ))}

@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import Hero from "@/components/sections/Hero"
 import CountingDown from "@/components/sections/CountingDown"
 import OrderOfEvents from "@/components/sections/OrderOfEvents"
@@ -15,13 +18,18 @@ import Footer from "@/components/layout/Footer"
 import WishesCard from "@/components/popup/WishesCard"
 
 export default function Home() {
+    const [menuOpen, setMenuOpen] = useState(false)
+
+  
   return (
     <>
+          <Header open={menuOpen} setOpen={setMenuOpen} />
 
-    <Header />
      <Opening />
 
-     <Hero />
+           <Hero menuOpen={menuOpen} />
+
+
      <CountingDown />
      <OrderOfEvents />
      <VenueDetails />

@@ -1,14 +1,24 @@
 import Image from "next/image"
 
-const Hero = () => {
+const Hero = ({ menuOpen }: any) => {
   return (
     <>
-      <section id="hero" className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
+      <section id="hero" className='w-full bg-[#6C7852]  min-h-screen grid grid-cols-1 lg:grid-cols-2'>
 
         {/* KIRI */}
-        <div className="bg-[#6C7852]  flex flex-col items-center justify-center px-6 relative min-h-screen lg:min-h-0">
+        <div 
+      className={`
+    flex flex-col items-center px-6 lg:px-0
+    h-screen
+    pt-28 lg:pt-0
+    lg:justify-center
+    transition-all lg:transition-none duration-700 lg:duration-0
+    ${menuOpen ? "translate-y-16 lg:translate-y-0" : "translate-y-0"}
+  
+  `}
+        >
 
-          <div className="relative mt-28 mb-8 sm:mb-6 lg:mb-7">
+          <div className="relative mb-8 sm:mb-6 lg:mb-7">
             <Image
               src="/images/hero/Iv&WiWhite 1.png"
               alt="logo"
