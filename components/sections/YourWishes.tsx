@@ -80,7 +80,7 @@ const YourWishes = () => {
                                 {!showAll ? (
                                     dummyPesan.slice(0, 4).map((item, index) => (
                                         <div key={item.id}>
-                                            <p className="text-white font-medium lg:font-bold text-[12px] md:text-[18px] mb-4 font-sweetsans">
+                                            <p className="text-white font-medium lg:font-bold text-[12px] md:text-[18px] mb-3 font-sweetsans">
                                                 {item.nama}
                                             </p>
 
