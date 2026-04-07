@@ -69,17 +69,17 @@ const Header = ({ open, setOpen }: any) => {
           <motion.div
             initial={{ scale: 0.7, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-           exit={{
-  scale: 0.85,
-  opacity: 0,
-  transition: {
-    duration: 0.4,
-    ease: [0.4, 0, 0.2, 1]
-  }
-}}
+            exit={{
+              scale: 0.85,
+              opacity: 0,
+              transition: {
+                duration: 0.4,
+                ease: [0.4, 0, 0.2, 1]
+              }
+            }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             style={{ originX: 0, originY: 0 }}
-            className="absolute top-4 left-4 bg-[#1E1E1E]/50 py-4 md:p-8 text-white  w-full max-w-[260px] md:max-w-[280px] z-0"
+            className="absolute top-4 left-4 bg-[#1E1E1E]/30 py-4 md:p-8 text-white  w-full max-w-[260px] md:max-w-[280px] z-0"
           >
 
             {/* CLOSE */}
@@ -104,19 +104,18 @@ const Header = ({ open, setOpen }: any) => {
               variants={container}
               initial="hidden"
               animate="show"
-              className="pt-4 pl-7 space-y-1.5 text-[12px] md:text-[14px] tracking-widest text-white font-sans font-medium flex flex-col"
+              className="pt-4 pl-9 space-y-1.5 text-[12px] md:text-[14px] tracking-widest text-white font-sans font-medium flex flex-col"
             >
               {linkMenu.map((menu) => (
                 <motion.a
                   key={menu.name}
                   href={menu.link}
                   variants={itemVariants}
-                  whileTap={{ scale: 0.97 }}
                   onClick={() => {
-  setTimeout(() => {
-    setOpen(false)
-  }, 200)
-}}
+                    setTimeout(() => {
+                      setOpen(false)
+                    }, 200)
+                  }}
                   className="group relative flex items-center cursor-pointer"
                 >
                   {/* PANAH */}
@@ -144,7 +143,7 @@ const Header = ({ open, setOpen }: any) => {
                 duration: 0.6,
                 ease: "easeOut"
               }}
-              className="pt-[20px] ml-7 text-[8px] md:text-[12px] font-sans font-light"
+              className="pt-[20px] ml-9 text-[8px] md:text-[12px] font-sans font-light"
             >
               Select a section above to continue
             </motion.p>

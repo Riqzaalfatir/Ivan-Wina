@@ -124,7 +124,7 @@ const tanggalTarget = new Date("2026-04-09T00:00:00+07:00")
               target="_blank"
               rel="noopener noreferrer"
               
-              className="uppercase font-normal text-white text-[12px] md:text-[23px] lg:text-[18px] font-sweetsans py-2 px-8 md:px-14 bg-[#CB4F35]"
+              className="uppercase font-normal text-white text-[12px] md:text-[23px] lg:text-[18px] font-sweetsans h-[29px] w-[200px] md:h-[40px] md:w-[326px] flex items-center justify-center bg-[#CB4F35]"
             >
               MARK YOUR CALENDAR
             </motion.a>

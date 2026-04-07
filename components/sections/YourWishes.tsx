@@ -55,13 +55,13 @@ const YourWishes = () => {
                             }} className='w-full flex flex-col gap-4'>
                             <input type="text" value={nama} placeholder="Desy (Tester)" onChange={(e) => setNama(e.target.value)} className='w-full  text-white  font-sweetsans text-[12px] bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
                             <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full  text-[12px]  font-sweetsans bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none text-white h-[100px] md:h-[310px]'></textarea>
-                            <button onClick={handleSubmit} className='bg-[#454F23] py-2 text-[12px] md:text-[18px] lg:text-[18px] font-sweetsans uppercase flex items-center justify-center gap-2  text-white'>
+                            <button onClick={handleSubmit} className='bg-[#454F23] h-[26px] md:h-auto lg:h-[40px]  text-[12px] md:text-[18px] lg:text-[18px] font-figtree font-normal uppercase flex items-center justify-center gap-1.5  text-white'>
                                 <Image
                                     src="/images/wishes/Kirim.png"
                                     alt="Kirim"
-                                    width={18}
-                                    height={18}
-                                    className="object-cover" />
+                                    width={15}
+                                    height={19}
+                                    className="object-cover w-[15px] h-[19px] md:w-[25px]" />
                                 Send
                             </button>
 
@@ -73,18 +73,18 @@ const YourWishes = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} className={`w-full max-w-none mt-18 py-6 px-4  ${showAll ? "bg-transparent" : "bg-[#454F23] max-h-[580px] overflow-y-auto"
+                                }} className={`w-full max-w-none mt-18 py-6 px-6  ${showAll ? "bg-transparent" : "bg-[#454F23] max-h-[580px] overflow-y-auto"
                                     }`}>
                             
                             {/* DEFAULT PESAN */}
                                 {!showAll ? (
                                     dummyPesan.slice(0, 4).map((item, index) => (
                                         <div key={item.id}>
-                                            <p className="text-white font-bold text-[12px] md:text-[18px] mb-4 font-sweetsans">
+                                            <p className="text-white font-medium lg:font-bold text-[12px] md:text-[18px] mb-4 font-sweetsans">
                                                 {item.nama}
                                             </p>
 
-                                            <p className="text-white text-[12px] md:text-[18px]  font-light font-sweetsans">
+                                            <p className="text-white text-[12px] md:text-[18px]   font-sweetsans tracking-[0.5px]">
                                                 {item.pesan}
                                             </p>
 
@@ -157,13 +157,13 @@ const YourWishes = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} onClick={() => setShowAll(!showAll)} className='bg-[#454F23] py-2 text-[14px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2 '>
+                                }} onClick={() => setShowAll(!showAll)} className='bg-[#454F23] h-[26px] lg:h-[40px] text-[14px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2 '>
                                 <Image
                                     src="/images/wishes/Pesan.png"
                                     alt="Kirim"
-                                    width={20}
+                                    width={18}
                                     height={20}
-                                    className="object-cover" />
+                                    className="object-cover  w-[18px] h-[20px] md:w-[22px]" />
                                 {showAll ? "BACK" : "See all message"}
                             </motion.button>
                         </motion.div>

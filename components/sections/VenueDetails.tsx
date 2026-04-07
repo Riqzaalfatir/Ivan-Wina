@@ -21,7 +21,7 @@ const VenueDetails = () => {
     <>
       <section id="venue" className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-2'>
 
-      {/* KIRI */}
+        {/* KIRI */}
         <div className='bg-white lg:bg-[#D9D9D9] flex flex-col items-center justify-center leading-none gap-16 order-2 lg:order-1 py-[75px] md:py-[75px] lg:py-[1px]'>
 
           {/* CEREMONY */}
@@ -53,7 +53,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[40px]'
+              className='font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[40px] lg:mb-[50px]'
             >
               <p>JL. Sukajadi No.223,</p>
               <p>Bandung, Jawa Barat</p>
@@ -65,8 +65,12 @@ const VenueDetails = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              <Link href="https://www.google.com/maps?q=Jl.+Sukajadi+No.223+Bandung+Jawa+Barat" target="_blank" className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-sweetsans py-2 px-12 bg-[#CB4F35] font-light flex items-center gap-2">
-                <Image src="/images/venuedetails/Maps.png" alt="Maps" width={20} height={20} />
+              <Link
+                href="https://www.google.com/maps?q=Jl.+Sukajadi+No.223+Bandung+Jawa+Barat"
+                target="_blank"
+                className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-figtree font-normal h-[30px] md:h-[40px] w-[160px] md:w-[279px] bg-[#CB4F35]  flex items-center justify-center gap-2 lg:gap-3"
+              >
+                <Image src="/images/venuedetails/Maps.png" alt="Maps" width={15} height={15} className="w-[15px] h-[15px] md:w-[24px] md:h-[30px]" />
                 OPEN GOOGLE MAPS
               </Link>
             </motion.div>
@@ -111,8 +115,8 @@ const VenueDetails = () => {
               whileInView="show"
               viewport={{ once: true }}
             >
-              <Link href="https://www.google.com/maps?q=Cikole+Lembang+Bandung+Jawa+Barat" target="_blank" className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-sweetsans py-2 px-12 bg-[#CB4F35] font-light flex items-center gap-2">
-                <Image src="/images/venuedetails/Maps.png" alt="Maps" width={20} height={20} />
+              <Link href="https://www.google.com/maps?q=Cikole+Lembang+Bandung+Jawa+Barat" target="_blank" className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-figtree h-[30px] md:h-[40px] w-[160px] md:w-[279px] bg-[#CB4F35]  flex items-center justify-center gap-2 lg:gap-3">
+                <Image src="/images/venuedetails/Maps.png" alt="Maps" width={15} height={15} className="w-[15px] h-[15px] md:w-[24px] md:h-[30px]" />
                 OPEN GOOGLE MAPS
               </Link>
             </motion.div>

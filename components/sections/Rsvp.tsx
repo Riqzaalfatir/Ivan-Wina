@@ -97,7 +97,7 @@ const Rsvp = () => {
                         >
                             <button
                                 onClick={() => setStatus("attend")}
-                                className={`flex-1 whitespace-nowrap uppercase font-figtree font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${status === "attend"
+                                    className={`flex-1 whitespace-nowrap uppercase font-figtree lg:font-sweetsans font-medium w-[90px] md:w-auto lg:w-[172px] h-[26px] md:h-auto lg:h-[40px] text-[12px] md:text-[22px] lg:text-[18px] tracking-[0.5px]  ${status === "attend"
                                         ? "bg-[#CB4F35] text-white"
                                         : "border border-[#CB4F35] text-white"
                                     }`}
@@ -107,7 +107,7 @@ const Rsvp = () => {
 
                             <button
                                 onClick={() => setStatus("not")}
-                                className={`flex-1 whitespace-nowrap uppercase font-figtree font-normal text-[12px] md:text-[22px] lg:text-[18px] py-2 ${status === "not"
+                                className={`flex-1 whitespace-nowrap uppercase font-figtree lg:font-sweetsans  w-[90px] md:w-auto lg:w-[172px] h-[26px] md:h-auto lg:h-[40px] text-[12px] md:text-[22px] lg:text-[18px] tracking-[0.5px]  ${status === "not"
                                         ? "bg-[#CB4F35] text-white"
                                         : "border border-[#CB4F35] text-white"
                                     }`}
@@ -134,7 +134,7 @@ const Rsvp = () => {
 
                             <button
                                 onClick={waTidakHadir}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 lg:py-2 mb-8 bg-[#CB4F35]'                            >
+                                className='flex w-full items-center font-medium justify-center gap-3 uppercase font-figtree  text-[12px] md:text-[22px] lg:text-[18px] text-white h-[26px] md:h-auto lg:h-[40px] mb-8 bg-[#CB4F35]'                            >
                                 {/* <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"
@@ -157,7 +157,7 @@ const Rsvp = () => {
                                         <select
                                             value={guest}
                                             onChange={(e) => setGuest(Number(e.target.value))}
-                                            className="w-full md:w-full bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px]  py-3 px-4 "
+                                            className="w-full md:w-full bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px] h-[30px] lg:h-[40px]   px-4 "
                                         >
                                             {[1, 2, 3, 4, 5].map((num) => (
                                                 <option key={num} value={num}>
@@ -169,7 +169,7 @@ const Rsvp = () => {
 
                                      <button
                                 onClick={waHadir}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-sweetsans  text-[12px] md:text-[22px] lg:text-[18px] text-white py-2 lg:py-2 mb-8 bg-[#CB4F35]'                            >
+                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree  font-medium  text-[12px] md:text-[22px] lg:text-[18px] text-white h-[26px] md:h-auto lg:h-[40px] mb-8 bg-[#CB4F35]'                            >
                                 {/* <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"
@@ -190,13 +190,13 @@ const Rsvp = () => {
 
                             <button
                                 onClick={waHelpdesk}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree  text-[12px] md:text-[22px] lg:text-[18px] text-white py-0.5 lg:py-2 bg-[#CB4F35]'                            >
+                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree font-medium  text-[12px] md:text-[22px] lg:text-[18px] text-white h-[26px] md:h-auto lg:h-[40px] bg-[#CB4F35] tracking-[1px]'                            >
                                 <Image
                                     src="/images/rsvp/lonceng.svg"
                                     alt="wa"
-                                    width={25}
-                                    height={25}
-                                    className="w-[20px] md:w-[20px] object-contain"
+                                    width={18}
+                                    height={23}
+                                    className="w-[20px] md:w-[28px] object-contain"
                                 />
 
                                 Chat helpdesk team
