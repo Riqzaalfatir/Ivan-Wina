@@ -79,7 +79,7 @@ const Header = ({ open, setOpen }: any) => {
 }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             style={{ originX: 0, originY: 0 }}
-            className="bg-[#1E1E1E]/50 py-4 md:p-8 text-white relative w-full max-w-[260px] md:max-w-[280px] z-0"
+            className="absolute top-4 left-4 bg-[#1E1E1E]/50 py-4 md:p-8 text-white  w-full max-w-[260px] md:max-w-[280px] z-0"
           >
 
             {/* CLOSE */}
