@@ -155,7 +155,7 @@ const OurStory = () => {
                 plugins={[Zoom]}
             />
 
-            <div className="border-b border-[#454F23]/80 md:border-[#454F23]/80 border-[1px]" />
+            <div className="border-b border-[#454F23]/20 md:border-[#454F23]/80 border-[1px]" />
         </>
     )
 }
