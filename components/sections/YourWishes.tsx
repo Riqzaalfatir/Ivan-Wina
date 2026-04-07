@@ -55,7 +55,7 @@ const YourWishes = () => {
                             }} className='w-full flex flex-col gap-4'>
                             <input type="text" value={nama} placeholder="Desy (Tester)" onChange={(e) => setNama(e.target.value)} className='w-full  text-white  font-sweetsans text-[12px] bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
                             <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full  text-[12px] font-figtree md:font-sweetsans bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none text-white h-[100px] md:h-[310px]'></textarea>
-                            <button onClick={handleSubmit} className='bg-[#454F23] h-[26px] md:h-auto lg:h-[40px]  text-[12px] md:text-[18px] lg:text-[18px] font-sweetsans font-normal uppercase flex items-center justify-center gap-1.5  text-white'>
+                            <button onClick={handleSubmit} className='bg-[#454F23] h-[26px] md:h-auto lg:h-[40px]  text-[12px] md:text-[18px] lg:text-[18px] font-figtree md:font-sweetsansfont-sweetsans font-normal uppercase flex items-center justify-center gap-1.5  text-white'>
                                 <Image
                                     src="/images/wishes/Kirim.png"
                                     alt="Kirim"
