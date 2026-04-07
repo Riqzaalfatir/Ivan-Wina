@@ -23,7 +23,7 @@ const Opening = () => {
           animate={{ y: 0 }}
           exit={{ y: "-100%" }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="fixed inset-0 z-50 bg-[#6C7852] flex flex-col items-center lg:justify-center pt-[40px] lg:pt-0 px-6 overflow-y-auto"
+          className="fixed inset-0 z-50 bg-[#6C7852] flex flex-col items-center md:justify-center pt-[40px] md:pt-0 px-6 overflow-y-auto"
         >
 
           <div className="relative mb-8 sm:mb-6 lg:mb-7">

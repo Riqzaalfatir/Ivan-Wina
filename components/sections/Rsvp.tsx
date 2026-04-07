@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion"
 import Image from 'next/image'
+import Attend from '../popup/Attend'
 
 const Rsvp = () => {
     const waHadir = () => {
@@ -34,8 +35,12 @@ const Rsvp = () => {
         window.open(url, "_blank")
     }
 
+
+
     const [status, setStatus] = useState<"attend" | "not">("attend")
     const [guest, setGuest] = useState(1)
+
+    const [openPopup, setOpenPopup] = useState(false)
 
 
     return (
@@ -96,7 +101,10 @@ const Rsvp = () => {
                             className='flex w-full items-center gap-4 mb-[40px]'
                         >
                             <button
-                                onClick={() => setStatus("attend")}
+                              onClick={() => {
+    setStatus("attend")
+    setOpenPopup(true)
+}}
                                     className={`flex-1 whitespace-nowrap uppercase font-figtree lg:font-sweetsans font-medium w-[90px] md:w-auto lg:w-[172px] h-[26px] md:h-auto lg:h-[40px] text-[12px] md:text-[22px] lg:text-[18px] tracking-[0.5px]  ${status === "attend"
                                         ? "bg-[#CB4F35] text-white"
                                         : "border border-[#CB4F35] text-white"
@@ -157,7 +165,7 @@ const Rsvp = () => {
                                         <select
                                             value={guest}
                                             onChange={(e) => setGuest(Number(e.target.value))}
-                                            className="w-full md:w-full bg-[#F5F5F5] text-black text-[12px] md:text-[19px] lg:text-[15px] h-[30px] lg:h-[40px]   px-4 "
+                                            className="w-full md:w-full bg-[#F5F5F5]     text-black text-[12px] md:text-[19px] lg:text-[15px] h-[30px] lg:h-[40px]   px-4 "
                                         >
                                             {[1, 2, 3, 4, 5].map((num) => (
                                                 <option key={num} value={num}>
@@ -205,6 +213,14 @@ const Rsvp = () => {
                     </div>
                 </div>
             </section>
+            <AnimatePresence>
+  {openPopup && (
+    <Attend
+      setOpenPopup={setOpenPopup}
+      waHelpdesk={waHelpdesk}
+    />
+  )}
+</AnimatePresence>
 
             <div className="border-b border-[#454F23]/80 md:border-[#454F23]/80 border-[1px]" />
         </>
