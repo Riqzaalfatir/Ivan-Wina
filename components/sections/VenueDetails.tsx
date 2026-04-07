@@ -43,7 +43,7 @@ const VenueDetails = () => {
               viewport={{ once: true }}
               className='uppercase font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[30px]'
             >
-              <p className="font-semibold">LOCATION:</p>
+              <p className="font-medium">LOCATION:</p>
               <p className="">GEREJA KATOLIK</p>
               <p className="">SANTO LAURENTIUS</p>
             </motion.div>
@@ -91,7 +91,7 @@ const VenueDetails = () => {
               viewport={{ once: true }}
               className='uppercase font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[30px]'
             >
-              <p className='font-semibold'>LOCATION:</p>
+              <p className='font-medium'>LOCATION:</p>
               <p className="">KILOGRAM</p>
             </motion.div>
 
@@ -144,7 +144,7 @@ const VenueDetails = () => {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-[#0C1602AB]/50" />
+              <div className="absolute inset-0 bg-black/50" />
             </motion.div>
 
             <motion.h2

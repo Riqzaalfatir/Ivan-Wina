@@ -23,16 +23,16 @@ const Opening = () => {
           animate={{ y: 0 }}
           exit={{ y: "-100%" }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="fixed inset-0 z-50 bg-[#6C7852] flex flex-col items-center justify-center px-6 overflow-y-auto"
+          className="fixed inset-0 z-50 bg-[#6C7852] flex flex-col items-center lg:justify-center pt-[61px] lg:pt-0 px-6 overflow-y-auto"
         >
 
-          <div className="relative mb-5 sm:mb-6 lg:mb-7">
+          <div className="relative mb-8 sm:mb-6 lg:mb-7">
             <Image
               src="/images/hero/Iv&WiWhite 1.png"
               alt="logo"
               width={120}
               height={120}
-              className="w-[90px] h-[60px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[90px] lg:w-[120px] lg:h-[70px]"
+              className="w-[90px] h-[45px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[90px] lg:w-[120px] lg:h-[70px]"
             />
           </div>
 
@@ -63,12 +63,12 @@ const Opening = () => {
 
           <p className='mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px] font-sweetsans  text-[12px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[5px] text-white'>Dear Mr./ Mrs./ Ms.</p>
           <p className='font-sweetsans text-[14px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[26px] lg:mb-[20px] text-white font-bold'>Sela</p>
-          <p className="text-center font-sweetsans font-light text-[10px] md:text-[14px] text-white">We sincerely apologize <br />
+          <p className="text-center font-sweetsans  text-[10px] md:text-[14px] text-white">We sincerely apologize <br />
             for any misspelling of names or titles.</p>
 
           <button
             onClick={handleOpen}
-            className="mt-5 bg-[#CB4F35] text-[#FEFBF0] px-8 py-2 text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]  tracking-[2px] uppercase font-sweetsans font-medium hover:opacity-90 transition"
+            className="mt-5 bg-[#CB4F35] text-[#FEFBF0] px-6 py-2 text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]  tracking-[2px] uppercase font-sweetsans font-medium lg:font-normal hover:opacity-90 transition"
           >
             Open Invitation
           </button>

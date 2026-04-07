@@ -53,7 +53,7 @@ const WeddingGift = () => {
                 delay: 0.4,
               }} className='text-white  text-[12px] md:text-[23px] lg:text-[18px] font-sweetsans font-light max-w-[250px]  md:max-w-[400px] lg:max-w-[340px] leading-[22px] mb-12'>
               Should you wish to honor us with a gift,
-              please find the details below
+              please find the details below <br />
               for your convenience.
             </motion.p>
           </div>

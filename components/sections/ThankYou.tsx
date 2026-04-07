@@ -64,7 +64,7 @@ const ThankYou = () => {
     width={0}
     height={0}
     sizes="100vw"
-    className="w-[90px] md:w-[140px] lg:w-[150px] h-auto object-contain"
+    className="w-[80px] md:w-[140px] lg:w-[150px] h-auto object-contain"
   />
 </motion.footer>
 

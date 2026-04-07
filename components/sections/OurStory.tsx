@@ -8,9 +8,9 @@ import "yet-another-react-lightbox/styles.css"
 import Zoom from "yet-another-react-lightbox/plugins/zoom"
 
 const images = [
-    { src: "/images/ourstory/ourstory3.jpg", position: "object-[50%_50%]" },
+    { src: "/images/ourstory/ourstory1.jpg", position: "object-[50%_60%]" },
     { src: "/images/ourstory/ourstory2.jpg", position: "object-[50%_20%]" },
-    { src: "/images/ourstory/ourstory1.jpg", position: "object-[50%_50%]" },
+    { src: "/images/ourstory/ourstory3.jpg", position: "object-[50%_50%]" },
     { src: "/images/ourstory/ourstory4.jpg", position: "object-[50%_0%]" },
     { src: "/images/ourstory/ourstory5.jpg", position: "object-[50%_50%]" },
 ]

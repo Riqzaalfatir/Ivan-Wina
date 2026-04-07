@@ -76,7 +76,7 @@ const Header = ({ open, setOpen }: any) => {
             }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             style={{ originX: 0, originY: 0 }}
-            className="bg-[#1E1E1E]/50 py-4 md:p-8 text-white relative w-full max-w-[245px] md:max-w-[280px] z-0"
+            className="bg-[#1E1E1E]/50 py-4 md:p-8 text-white relative w-full max-w-[260px] md:max-w-[280px] z-0"
           >
 
             {/* CLOSE */}
@@ -109,18 +109,21 @@ const Header = ({ open, setOpen }: any) => {
                   href={menu.link}
                   variants={itemVariants}
                   whileTap={{ scale: 0.97 }}
-                  className="cursor-pointer relative group inline-block"
                   onClick={() => setOpen(false)}
+                  className="group relative flex items-center cursor-pointer"
                 >
-                  {/* ARROW */}
-                  <span className="absolute left-0 opacity-0 -translate-x-3 transition-all duration-300 ease-out md:group-hover:opacity-100 md:group-hover:translate-x-0">
+                  {/* PANAH */}
+                  <span
+                    className="absolute left-0 opacity-0 transition-all duration-500 ease-out 
+                   group-hover:opacity-100 font-sweetsans"
+                  >
                     →
                   </span>
 
                   {/* TEXT */}
-                  <motion.span>
+                  <span className="transition-all duration-300 ease-out group-hover:translate-x-4">
                     {menu.name}
-                  </motion.span>
+                  </span>
                 </motion.a>
               ))}
             </motion.ul>
@@ -134,7 +137,7 @@ const Header = ({ open, setOpen }: any) => {
                 duration: 0.6,
                 ease: "easeOut"
               }}
-              className="pt-[20px] ml-7 text-[8px] md:text-[12px] font-sans font-extralight"
+              className="pt-[20px] ml-7 text-[8px] md:text-[12px] font-sans font-light"
             >
               Select a section above to continue
             </motion.p>
