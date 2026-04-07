@@ -169,7 +169,7 @@ const Rsvp = () => {
 
                                      <button
                                 onClick={waHadir}
-                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree  font-medium  text-[12px] md:text-[22px] lg:text-[18px] text-white h-[26px] md:h-auto lg:h-[40px] mb-8 bg-[#CB4F35]'                            >
+                                className='flex w-full items-center justify-center gap-3 uppercase font-figtree  font-medium  text-[12px] md:text-[22px] lg:text-[18px] text-white h-[26px] md:h-auto lg:h-[40px] mb-8 bg-[#CB4F35] '                            >
                                 {/* <Image
                                     src="/images/rsvp/lonceng.png"
                                     alt="wa"

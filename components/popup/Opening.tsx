@@ -23,7 +23,7 @@ const Opening = () => {
           animate={{ y: 0 }}
           exit={{ y: "-100%" }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="fixed inset-0 z-50 bg-[#6C7852] flex flex-col items-center lg:justify-center pt-[61px] lg:pt-0 px-6 overflow-y-auto"
+          className="fixed inset-0 z-50 bg-[#6C7852] flex flex-col items-center lg:justify-center pt-[40px] lg:pt-0 px-6 overflow-y-auto"
         >
 
           <div className="relative mb-8 sm:mb-6 lg:mb-7">
@@ -68,7 +68,7 @@ const Opening = () => {
 
           <button
             onClick={handleOpen}
-            className="mt-5 bg-[#CB4F35] text-[#FEFBF0] h-[30px] w-[238px] md:h-[40px] md:w-[320px] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]  tracking-[2px] uppercase font-sweetsans font-medium lg:font-normal hover:opacity-90 transition"
+            className="mt-5 bg-[#CB4F35] text-[#FEFBF0] h-[30px] w-[175px] md:h-[40px] md:w-[320px] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]  uppercase font-sweetsans font-medium lg:font-normal hover:opacity-90 transition  flex items-center justify-center"
           >
             Open Invitation
           </button>

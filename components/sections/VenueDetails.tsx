@@ -64,6 +64,8 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
+                className="flex justify-center w-full"
+
             >
               <Link
                 href="https://www.google.com/maps?q=Jl.+Sukajadi+No.223+Bandung+Jawa+Barat"
@@ -83,7 +85,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='uppercase font-sweetsans font-bold text-[14x] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[20px]'
+              className='uppercase font-sweetsans font-bold text-[14px] md:text-[24px] lg:text-[24px] text-[#202F26] mb-[20px]'
             >
               RECEPTION
             </motion.h2>
@@ -104,22 +106,33 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className='font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[40px]'
+              className='font-sweetsans font-normal text-[12px] md:text-[18px] lg:text-[18px] text-center text-[#202F26] flex flex-col gap-2 mb-[40px] lg:mb-[50px]'
             >
               <p>Cikole, Lembang, Jawa Barat</p>
             </motion.div>
 
             <motion.div
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-            >
-              <Link href="https://www.google.com/maps?q=Cikole+Lembang+Bandung+Jawa+Barat" target="_blank" className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-figtree h-[30px] md:h-[40px] w-[160px] md:w-[279px] bg-[#CB4F35]  flex items-center justify-center gap-2 lg:gap-3">
-                <Image src="/images/venuedetails/Maps.png" alt="Maps" width={15} height={15} className="w-[15px] h-[15px] md:w-[24px] md:h-[30px]" />
-                OPEN GOOGLE MAPS
-              </Link>
-            </motion.div>
+  variants={fadeUp}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true }}
+  className="flex justify-center w-full"
+>
+  <Link
+    href="https://www.google.com/maps?q=Cikole+Lembang+Bandung+Jawa+Barat"
+    target="_blank"
+    className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-figtree font-normal h-[30px] md:h-[40px] w-[160px] md:w-[279px] bg-[#CB4F35] flex items-center justify-center gap-2 lg:gap-3"
+  >
+    <Image
+      src="/images/venuedetails/Maps.png"
+      alt="Maps"
+      width={15}
+      height={15}
+      className="w-[15px] h-[15px] md:w-[24px] md:h-[30px]"
+    />
+    OPEN GOOGLE MAPS
+  </Link>
+</motion.div>
           </div>
 
         </div>
