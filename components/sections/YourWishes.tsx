@@ -84,7 +84,7 @@ const YourWishes = () => {
                                                 {item.nama}
                                             </p>
 
-                                            <p className="text-white text-[12px] md:text-[18px]   font-sweetsans font-light tracking-[0.5px]">
+                                            <p className="text-white text-[12px] md:text-[18px]   font-sweetsans font-light md:font-normal tracking-[0.5px]">
                                                 {item.pesan}
                                             </p>
 
