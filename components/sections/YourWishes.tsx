@@ -75,7 +75,7 @@ const YourWishes = () => {
                             }} className='w-full flex flex-col gap-4'>
                             <input type="text" value={nama} placeholder="Desy (Tester)" onChange={(e) => setNama(e.target.value)} className='w-full  text-slate-200  font-sweetsans text-[12px] lg:text-[16px] bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
                             <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full  text-[12px] lg:text-[16px] font-sweetsans bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none text-slate-200 h-[100px] md:h-[262px]'></textarea>
-                            <button onClick={handleSubmit} className='bg-[#454F23] h-[26px] md:h-auto lg:h-[40px]  text-[12px] md:text-[18px] lg:text-[18px] font-sweetsans font-normal uppercase flex items-center justify-center gap-1.5  text-white'>
+                            <button onClick={handleSubmit} className='bg-[#454F23] h-[26px] md:h-[40px]  text-[12px] md:text-[18px] lg:text-[18px] font-sweetsans font-normal uppercase flex items-center justify-center gap-1.5  text-white'>
                                 <Image
                                     src="/images/wishes/Kirim.png"
                                     alt="Kirim"
@@ -177,7 +177,7 @@ const YourWishes = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} onClick={() => setShowAll(!showAll)} className='bg-[#454F23] h-[26px] lg:h-[40px] text-[12px] md:text-[18px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2 '>
+                                }} onClick={() => setShowAll(!showAll)} className='bg-[#454F23] h-[26px] md:h-[40px] text-[12px] md:text-[18px] font-sweetsans text-white uppercase mt-3 flex items-center justify-center gap-2 '>
                                 <Image
                                     src="/images/wishes/Pesan.png"
                                     alt="Kirim"
