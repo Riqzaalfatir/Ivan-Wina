@@ -140,14 +140,14 @@ const YourWishes = () => {
                                                         ease: [0.22, 1, 0.36, 1]
                                                     }}
                                                     onClick={() => setSelectedMessage(item)}
-                                                    className="min-h-[160px] md:min-h-[170px] rounded-md overflow-hidden shadow-md bg-[#F4F8F5] font-sweetsans flex flex-col"
+                                                    className="min-h-[150px] md:min-h-[190px] rounded-md overflow-hidden shadow-md bg-[#F4F8F5] font-sweetsans flex flex-col "
                                                 >
                                                     <div className="p-2 text-[#202F26] relative flex-1 flex flex-col justify-center">
                                                         <p className="text-[40px] md:text-[60px] text-slate-500 opacity-30 leading-none absolute top-2 left-3">
                                                             “
                                                         </p>
 
-                                                        <p className="text-[11px] md:text-[16px] leading-relaxed px-1 md:px-4  md:pt-9 text-slate-600 font-medium line-clamp-3 text-center">
+                                                        <p className="text-[11px] md:text-[16px] leading-relaxed px-1 md:px-4  md:pt-9 text-slate-600 font-medium line-clamp-3 text-center mt-4 md:-mt-2">
                                                             {item.pesan}
                                                         </p>
                                                     </div>
