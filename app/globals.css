@@ -68,6 +68,8 @@ body {
   background: var(--background);
   font-family: 'Roboto Mono', monospace;  
   -moz-osx-font-smoothing: grayscale;
+    background-color: #6C7852;
+
 }
 
 * {

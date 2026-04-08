@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { useEffect } from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Lightbox from "yet-another-react-lightbox"
@@ -31,6 +32,12 @@ const OurStory = () => {
         setIndex((prev) => (prev - 1 + images.length) % images.length)
     }
 
+    useEffect(() => {
+        images.forEach((img) => {
+            const image = new window.Image()
+            image.src = img.src
+        })
+    }, [])
 
     return (
 
@@ -61,12 +68,13 @@ const OurStory = () => {
                                     initial={{ x: direction > 0 ? 100 : -100, opacity: 0 }}
                                     animate={{ x: 0, opacity: 1 }}
                                     exit={{ x: direction > 0 ? -100 : 100, opacity: 0 }}
-                                    transition={{ duration: 0.4 }}
+                                    transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                                 >
                                     <Image
                                         src={images[index].src}
                                         alt="prewed"
                                         fill
+                                        sizes="(max-width: 768px) 100vw, 950px"
                                         className={`object-cover ${images[index].position}`}
                                     />
                                 </motion.div>
@@ -86,7 +94,7 @@ const OurStory = () => {
                                 />
                             </button>
 
-                            {/* PANAH KIRI MOBILE DESKTOP */}
+                            {/* PANAH KIRI DESKTOP */}
                             <button
                                 onClick={prevSlide}
                                 className="hidden lg:block absolute left-8 top-1/2 -translate-y-1/2 z-30"
@@ -105,11 +113,14 @@ const OurStory = () => {
                             <button
 
                                 onClick={nextSlide}
-                                className="lg:hidden absolute right-3 top-1/2 -translate-y-1/2 z-30 pointer-events-auto "
+                                className="lg:hidden absolute right-2 top-1/2 -translate-y-1/2 z-30 "
                             >
-                                <img
-                                    src="/images/ourstory/panahkanan.png"
-                                    alt="right"
+
+                                <Image
+                                    src="/images/ourstory/vectorkanan.png"
+                                    alt="left"
+                                    width={50}
+                                    height={40}
                                     className="w-[40px] md:w-[60px]"
                                 />
                             </button>
@@ -152,7 +163,7 @@ const OurStory = () => {
                 plugins={[Zoom]}
             />
 
-            <div className="border-b border-[#454F23]/80 md:border-[#454F23]/80 border-[1px]" />
+            <div className="border-b border-[#454F23]/15 border-[1px]" />
         </>
     )
 }

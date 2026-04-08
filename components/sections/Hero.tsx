@@ -66,7 +66,7 @@ const Hero = ({ menuOpen }: HeroProps) => {
 
       </section>
 
-      <div className="border-b border-[#454F23]/85 border-[1px]" />
+      <div className="border-b border-[#454F23]/15 border-[1px]" />
     </>
   )
 }

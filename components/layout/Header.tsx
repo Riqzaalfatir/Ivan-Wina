@@ -11,7 +11,7 @@ type HeaderProps = {
 }
 
 const Header = ({ open, setOpen }: HeaderProps) => {
-  
+
   const linkMenu = [
     { name: "HOME", link: "#hero" },
     { name: "COUNTING DOWN", link: "#counting" },
@@ -72,14 +72,12 @@ const Header = ({ open, setOpen }: HeaderProps) => {
       <AnimatePresence mode="wait">
         {open && (
           <motion.div
-            initial={{ scale: 0.7, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             exit={{
-              scale: 0.85,
               opacity: 0,
               transition: {
-                duration: 0.4,
-                ease: [0.4, 0, 0.2, 1]
+                duration: 0.3
               }
             }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
@@ -90,9 +88,10 @@ const Header = ({ open, setOpen }: HeaderProps) => {
             {/* CLOSE */}
             <motion.button
               onClick={() => setOpen(false)}
-              whileTap={{ scale: 0.9, rotate: 60 }}
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 250, damping: 20 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
               className="absolute top-2.5 left-2"
             >
               <Image
