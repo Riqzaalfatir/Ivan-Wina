@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Opening = () => {
+const Opening = ({ namaTamu = "Sela" }) => {
   const [open, setOpen] = useState(true);
 
   useEffect(() => {
@@ -49,11 +49,11 @@ const Opening = () => {
                 />
               </div>
 
-              <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[48px] sm:text-[64px] md:text-[80px] lg:text-[66px] text-[#202F26] z-10 whitespace-nowrap text-center">
+              <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[48px] sm:text-[64px] md:text-[80px] lg:text-[72px] text-[#202F26] z-10 whitespace-nowrap text-center">
                 IVAN & WINA
               </h1>
 
-              <h3 className="absolute top-[60%] left-1/2 -translate-x-1/2 text-[14px] sm:text-[18px] md:text-[21px] lg:text-[16px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans font-medium text-center">
+              <h3 className="absolute top-[60%] left-1/2 -translate-x-1/2 text-[12px] sm:text-[18px] md:text-[21px] lg:text-[18px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans font-medium text-center">
                 23 MAY 2026
               </h3>
 
@@ -61,9 +61,9 @@ const Opening = () => {
 
           </div>
 
-          <p className='mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px] font-sweetsans  text-[12px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[5px] text-white'>Dear Mr./ Mrs./ Ms.</p>
-          <p className='font-sweetsans text-[14px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[26px] lg:mb-[20px] text-white font-bold'>Sela</p>
-          <p className="text-center font-sweetsans  text-[10px] md:text-[14px] text-white">We sincerely apologize <br />
+          <p className='mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px] font-sweetsans  text-[12px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[5px] text-white font-medium'>Dear Mr./ Mrs./ Ms.</p>
+          <p className='font-sweetsans text-[14px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[26px] lg:mb-[30px] text-white font-medium'>{namaTamu}</p>
+          <p className="text-center font-outfit font-normal  text-[9px] md:text-[14px] text-white tracking-[1px] lg:mb-[10px]">We sincerely apologize <br />
             for any misspelling of names or titles.</p>
 
           <button

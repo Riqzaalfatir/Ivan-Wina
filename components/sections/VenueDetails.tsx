@@ -64,7 +64,7 @@ const VenueDetails = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-                className="flex justify-center w-full"
+              className="flex justify-center w-full"
 
             >
               <Link
@@ -112,27 +112,27 @@ const VenueDetails = () => {
             </motion.div>
 
             <motion.div
-  variants={fadeUp}
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: true }}
-  className="flex justify-center w-full"
->
-  <Link
-    href="https://www.google.com/maps?q=Cikole+Lembang+Bandung+Jawa+Barat"
-    target="_blank"
-    className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-figtree font-normal h-[30px] md:h-[40px] w-[160px] md:w-[279px] bg-[#CB4F35] flex items-center justify-center gap-2 lg:gap-3"
-  >
-    <Image
-      src="/images/venuedetails/Maps.png"
-      alt="Maps"
-      width={15}
-      height={15}
-      className="w-[15px] h-[15px] md:w-[24px] md:h-[30px]"
-    />
-    OPEN GOOGLE MAPS
-  </Link>
-</motion.div>
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="flex justify-center w-full"
+            >
+              <Link
+                href="https://www.google.com/maps?q=Cikole+Lembang+Bandung+Jawa+Barat"
+                target="_blank"
+                className="uppercase text-white text-[10px] md:text-[18px] lg:text-[18px] font-figtree font-normal h-[30px] md:h-[40px] w-[160px] md:w-[279px] bg-[#CB4F35] flex items-center justify-center gap-2 lg:gap-3"
+              >
+                <Image
+                  src="/images/venuedetails/Maps.png"
+                  alt="Maps"
+                  width={15}
+                  height={15}
+                  className="w-[15px] h-[15px] md:w-[24px] md:h-[30px]"
+                />
+                OPEN GOOGLE MAPS
+              </Link>
+            </motion.div>
           </div>
 
         </div>

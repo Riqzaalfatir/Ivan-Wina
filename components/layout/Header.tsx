@@ -5,8 +5,13 @@ import { FiMenu } from "react-icons/fi"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
-const Header = ({ open, setOpen }: any) => {
+type HeaderProps = {
+  open: boolean
+  setOpen: (value: boolean) => void
+}
 
+const Header = ({ open, setOpen }: HeaderProps) => {
+  
   const linkMenu = [
     { name: "HOME", link: "#hero" },
     { name: "COUNTING DOWN", link: "#counting" },
@@ -104,7 +109,7 @@ const Header = ({ open, setOpen }: any) => {
               variants={container}
               initial="hidden"
               animate="show"
-              className="pt-4 pl-9 space-y-1.5 text-[12px] md:text-[14px] tracking-widest text-white font-sans font-medium flex flex-col"
+              className="pt-4 pl-9 md:pl-4 space-y-1.5 text-[12px] md:text-[14px] tracking-widest text-white font-sans font-medium flex flex-col"
             >
               {linkMenu.map((menu) => (
                 <motion.a
@@ -143,7 +148,7 @@ const Header = ({ open, setOpen }: any) => {
                 duration: 0.6,
                 ease: "easeOut"
               }}
-              className="pt-[20px] ml-9 text-[8px] md:text-[12px] font-sans font-light"
+              className="pt-[20px] ml-9 md:ml-4 text-[8px] md:text-[12px] font-sans font-light"
             >
               Select a section above to continue
             </motion.p>

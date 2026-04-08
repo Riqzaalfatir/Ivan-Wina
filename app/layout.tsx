@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Figtree, Noto_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Figtree, Noto_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -21,6 +21,12 @@ const notoSans = Noto_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-noto-sans",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-outfit",
 });
 
 export const metadata: Metadata = {
@@ -49,7 +55,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${figtree.variable} ${geistSans.variable} ${geistMono.variable} ${notoSans.variable}`}>
+    <html lang="en" className={`${figtree.variable} ${geistSans.variable} ${geistMono.variable} ${notoSans.variable}  ${outfit.variable}`}>
       <body>{children}</body>
     </html>
   );

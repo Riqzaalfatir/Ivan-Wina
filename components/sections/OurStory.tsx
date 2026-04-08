@@ -74,7 +74,6 @@ const OurStory = () => {
 
                             {/* PANAH KIRI MOBILE */}
                             <button
-
                                 onClick={prevSlide}
                                 className="lg:hidden absolute left-2  top-1/2 -translate-y-1/2 z-30"
                             >
@@ -89,7 +88,6 @@ const OurStory = () => {
 
                             {/* PANAH KIRI MOBILE DESKTOP */}
                             <button
-
                                 onClick={prevSlide}
                                 className="hidden lg:block absolute left-8 top-1/2 -translate-y-1/2 z-30"
                             >
@@ -112,12 +110,11 @@ const OurStory = () => {
                                 <img
                                     src="/images/ourstory/panahkanan.png"
                                     alt="right"
-                                    className="w-[42px] md:w-[60px]"
+                                    className="w-[40px] md:w-[60px]"
                                 />
                             </button>
 
                             {/* PANAH KANAN DEKSTOP */}
-
                             <button
 
                                 onClick={nextSlide}
@@ -141,14 +138,14 @@ const OurStory = () => {
             <Lightbox
                 open={open}
                 close={() => {
-  setOpen(false)
+                    setOpen(false)
 
-  setTimeout(() => {
-    window.scrollTo({
-      top: scrollY,
-    })
-  }, 50)
-}}
+                    setTimeout(() => {
+                        window.scrollTo({
+                            top: scrollY,
+                        })
+                    }, 50)
+                }}
                 index={index}
 
                 slides={images.map((img) => ({ src: img.src }))}

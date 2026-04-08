@@ -1,21 +1,18 @@
 import Image from "next/image"
 
-const Hero = ({ menuOpen }: any) => {
+
+type HeroProps = {
+  menuOpen: boolean
+}
+
+const Hero = ({ menuOpen }: HeroProps) => {
   return (
     <>
       <section id="hero" className='w-full bg-[#6C7852]  min-h-screen grid grid-cols-1 lg:grid-cols-2'>
 
         {/* KIRI */}
-        <div 
-      className={`
-    flex flex-col items-center px-6 lg:px-0
-    h-screen
-    pt-28 lg:pt-0
-    lg:justify-center
-    transition-all lg:transition-none duration-700 lg:duration-0
-    ${menuOpen ? "translate-y-16 lg:translate-y-0" : "translate-y-0"}
-  
-  `}
+        <div className={`flex flex-col items-center px-6 lg:px-0 h-screen pt-28 lg:pt-0 md:justify-center transition-all lg:transition-none duration-700 lg:duration-0
+           ${menuOpen ? "translate-y-16 lg:translate-y-0" : "translate-y-0"}`}
         >
 
           <div className="relative mb-8 sm:mb-6 lg:mb-7">
@@ -30,7 +27,7 @@ const Hero = ({ menuOpen }: any) => {
 
           <div className="relative flex flex-col items-center">
 
-            <div className="relative w-[210px] h-[330px] sm:w-[240px] sm:h-[390px] md:w-[350px] md:h-[500px] lg:w-[250px] lg:h-[390px]  md:mt-0">
+            <div className="relative w-[190px] h-[330px] sm:w-[240px] sm:h-[390px] md:w-[350px] md:h-[500px] lg:w-[250px] lg:h-[390px]  md:mt-0">
 
               <div className="absolute inset-0 overflow-hidden">
                 <Image

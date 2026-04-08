@@ -82,12 +82,11 @@ const DressCode = () => {
                 <Image
                   src="/images/dresscode/Prewed2.png"
                   alt="main"
-                  width={520}
-                  height={520}
+                  width={560}
+                  height={560}
                   className="hidden lg:block object-cover"
                 />
                 <div className="absolute z-20 inset-0 bg-black/50" />
-
 
               </motion.div>
 
@@ -118,8 +117,7 @@ const DressCode = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ delayChildren: 0.2 }} // ⬅️ ini bikin napas dulu
-
+          transition={{ delayChildren: 0.2 }} 
           className='bg-white lg:bg-[#D9D9D9]  flex flex-col items-center justify-center leading-none gap-[79px] py-[75px] md:py-[75px] lg:py-[1px]'
         >
 
@@ -146,7 +144,7 @@ const DressCode = () => {
                   alt={`color-${i}`}
                   width={60}
                   height={60}
-                  className="w-[40px] md:w-[55px] lg:w-[50px] object-contain"
+                  className="w-[40px] md:w-[55px] lg:w-[55px] object-contain"
                 />
               ))}
             </div>

@@ -1,11 +1,13 @@
 "use client"
 
 import { dummyPesan } from "@/components/data/wishes"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import WishesCard from "../popup/WishesCard"
+// DATA PESAN DUMMY
 import type { Wish } from "@/components/data/wishes"
+
 
 
 
@@ -18,16 +20,34 @@ const YourWishes = () => {
             return;
         }
 
-        console.log({ nama, pesan })
+        const newPesan = {
+            id: Date.now(),
+            nama,
+            pesan
+        };
 
-        setShowPopup(true)
+        setPesanList((prev) => [newPesan, ...prev]);
 
-        setNama("")
-        setPesan("")
+        setShowPopup(true);
+        setNama("");
+        setPesan("");
     }
+
     const [showPopup, setShowPopup] = useState(false);
     const [showAll, setShowAll] = useState(false);
     const [selectedMessage, setSelectedMessage] = useState<Wish | null>(null)
+    const [pesanList, setPesanList] = useState<Wish[]>(dummyPesan);
+
+    useEffect(() => {
+        const saved = localStorage.getItem("pesan");
+        if (saved) {
+            setPesanList(JSON.parse(saved));
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem("pesan", JSON.stringify(pesanList));
+    }, [pesanList]);
 
     return (
         <>
@@ -54,7 +74,7 @@ const YourWishes = () => {
                                 delay: 0.2,
                             }} className='w-full flex flex-col gap-4'>
                             <input type="text" value={nama} placeholder="Desy (Tester)" onChange={(e) => setNama(e.target.value)} className='w-full  text-slate-200  font-sweetsans text-[12px] lg:text-[16px] bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none placeholder:text-[#BFC7A4]' />
-                            <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full  text-[12px] lg:text-[16px] font-sweetsans bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none text-slate-200 h-[100px] md:h-[310px]'></textarea>
+                            <textarea value={pesan} onChange={(e) => setPesan(e.target.value)} className='w-full  text-[12px] lg:text-[16px] font-sweetsans bg-transparent border-[1.5px] border-[#454F23] px-3 py-2 text-sm outline-none text-slate-200 h-[100px] md:h-[262px]'></textarea>
                             <button onClick={handleSubmit} className='bg-[#454F23] h-[26px] md:h-auto lg:h-[40px]  text-[12px] md:text-[18px] lg:text-[18px] font-sweetsans font-normal uppercase flex items-center justify-center gap-1.5  text-white'>
                                 <Image
                                     src="/images/wishes/Kirim.png"
@@ -65,7 +85,7 @@ const YourWishes = () => {
                                 Send
                             </button>
 
-                         {/* PESAN */}
+                            {/* PESAN */}
                             <motion.div initial={{ opacity: 0, y: 80 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -73,14 +93,14 @@ const YourWishes = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} className={`w-full max-w-none mt-18 py-6 px-6  ${showAll ? "bg-transparent" : "bg-[#454F23] max-h-[580px] overflow-y-auto"
+                                }} className={`w-full max-w-none mt-18 py-6 px-4 md:px-6  ${showAll ? "bg-transparent" : "bg-[#454F23] h-[330px] md:h-[503px] overflow-y-auto"
                                     }`}>
-                            
-                            {/* DEFAULT PESAN */}
+
+                                {/* DEFAULT PESAN */}
                                 {!showAll ? (
-                                    dummyPesan.slice(0, 4).map((item, index) => (
+                                    pesanList.slice(0, 8).map((item, index, array) => (
                                         <div key={item.id}>
-                                            <p className="text-white font-medium lg:font-bold text-[12px] md:text-[18px] mb-2 font-sweetsans">
+                                            <p className="text-white font-medium lg:font-bold text-[12px] md:text-[18px] mb-0.5 md:mb-3 font-sweetsans">
                                                 {item.nama}
                                             </p>
 
@@ -88,14 +108,14 @@ const YourWishes = () => {
                                                 {item.pesan}
                                             </p>
 
-                                            {index !== 3 && (
-                                                <div className="border-t border-[#D9D9D9] my-3"></div>
+                                            {index !== array.length - 1 && (
+                                                <div className="border-t  border-[#D9D9D9]/40 my-3"></div>
                                             )}
                                         </div>
                                     ))
                                 ) : (
 
-                            // SEMUA PESAN
+                                    // SEMUA PESAN
                                     <div className="max-w-2xl relative left-1/2 -translate-x-1/2 w-screen px-10 md:px-12">
                                         <motion.div
                                             layout
@@ -109,7 +129,7 @@ const YourWishes = () => {
                                                     }
                                                 }
                                             }} className="grid grid-cols-2  gap-3">
-                                            {dummyPesan.map((item) => (
+                                            {pesanList.map((item) => (
                                                 <motion.div key={item.id}
                                                     variants={{
                                                         hidden: { opacity: 0, y: 50, scale: 0.95 },
@@ -144,7 +164,7 @@ const YourWishes = () => {
                                 )}
                             </motion.div>
 
-                       
+
                             <WishesCard
                                 data={selectedMessage}
                                 onClose={() => setSelectedMessage(null)}
@@ -170,15 +190,15 @@ const YourWishes = () => {
                     </div>
                 </div>
 
-        {/* POPUP KETIKA PESAN DIKIRIM */}
+                {/* POPUP KETIKA PESAN DIKIRIM */}
                 {showPopup && (
                     <div className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-50">
 
-                        <div className="bg-[#F7F8F2] rounded-2xl p-8 w-[340px] text-center shadow-xl border border-[#E4E7D6]">
+                        <div className="bg-[#F7F8F2] rounded-2xl p-6 w-[340px] text-center shadow-xl border border-[#E4E7D6]">
 
                             {/* Title */}
                             <h3 className="text-[22px] font-sweetsans font-semibold text-[#454F23] mb-3 tracking-wide">
-                                Message Sent
+                                Pesan Terkirim !
                             </h3>
 
                             {/* Divider */}
@@ -186,14 +206,14 @@ const YourWishes = () => {
 
                             {/* Description */}
                             <p className="text-[16px] text-[#6C7852] font-sweetsans leading-relaxed mb-6">
-                                Thank you for your kind wishes.
-                                We truly appreciate your message.
+                              Terima kasih atas doa dan ucapan baik Anda. Kami
+                              sangat menghargai pesan yang telah diberikan.
                             </p>
 
                             {/* Button */}
                             <button
                                 onClick={() => setShowPopup(false)}
-                                className="bg-[#454F23] hover:bg-[#5A6530] transition-all text-white px-6 py-2 rounded-full text-[14px] tracking-wide"
+                                className="bg-[#454F23] hover:bg-[#5A6530] transition-all text-white px-6 py-2 rounded-full text-[14px] tracking-wide font-sweetsans"
                             >
                                 Close
                             </button>

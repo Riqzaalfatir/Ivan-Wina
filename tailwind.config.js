@@ -11,6 +11,7 @@ module.exports = {
         sweetsans: ['"Sweet Sans Pro"'],
         figtree: ['var(--font-figtree)'],
         sans: ["var(--font-noto-sans)"],
+        outfit: ['var(--font-outfit)'], 
         mono: ['"Roboto Mono"', 'monospace'],
       },
     },

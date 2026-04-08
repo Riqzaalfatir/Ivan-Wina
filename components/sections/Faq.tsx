@@ -23,7 +23,7 @@ const Faq = () => {
                         transition={{
                             duration: 1.5,
                             ease: [0.22, 1, 0.36, 1],
-                        }} className='uppercase text-center text-white font-sweetsans font-medium text-[28px] md:text-[46px] lg:text-[46px] mb-[18px]'>
+                        }} className='uppercase text-center text-white font-sweetsans font-medium text-[28px] md:text-[46px] lg:text-[46px] mb-[25px]'>
                         FAQ
                     </motion.h2>
             
@@ -66,7 +66,7 @@ const Faq = () => {
                                                 duration: 1.5,
                                                 ease: [0.22, 1, 0.36, 1],
                                                 delay: 0.4,
-                                            }} key={key} className="border-b border-white">
+                                            }} key={key} className="border-white border-b-[1.5px]">
 
                                             <button
                                                 onClick={() => toggle(key)}

@@ -39,7 +39,7 @@ const WeddingGift = () => {
                 duration: 1.5,
                 ease: [0.22, 1, 0.36, 1],
                 delay: 0.2,
-              }} className='text-white text-[12px] md:text-[23px] lg:text-[18px] font-sweetsans font-light max-w-sm leading-[22px] mb-5'>
+              }} className='text-white text-[12px] md:text-[23px] lg:text-[18px] font-sweetsans font-light max-w-sm leading-[22px] mb-5 md:mb-7'>
               Your presence and prayers <br />
               are the greatest blessing to us.
             </motion.p>

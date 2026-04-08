@@ -49,7 +49,7 @@ const OrderOfEvents = () => {
                 >
                     <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[20px]">09.00 WIB</h3>
                     <h4 className="font-sweetsans font-bold text-[14px] md:text-[24px] lg:text-[24px] mb-[17px]">CEREMONY</h4>
-                    <p className="font-sweetsans font-normal text-[12px] md:text-[16px] lg:text-[16px] text-[#202F26]">The Sacrament. The vows</p>
+                    <p className="font-sweetsans font-normal text-[12px] md:text-[16px] lg:text-[18px] text-[#202F26]">The Sacrament. The vows</p>
                 </motion.div>
 
                 {/* ITEM 2 TEA PAI */}
@@ -66,7 +66,7 @@ const OrderOfEvents = () => {
                 >
                     <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[20px]">12.00 WIB</h3>
                     <h4 className="font-sweetsans font-bold text-[14px] md:text-[24px] lg:text-[24px] mb-[17px]">TEA PAI</h4>
-                    <p className="font-sweetsans font-normal text-[12px] md:text-[16px] lg:text-[16px] text-[#202F26]">The tradition. The honor.</p>
+                    <p className="font-sweetsans font-normal text-[12px] md:text-[16px] lg:text-[18px] text-[#202F26]">The tradition. The honor.</p>
                 </motion.div>
 
                 {/* ITEM 3 COCKTAIL HOUR */}
@@ -83,7 +83,7 @@ const OrderOfEvents = () => {
                 >
                     <h3 className="font-sweetsans font-bold text-[28px]  md:text-[45px] lg:text-[45px] mb-[20px]">12.00 WIB</h3>
                     <h4 className="font-sweetsans font-bold text-[14px] md:text-[24px] lg:text-[24px] mb-[5px]">COCKTAIL HOUR</h4>
-                    <p className="font-sweetsans text-[9px] md:text-[14px] lg:text-[14px] font-light italic text-[#202F26]">Followed by the Reception</p>
+                    <p className="font-sweetsans text-[9px] md:text-[14px] lg:text-[15px] font-light italic text-[#202F26]">Followed by the Reception</p>
                 </motion.div>
 
                 <motion.p
