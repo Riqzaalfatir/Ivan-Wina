@@ -93,7 +93,7 @@ const YourWishes = () => {
                                     duration: 1.5,
                                     ease: [0.22, 1, 0.36, 1],
                                     delay: 0.2,
-                                }} className={`w-full max-w-none mt-18 py-6 px-4 md:px-6  ${showAll ? "bg-transparent" : "bg-[#454F23] h-[330px] md:h-[503px] overflow-y-auto"
+                                }} className={`w-full max-w-none mt-18 py-4 px-4 md:px-6  ${showAll ? "bg-transparent" : "bg-[#454F23] h-[360px] md:h-[503px] overflow-y-auto"
                                     }`}>
 
                                 {/* DEFAULT PESAN */}

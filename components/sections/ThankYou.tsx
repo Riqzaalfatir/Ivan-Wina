@@ -7,7 +7,7 @@ const ThankYou = () => {
   return (
     <section className="bg-[#6C7852]  relative w-full">
 
-      <div className=" flex flex-col items-center text-center px-6 pt-32 pb-6 lg:pb-0">
+      <div className=" bg-[#6C7852]   flex flex-col items-center text-center px-6 pt-32 pb-6 lg:pb-0">
 
         <div className="relative flex flex-col items-center">
 
