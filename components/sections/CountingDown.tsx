@@ -17,7 +17,7 @@ const Countdown = dynamic(() => import("react-countdown"), {
 })
 
 const CountingDown = () => {
-  const tanggalTarget = new Date("2026-04-09T00:00:00+07:00")
+  const tanggalTarget = new Date("2026-10-09T00:00:00+07:00")
 
   const renderer = ({ days, hours, minutes, seconds, completed }: CountdownProps)  => {
     if (completed) {
