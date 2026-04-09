@@ -50,12 +50,12 @@
               </div>
 
               {/* CONTENT */}
-              <div className="flex flex-col items-center text-center px-4 pt-[21px] md:pt-[25px] pb-[30px] md:pb-[0px] flex-1 leading-none">
+              <div className="flex flex-col items-center text-center px-4 pt-[21px] md:pt-[22px] pb-[30px] md:pb-[0px] flex-1 leading-none">
                 <p className="text-[12px] md:text-[14px] text-[#202F26] font-sweetsans font-medium ">
                   THE WEDDING OF
                 </p>
 
-                <h1 className="text-[28px] md:text-[36px] text-[#202F26] pt-[14px] md:pt-[10px]">
+                <h1 className="text-[28px] md:text-[36px] text-[#202F26] pt-[14px] md:pt-[12px]">
                   IVAN & WINA
                 </h1>
 
@@ -67,14 +67,14 @@
                   {namaTamu}
                 </p>
 
-                <p className="text-[9px] md:text-[12px]  text-[#202F26] font-sweetsans pt-[16px] md:pt-[23px]">
+                <p className="text-[9px] md:text-[12px]  text-[#202F26] font-sweetsans pt-[16px] md:pt-[23px] leading-[1.4]">
                   We sincerely apologize <br />
                   for any misspelling of names or titles.
                 </p>
 
                 <button
                   onClick={handleOpen}
-                  className="bg-[#CB4F35] text-white w-[184px] h-[30px] md:w-[220px] md:h-[40px] rounded-full uppercase font-sweetsans font-medium text-[12px] md:text-[18px] mt-[15px] md:mt-[23px]"
+                  className="bg-[#CB4F35] text-white w-[184px] h-[30px] md:w-[220px] md:h-[40px] rounded-full uppercase font-sweetsans font-medium text-[12px] md:text-[18px] mt-[15px] md:mt-[20px]"
                 >
                   Open Invitation
                 </button>
