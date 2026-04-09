@@ -1,82 +1,90 @@
-"use client";
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+  "use client";
 
-const Opening = ({ namaTamu = "Sela" }) => {
-  const [open, setOpen] = useState(true);
+  import { useState, useEffect } from "react";
+  import Image from "next/image";
+  import { motion, AnimatePresence } from "framer-motion";
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-  }, []);
+  const Opening = ({ namaTamu = "Sela" }) => {
+    const [open, setOpen] = useState(true);
 
-  const handleOpen = () => {
-    setOpen(false);
-    document.body.style.overflow = "auto";
-  };
+    useEffect(() => {
+      document.body.style.overflow = "hidden";
+    }, []);
 
-  return (
-    <AnimatePresence>
-      {open && (
-        <motion.div
-          initial={{ y: 0 }}
-          animate={{ y: 0 }}
-          exit={{ y: "-100%" }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="fixed inset-0 z-50 bg-[#6C7852] flex flex-col items-center md:justify-center pt-[40px] md:pt-0 px-6 overflow-y-auto"
-        >
+    const handleOpen = () => {
+      setOpen(false);
+      document.body.style.overflow = "auto";
+    };
 
-          <div className="relative mb-8 sm:mb-6 lg:mb-7">
-            <Image
-              src="/images/hero/Iv&WiWhite 1.png"
-              alt="logo"
-              width={120}
-              height={120}
-              className="w-[90px] h-[45px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[90px] lg:w-[120px] lg:h-[70px]"
-            />
-          </div>
+    return (
+      <AnimatePresence mode="wait" >
+        {open && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }} // 🔥 TAMBAH INI
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm  md:backdrop-blur-md flex justify-center items-start md:items-center pt-32 md:pt-0 px-4"
+          >
+            {/* CARD POPUP */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.97, y: 30 }} // 🔥 keluar turun dikit
 
-          <div className="relative flex flex-col items-center">
+              transition={{
+                duration: open ? 0.6 : 1.5, // masuk lebih lama, keluar lebih pelan
+                ease: "easeOut"
+              }}
 
-            <div className="relative w-[210px] h-[330px] sm:w-[240px] sm:h-[390px] md:w-[350px] md:h-[500px] lg:w-[250px] lg:h-[390px]">
-
-              <div className="absolute inset-0 overflow-hidden">
+              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[430px] md:w-[406px] md:h-[520px] shadow-xl flex flex-col"
+            >
+              {/* IMAGE */}
+              <div className="relative w-full h-[182px] md:h-[220px] overflow-hidden">
                 <Image
                   src="/images/opening/Opening1.jpg"
-                  alt="Prewed1"
+                  alt="prewed"
                   fill
-                  className="object-cover scale-150"
+                  className="object-cover object-[50%_67%] md:object-[50%_70%] scale-110"
                 />
               </div>
 
-              <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[48px] sm:text-[64px] md:text-[80px] lg:text-[72px] text-[#202F26] z-10 whitespace-nowrap text-center">
-                IVAN & WINA
-              </h1>
+              {/* CONTENT */}
+              <div className="flex flex-col items-center text-center px-4 pt-[21px] md:pt-[25px] pb-[30px] md:pb-[0px] flex-1 leading-none">
+                <p className="text-[12px] md:text-[14px] text-[#202F26] font-sweetsans font-medium ">
+                  THE WEDDING OF
+                </p>
 
-              <h3 className="absolute top-[60%] left-1/2 -translate-x-1/2 text-[12px] sm:text-[18px] md:text-[21px] lg:text-[18px] text-[#202F26] z-10 whitespace-nowrap font-sweetsans font-medium text-center">
-                23 MAY 2026
-              </h3>
+                <h1 className="text-[28px] md:text-[36px] text-[#202F26] pt-[14px] md:pt-[10px]">
+                  IVAN & WINA
+                </h1>
 
-            </div>
+                <p className="text-[12px] md:text-[14px] text-[#202F26] font-sweetsans font-medium pt-[19px] md:pt-[22px]">
+                  Dear Mr. / Mrs. / Ms.
+                </p>
 
-          </div>
+                <p className="text-[14px] md:text-[18px] font-medium font-sweetsans text-[#202F26] pt-[11px] md:pt-[13px]">
+                  {namaTamu}
+                </p>
 
-          <p className='mt-[30px] sm:mt-[30px] md:mt-[30px] lg:mt-[30px] font-sweetsans  text-[12px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[5px] text-white font-medium'>Dear Mr./ Mrs./ Ms.</p>
-          <p className='font-sweetsans text-[14px] sm:text-[18px] md:text-[24px] lg:text-[18px] mb-[26px] lg:mb-[30px] text-white font-medium'>{namaTamu}</p>
-          <p className="text-center font-outfit font-normal  text-[9px] md:text-[14px] text-white tracking-[1px] lg:mb-[10px]">We sincerely apologize <br />
-            for any misspelling of names or titles.</p>
+                <p className="text-[9px] md:text-[12px]  text-[#202F26] font-sweetsans pt-[16px] md:pt-[23px]">
+                  We sincerely apologize <br />
+                  for any misspelling of names or titles.
+                </p>
 
-          <button
-            onClick={handleOpen}
-            className="mt-5 bg-[#CB4F35] text-[#FEFBF0] h-[30px] w-[175px] md:h-[40px] md:w-[320px] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]  uppercase font-sweetsans font-medium lg:font-normal hover:opacity-90 transition  flex items-center justify-center"
-          >
-            Open Invitation
-          </button>
+                <button
+                  onClick={handleOpen}
+                  className="bg-[#CB4F35] text-white w-[184px] h-[30px] md:w-[220px] md:h-[40px] rounded-full uppercase font-sweetsans font-medium text-[12px] md:text-[18px] mt-[15px] md:mt-[23px]"
+                >
+                  Open Invitation
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )
+        }
+      </AnimatePresence >
+    );
+  };
 
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-};
-
-export default Opening;
+  export default Opening;
