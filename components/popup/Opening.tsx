@@ -39,7 +39,6 @@
 
               className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[430px] md:w-[406px] md:h-[520px] shadow-xl flex flex-col"
             >
-              {/* IMAGE */}
               <div className="relative w-full h-[182px] md:h-[220px] overflow-hidden">
                 <Image
                   src="/images/opening/Opening1.jpg"
@@ -49,7 +48,6 @@
                 />
               </div>
 
-              {/* CONTENT */}
               <div className="flex flex-col items-center text-center px-4 pt-[21px] md:pt-[22px] pb-[30px] md:pb-[0px] flex-1 leading-none">
                 <p className="text-[12px] md:text-[14px] text-[#202F26] font-sweetsans font-medium ">
                   THE WEDDING OF

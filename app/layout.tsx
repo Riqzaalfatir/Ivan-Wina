@@ -34,20 +34,30 @@ export const metadata: Metadata = {
   description: "You are invited to our special day",
 
   icons: {
-    icon: "/favicon.ico", 
+    icon: "/favicon.ico",
   },
 
   openGraph: {
     title: "Wedding Invitation",
     description: "You are invited to our special day",
     url: "https://ivan-wina.vercel.app/",
+    siteName: "Wedding Invitation",
     images: [
       {
         url: "https://ivan-wina.vercel.app/images/hero/Prewed2.jpg",
         width: 1200,
         height: 630,
+        alt: "Wedding Invitation",
       },
     ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Wedding Invitation",
+    description: "You are invited to our special day",
+    images: ["https://ivan-wina.vercel.app/images/hero/Prewed2.jpg"],
   },
 };
 
